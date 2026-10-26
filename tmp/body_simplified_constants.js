@@ -1,0 +1,5763 @@
+(function ⵂⵐⴺⵍ() {
+  var ⴲⴻⴾⵍ = 34;
+  while (ⴲⴻⴾⵍ < 35) switch (ⴲⴻⴾⵍ) {
+    case 34:
+      ⴲⴻⴾⵍ = window["__qxShadowPatched"] ? 11 : 35;
+      break;
+    case 11:
+      ⴲⴻⴾⵍ = 35;
+      return;
+  }
+  window["__qxShadowPatched"] = true;
+  const ⴲⵋⴳⵍ = new WeakMap();
+  const ⵒⴵⴷⵍ = Element["prototype"]["attachShadow"];
+  Element["prototype"]["attachShadow"] = function (ⵂⵀⴵⵎ) {
+    const ⴲⵛⴸⵎ = ⵒⴵⴷⵍ["call"](this, Object["assign"]({}, ⵂⵀⴵⵎ || {}, {
+      ["mode"]: "open"
+    }));
+    ⴲⵋⴳⵍ["set"](this, ⴲⵛⴸⵎ);
+    var ⴲⴻⵞⵍ = 22;
+    while (ⴲⴻⵞⵍ < 34) switch (ⴲⴻⵞⵍ) {
+      case 9:
+        ⴲⴻⵞⵍ = 34;
+        {
+          window["__qxUsermenuShadow"] = ⴲⵛⴸⵎ;
+        }
+        break;
+      case 22:
+        ⴲⴻⵞⵍ = this["localName"] === "qx-usermenu-trigger" ? 9 : 34;
+        break;
+    }
+    return ⴲⵛⴸⵎ;
+  };
+  window["__qxGetShadowRoot"] = function (ⵒⵕⴱⵎ) {
+    var ⵒⴵⵗⵍ = 23;
+    while (ⵒⴵⵗⵍ < 38) switch (ⵒⴵⵗⵍ) {
+      case 24:
+        ⵒⴵⵗⵍ = 38;
+        return null;
+      case 23:
+        ⵒⴵⵗⵍ = !ⵒⵕⴱⵎ ? 24 : 38;
+        break;
+    }
+    return ⵒⵕⴱⵎ["shadowRoot"] || ⴲⵋⴳⵍ["get"](ⵒⵕⴱⵎ) || null;
+  };
+  window["__qxEnsureUsermenuShadow"] = function () {
+    const ⵂⵐⵚⵍ = document["querySelector"]("qx-usermenu-trigger");
+    var ⵂⴰⵐⵍ = 7;
+    while (ⵂⴰⵐⵍ < 33) switch (ⵂⴰⵐⵍ) {
+      case 12:
+        ⵂⴰⵐⵍ = 33;
+        return null;
+      case 7:
+        ⵂⴰⵐⵍ = !ⵂⵐⵚⵍ ? 12 : 33;
+        break;
+    }
+    const ⴲⵋⵓⵍ = ⵂⵐⵚⵍ["shadowRoot"] || ⴲⵋⴳⵍ["get"](ⵂⵐⵚⵍ) || window["__qxUsermenuShadow"] || null;
+    var ⵒⵕⵑⵎ = 15;
+    while (ⵒⵕⵑⵎ < 33) switch (ⵒⵕⵑⵎ) {
+      case 7:
+        ⵒⵕⵑⵎ = 33;
+        return ⴲⵋⵓⵍ;
+      case 15:
+        ⵒⵕⵑⵎ = ⴲⵋⵓⵍ ? 7 : 33;
+        break;
+    }
+    var ⵂⵀⵕⵎ = 33;
+    while (ⵂⵀⵕⵎ < 34) switch (ⵂⵀⵕⵎ) {
+      case 33:
+        ⵂⵀⵕⵎ = !window["__qxUsermenuShadowKicked"] ? 8 : 34;
+        break;
+      case 8:
+        ⵂⵀⵕⵎ = 34;
+        {
+          window["__qxUsermenuShadowKicked"] = true;
+          try {
+            ⵂⵐⵚⵍ["remove"]();
+          } catch (ⵂⵐⵊⵎ) {}
+        }
+        break;
+    }
+    return null;
+  };
+})();
+(async function () {
+  function ⴲⴻⵎⵎ() {
+    var ⴲⵋⵃⵎ = 35;
+    while (ⴲⵋⵃⵎ < 39) switch (ⴲⵋⵃⵎ) {
+      case 38:
+        ⴲⵋⵃⵎ = 39;
+        {
+          return window["__qxEnsureUsermenuShadow"]();
+        }
+        break;
+      case 35:
+        ⴲⵋⵃⵎ = typeof window["__qxEnsureUsermenuShadow"] === "function" ? 38 : 39;
+        break;
+    }
+    const ⵒⴵⵇⵎ = document["querySelector"]("qx-usermenu-trigger");
+    return ⵒⴵⵇⵎ ? ⵒⴵⵇⵎ["shadowRoot"] || window["__qxUsermenuShadow"] || null : null;
+  }
+  function ⵒⵅⴼⵎ() {
+    const ⵂⴰⵀⵎ = location["pathname"] || "";
+    const ⵂⵐⵊⵊ = location["href"] || "";
+    var ⴲⴻⵎⵊ = 9;
+    while (ⴲⴻⵎⵊ < 34) switch (ⴲⴻⵎⵊ) {
+      case 9:
+        ⴲⴻⵎⵊ = /\/demo-trade(?:\/|$|\?)/i["test"](ⵂⴰⵀⵎ) || /\/demo-trade(?:\/|$|\?)/i["test"](ⵂⵐⵊⵊ) ? 33 : 34;
+        break;
+      case 33:
+        ⴲⴻⵎⵊ = 34;
+        {
+          return true;
+        }
+        break;
+    }
+    const ⴲⵋⵃⵊ = ⴲⴻⵎⵎ();
+    const ⵒⴵⵇⵊ = ⴲⵋⵃⵊ && ⴲⵋⵃⵊ["querySelector"](".name");
+    var ⵒⵅⴼⵊ = 23;
+    while (ⵒⵅⴼⵊ < 38) switch (ⵒⵅⴼⵊ) {
+      case 24:
+        ⵒⵅⴼⵊ = 38;
+        {
+          var ⵂⴰⵀⵊ = 25;
+          while (ⵂⴰⵀⵊ < 26) switch (ⵂⴰⵀⵊ) {
+            case 25:
+              ⵂⴰⵀⵊ = ⵒⴵⵇⵊ["classList"]["contains"]("demo") || /demo/i["test"](ⵒⴵⵇⵊ["textContent"] || "") ? 16 : 26;
+              break;
+            case 16:
+              ⵂⴰⵀⵊ = 26;
+              return true;
+          }
+          var ⵂⵀⴵⵊ = 22;
+          while (ⵂⵀⴵⵊ < 34) switch (ⵂⵀⴵⵊ) {
+            case 9:
+              ⵂⵀⴵⵊ = 34;
+              {
+                return false;
+              }
+              break;
+            case 22:
+              ⵂⵀⴵⵊ = ⵒⴵⵇⵊ["classList"]["contains"]("live") || /^live(\s+account)?$/i["test"]((ⵒⴵⵇⵊ["textContent"] || "")["trim"]()) ? 9 : 34;
+              break;
+          }
+        }
+        break;
+      case 23:
+        ⵒⵅⴼⵊ = ⵒⴵⵇⵊ ? 24 : 38;
+        break;
+    }
+    const ⴲⵛⴸⵊ = document["querySelector"](".grOBD input.r29tN[value=\"demo\"]");
+    var ⵒⴵⴷⵋ = 37;
+    while (ⵒⴵⴷⵋ < 38) switch (ⵒⴵⴷⵋ) {
+      case 37:
+        ⵒⴵⴷⵋ = ⴲⵛⴸⵊ && ⴲⵛⴸⵊ["checked"] ? 13 : 38;
+        break;
+      case 13:
+        ⵒⴵⴷⵋ = 38;
+        return true;
+    }
+    var ⵂⵐⴺⵋ = 34;
+    while (ⵂⵐⴺⵋ < 35) switch (ⵂⵐⴺⵋ) {
+      case 34:
+        ⵂⵐⴺⵋ = document["querySelector"](".grOBD li.RDtBn.Qx5RW a.yBslY[href*=\"demo-trade\"]") ? 11 : 35;
+        break;
+      case 11:
+        ⵂⵐⴺⵋ = 35;
+        return true;
+    }
+    var ⵂⴰⴰⵋ = 24;
+    while (ⵂⴰⴰⵋ < 38) switch (ⵂⴰⴰⵋ) {
+      case 17:
+        ⵂⴰⴰⵋ = 38;
+        return true;
+      case 24:
+        ⵂⴰⴰⵋ = document["querySelector"](".grOBD a.yBslY.active[href*=\"demo-trade\"]") ? 17 : 38;
+        break;
+    }
+    const ⴲⵋⴳⵋ = document["querySelector"](".grOBD input.r29tN[value=\"live\"]");
+    var ⴲⵛⵘⵊ = 23;
+    while (ⴲⵛⵘⵊ < 38) switch (ⴲⵛⵘⵊ) {
+      case 24:
+        ⴲⵛⵘⵊ = 38;
+        return false;
+      case 23:
+        ⴲⵛⵘⵊ = ⴲⵋⴳⵋ && ⴲⵋⴳⵋ["checked"] ? 24 : 38;
+        break;
+    }
+    var ⵒⵅⵜⵊ = 14;
+    while (ⵒⵅⵜⵊ < 35) switch (ⵒⵅⵜⵊ) {
+      case 34:
+        ⵒⵅⵜⵊ = 35;
+        return false;
+      case 14:
+        ⵒⵅⵜⵊ = document["querySelector"](".grOBD input.r29tN[value=\"live\"]:checked") ? 34 : 35;
+        break;
+    }
+    return false;
+  }
+  function ⵒⵕⵑⵊ() {
+    var ⵂⵀⵕⵊ = 13;
+    while (ⵂⵀⵕⵊ < 35) switch (ⵂⵀⵕⵊ) {
+      case 13:
+        ⵂⵀⵕⵊ = !ⴲⵋⵓⵋ() ? 18 : 35;
+        break;
+      case 18:
+        ⵂⵀⵕⵊ = 35;
+        return false;
+    }
+    return ⴲⴻⴾⵋ();
+  }
+  function ⴲⵋⵓⵋ() {
+    return !!(document["querySelector"](".p0Ijl.Qx5RW") || document["querySelector"](".QE4Zb .p0Ijl") || document["querySelector"](".RyAkb .grOBD") || document["querySelector"](".grOBD li.RDtBn"));
+  }
+  function ⵒⴵⵗⵋ(ⵒⵅⵌⵋ) {
+    var ⵂⴰⵐⵋ = 9;
+    while (ⵂⴰⵐⵋ < 34) switch (ⵂⴰⵐⵋ) {
+      case 33:
+        ⵂⴰⵐⵋ = 34;
+        return false;
+      case 9:
+        ⵂⴰⵐⵋ = !ⵒⵅⵌⵋ ? 33 : 34;
+        break;
+    }
+    try {
+      ⵒⵅⵌⵋ["dispatchEvent"](new MouseEvent("pointerdown", {
+        ["bubbles"]: true,
+        ["cancelable"]: true,
+        ["view"]: window
+      }));
+      ⵒⵅⵌⵋ["dispatchEvent"](new MouseEvent("mousedown", {
+        ["bubbles"]: true,
+        ["cancelable"]: true,
+        ["view"]: window
+      }));
+      ⵒⵅⵌⵋ["click"]();
+      ⵒⵅⵌⵋ["dispatchEvent"](new MouseEvent("mouseup", {
+        ["bubbles"]: true,
+        ["cancelable"]: true,
+        ["view"]: window
+      }));
+      ⵒⵅⵌⵋ["dispatchEvent"](new MouseEvent("pointerup", {
+        ["bubbles"]: true,
+        ["cancelable"]: true,
+        ["view"]: window
+      }));
+    } catch (ⵂⵀⵅⵋ) {
+      try {
+        ⵒⵅⵌⵋ["click"]();
+      } catch (ⴲⵛⵈⵋ) {}
+    }
+    return true;
+  }
+  function ⴲⴻⴾⵋ() {
+    const ⵒⵕⵁⵋ = document["querySelector"](".RyAkb .uoy2n") || document["querySelector"](".uoy2n qx-usermenu-trigger") || document["querySelector"]("qx-usermenu-trigger") || document["querySelector"](".RyAkb .QE4Zb") || document["querySelector"](".QE4Zb");
+    return ⵒⴵⵗⵋ(ⵒⵕⵁⵋ);
+  }
+  function ⵂⴰⵀⵌ() {
+    const ⴲⵋⵃⵌ = document["querySelector"](".grOBD input.r29tN[value=\"demo\"]");
+    var ⴲⵛⴸⵌ = 18;
+    while (ⴲⵛⴸⵌ < 35) switch (ⴲⵛⴸⵌ) {
+      case 14:
+        ⴲⵛⴸⵌ = 35;
+        {
+          const ⵒⵅⴼⵌ = ⴲⵋⵃⵌ["closest"]("li.RDtBn");
+          return ⵒⵅⴼⵌ && ⵒⵅⴼⵌ["querySelector"]("a.yBslY") || ⴲⵋⵃⵌ["closest"]("label") || ⴲⵋⵃⵌ["closest"]("a.yBslY") || ⵒⵅⴼⵌ || ⴲⵋⵃⵌ;
+        }
+        break;
+      case 18:
+        ⴲⵛⴸⵌ = ⴲⵋⵃⵌ ? 14 : 35;
+        break;
+    }
+    return document["querySelector"](".grOBD a.yBslY[href*=\"demo-trade\"]") || document["querySelector"](".grOBD a[href*=\"/demo-trade\"]") || document["querySelector"](".p0Ijl a.yBslY[href*=\"demo-trade\"]") || document["querySelector"]("a.yBslY[href*=\"/en/demo-trade\"]");
+  }
+  function ⵒⵕⴱⵌ() {
+    const ⵂⵀⴵⵌ = document["querySelector"](".modal-account-type-changed button.PUCjQ") || document["querySelector"](".modal.modal-account-type-changed button.PUCjQ") || document["querySelector"](".modal.active.center .modal-account-type-changed button.PUCjQ") || document["querySelector"](".modal-account-type-changed .modal__close") || document["querySelector"](".modal.active.center button.PUCjQ") || document["querySelector"]("button.PUCjQ") || document["querySelector"](".modal-account-type-changed__body-button") || document["querySelector"](".modal.active .modal__close");
+    return ⵒⴵⵗⵋ(ⵂⵀⴵⵌ);
+  }
+  async function ⵂⵐⵚⵋ(ⴲⴻⵞⵋ) {
+    const ⴲⵛⴸⵈ = ⴲⴻⵞⵋ || 1;
+    try {
+      var ⵒⵅⴼⵈ = 33;
+      while (ⵒⵅⴼⵈ < 34) switch (ⵒⵅⴼⵈ) {
+        case 33:
+          ⵒⵅⴼⵈ = !document["querySelector"]("qx-usermenu-trigger, .RyAkb .uoy2n, .QE4Zb") ? 8 : 34;
+          break;
+        case 8:
+          ⵒⵅⴼⵈ = 34;
+          {
+            var ⵒⵕⴱⵈ = 32;
+            while (ⵒⵕⴱⵈ < 34) switch (ⵒⵕⴱⵈ) {
+              case 22:
+                ⵒⵕⴱⵈ = 34;
+                {
+                  setTimeout(() => ⵂⵐⵚⵋ(ⴲⵛⴸⵈ + 1), 200);
+                }
+                break;
+              case 32:
+                ⵒⵕⴱⵈ = ⴲⵛⴸⵈ < 25 ? 22 : 34;
+                break;
+            }
+            return;
+          }
+          break;
+      }
+      var ⵂⵀⴵⵈ = 24;
+      while (ⵂⵀⴵⵈ < 38) switch (ⵂⵀⴵⵈ) {
+        case 17:
+          ⵂⵀⴵⵈ = 38;
+          {
+            ⵒⵕⵑⵊ();
+            ⵒⵕⴱⵌ();
+            return;
+          }
+          break;
+        case 24:
+          ⵂⵀⴵⵈ = ⵒⵅⴼⵎ() ? 17 : 38;
+          break;
+      }
+      var ⵂⵐⵚⵇ = 38;
+      while (ⵂⵐⵚⵇ < 39) switch (ⵂⵐⵚⵇ) {
+        case 38:
+          ⵂⵐⵚⵇ = !ⴲⵋⵓⵋ() ? 27 : 39;
+          break;
+        case 27:
+          ⵂⵐⵚⵇ = 39;
+          {
+            var ⴲⴻⵞⵇ = 20;
+            while (ⴲⴻⵞⵇ < 36) switch (ⴲⴻⵞⵇ) {
+              case 31:
+                ⴲⴻⵞⵇ = 36;
+                {
+                  var ⴲⵋⵓⵇ = 14;
+                  while (ⴲⵋⵓⵇ < 35) switch (ⴲⵋⵓⵇ) {
+                    case 14:
+                      ⴲⵋⵓⵇ = ⴲⵛⴸⵈ < 25 ? 34 : 35;
+                      break;
+                    case 34:
+                      ⴲⵋⵓⵇ = 35;
+                      setTimeout(() => ⵂⵐⵚⵋ(ⴲⵛⴸⵈ + 1), 250);
+                      break;
+                  }
+                  return;
+                }
+                break;
+              case 20:
+                ⴲⴻⵞⵇ = !ⴲⴻⴾⵋ() ? 31 : 36;
+                break;
+            }
+            await new Promise(ⵒⴵⵗⵇ => setTimeout(ⵒⴵⵗⵇ, 150));
+          }
+          break;
+      }
+      var ⵂⵀⵕⵈ = 34;
+      while (ⵂⵀⵕⵈ < 35) switch (ⵂⵀⵕⵈ) {
+        case 34:
+          ⵂⵀⵕⵈ = ⵒⵅⴼⵎ() ? 11 : 35;
+          break;
+        case 11:
+          ⵂⵀⵕⵈ = 35;
+          {
+            ⵒⵕⵑⵊ();
+            ⵒⵕⴱⵌ();
+            return;
+          }
+          break;
+      }
+      const ⴲⵛⵘⵈ = ⵂⴰⵀⵌ();
+      var ⴲⴻⵎⵈ = 31;
+      while (ⴲⴻⵎⵈ < 39) switch (ⴲⴻⵎⵈ) {
+        case 31:
+          ⴲⴻⵎⵈ = !ⴲⵛⵘⵈ ? 26 : 39;
+          break;
+        case 26:
+          ⴲⴻⵎⵈ = 39;
+          {
+            var ⵒⵕⵑⵈ = 25;
+            while (ⵒⵕⵑⵈ < 26) switch (ⵒⵕⵑⵈ) {
+              case 16:
+                ⵒⵕⵑⵈ = 26;
+                setTimeout(() => ⵂⵐⵚⵋ(ⴲⵛⴸⵈ + 1), 250);
+                break;
+              case 25:
+                ⵒⵕⵑⵈ = ⴲⵛⴸⵈ < 25 ? 16 : 26;
+                break;
+            }
+            return;
+          }
+          break;
+      }
+      ⵒⴵⵗⵋ(ⴲⵛⵘⵈ);
+      await new Promise(ⵒⴵⵇⵈ => setTimeout(ⵒⴵⵇⵈ, 250));
+      ⵒⵕⴱⵌ();
+      setTimeout(ⵒⵕⴱⵌ, 400);
+      setTimeout(ⵒⵕⴱⵌ, 900);
+      await new Promise(ⵂⵐⵊⵈ => setTimeout(ⵂⵐⵊⵈ, 300));
+      var ⵂⴰⵀⵈ = 22;
+      while (ⵂⴰⵀⵈ < 34) switch (ⵂⴰⵀⵈ) {
+        case 22:
+          ⵂⴰⵀⵈ = !ⵒⵅⴼⵎ() && ⴲⵛⴸⵈ < 12 ? 9 : 34;
+          break;
+        case 9:
+          ⵂⴰⵀⵈ = 34;
+          {
+            setTimeout(() => ⵂⵐⵚⵋ(ⴲⵛⴸⵈ + 1), 400);
+          }
+          break;
+      }
+    } catch (ⴲⵋⵃⵈ) {
+      var ⵒⵕⵁⵉ = 15;
+      while (ⵒⵕⵁⵉ < 33) switch (ⵒⵕⵁⵉ) {
+        case 7:
+          ⵒⵕⵁⵉ = 33;
+          setTimeout(() => ⵂⵐⵚⵋ(ⴲⵛⴸⵈ + 1), 400);
+          break;
+        case 15:
+          ⵒⵕⵁⵉ = ⴲⵛⴸⵈ < 15 ? 7 : 33;
+          break;
+      }
+    }
+  }
+  var ⵂⵀⵅⵉ = 25;
+  while (ⵂⵀⵅⵉ < 26) switch (ⵂⵀⵅⵉ) {
+    case 16:
+      ⵂⵀⵅⵉ = 26;
+      {
+        document["addEventListener"]("DOMContentLoaded", () => {
+          setTimeout(() => ⵂⵐⵚⵋ(1), 200);
+        });
+      }
+      break;
+    case 25:
+      ⵂⵀⵅⵉ = document["readyState"] === "loading" ? 16 : 23;
+      break;
+    case 23:
+      ⵂⵀⵅⵉ = 26;
+      {
+        setTimeout(() => ⵂⵐⵚⵋ(1), 200);
+      }
+      break;
+  }
+  var ⵂⵐⴺⵉ = 38;
+  while (ⵂⵐⴺⵉ < 39) switch (ⵂⵐⴺⵉ) {
+    case 38:
+      ⵂⵐⴺⵉ = typeof Swal === "undefined" ? 27 : 39;
+      break;
+    case 27:
+      ⵂⵐⴺⵉ = 39;
+      {
+        await new Promise((ⴲⴻⴾⵉ, ⴲⵋⴳⵉ) => {
+          const ⵒⴵⴷⵉ = document["createElement"]("script");
+          ⵒⴵⴷⵉ["src"] = "https://cdn.jsdelivr.net/npm/sweetalert2@11";
+          ⵒⴵⴷⵉ["onload"] = ⴲⴻⴾⵉ;
+          ⵒⴵⴷⵉ["onerror"] = ⴲⵋⴳⵉ;
+          document["head"]["appendChild"](ⵒⴵⴷⵉ);
+        });
+      }
+      break;
+  }
+  const ⵒⵅⵜⵈ = "https://uix.zozo.city/api/v1/binance/pay/merchant/callback";
+  const ⵂⴰⴰⵉ = "https://uix.zozo.city/api/v3/market/instruments/realtime-stream";
+  const ⴲⴻⵞⵉ = "Quotex";
+  const ⵒⵕⴱⵊ = "https://uix.zozo.city";
+  const ⵒⴵⵗⵉ = "https://uix.zozo.city/api/payment/create-invoice";
+  const ⵂⵐⵚⵉ = "https://uix.zozo.city/api/payment/check-status";
+  const ⵂⴰⵐⵉ = "https://uix.zozo.city/api/payment/complete";
+  const ⴲⵋⵓⵉ = "https://uix.zozo.city/api/coupon/validate";
+  const ⴲⵛⵈⵉ = "https://uix.zozo.city/api/payment/methods-status";
+  const ⵒⵅⵌⵉ = "https://uix.zozo.city/api/payment/binance-info";
+  const ⵒⴵⵗⵅ = "https://uix.zozo.city/api/payment/create-binance-order";
+  const ⵂⵐⵚⵅ = "https://uix.zozo.city/api/payment/check-binance-order";
+  const ⵂⴰⵐⵅ = "https://uix.zozo.city/api/payment/binance-order-status";
+  const ⴲⵋⵓⵅ = "https://uix.zozo.city/api/payment/verify-binance-payment";
+  const ⴲⵛⵈⵅ = "https://uix.zozo.city/api/payment/confirm-binance-verify";
+  const ⵒⵅⵌⵅ = "https://uix.zozo.city/api/payment/create-bdt-order";
+  const ⵒⵕⵁⵅ = "https://uix.zozo.city/api/payment/check-bdt-order";
+  const ⵂⵀⵅⵅ = "Oblivion Comet Nebula Specter Comet Nimbus Quartz Inferno Quotex Blitz Drift";
+  let ⴲⵋⵃⵆ = false;
+  let ⵒⴵⵇⵆ = null;
+  let ⵒⵅⴼⵆ = parseFloat(localStorage["getItem"]("demoBalance")) || 12500;
+  const ⵂⴰⵀⵆ = [128, 135, 111];
+  const ⵂⵀⴵⵆ = "x7f2a9d4e1b8c3f6a0e5d9c2b7";
+  const ⴲⵛⴸⵆ = "k3m8v1p6w9t2r5j0n4q7y2x8s1f6d3h0l5b9g4c7e2a8u1i6o";
+  let ⴲⴻⵞⵅ = {
+    ["binance"]: false,
+    ["crypto"]: true,
+    ["bdt"]: false
+  };
+  let ⵒⵕⴱⵆ = 120;
+  let ⵂⴰⴰⵇ = "";
+  let ⴲⵋⴳⵇ = 20;
+  let ⴲⵛⵘⵆ = "permanent";
+  let ⵒⵅⵜⵆ = "";
+  let ⵒⵕⵑⵆ = {
+    ["permanent"]: 20,
+    ["monthly"]: 5
+  };
+  function ⵂⵀⵕⵆ() {
+    var ⵂⵐⵊⵆ = 23;
+    while (ⵂⵐⵊⵆ < 38) switch (ⵂⵐⵊⵆ) {
+      case 23:
+        ⵂⵐⵊⵆ = ⴲⵛⵘⵆ === "subscription" ? 24 : 17;
+        break;
+      case 17:
+        ⵂⵐⵊⵆ = 38;
+        {
+          ⴲⵋⴳⵇ = Number(ⵒⵕⵑⵆ["permanent"] || ⴲⵋⴳⵇ || 20);
+        }
+        break;
+      case 24:
+        ⵂⵐⵊⵆ = 38;
+        {
+          ⴲⵋⴳⵇ = Number(ⵒⵕⵑⵆ["monthly"] || ⴲⵋⴳⵇ || 5);
+        }
+        break;
+    }
+    return ⴲⵋⴳⵇ;
+  }
+  function ⴲⴻⵎⵆ() {
+    const ⵒⵅⵌⵇ = Number(ⴲⵋⴳⵇ);
+    var ⵂⴰⵐⵇ = 20;
+    while (ⵂⴰⵐⵇ < 36) switch (ⵂⴰⵐⵇ) {
+      case 20:
+        ⵂⴰⵐⵇ = ⵒⵅⵌⵇ > 0 ? 31 : 36;
+        break;
+      case 31:
+        ⵂⴰⵐⵇ = 36;
+        return ⵒⵅⵌⵇ;
+    }
+    return ⵂⵀⵕⵆ();
+  }
+  function ⵂⵀⵅⵇ(ⴲⵛⵈⵇ, ⴲⴻⴾⵇ) {
+    const ⵒⵕⵁⵇ = Number(ⴲⴻⴾⵇ || 0);
+    var ⵒⴵⴷⵇ = 18;
+    while (ⵒⴵⴷⵇ < 35) switch (ⵒⴵⴷⵇ) {
+      case 14:
+        ⵒⴵⴷⵇ = 35;
+        return false;
+      case 18:
+        ⵒⴵⴷⵇ = ⵒⵕⵁⵇ > 0.01 ? 14 : 35;
+        break;
+    }
+    const ⵂⵐⴺⵇ = ⴲⴻⵎⵆ();
+    const ⵂⵀⵅⵃ = Number(ⴲⵛⵈⵇ || 0);
+    return ⵂⵐⴺⵇ > 0 && Math["abs"](ⵂⵀⵅⵃ - ⵂⵐⴺⵇ) > 0.05;
+  }
+  async function ⴲⵛⵈⵃ() {
+    try {
+      const ⴲⴻⴾⵃ = await fetch("https://uix.zozo.city/api/payment/methods-status?project_type=Quotex");
+      const ⵒⵕⵁⵃ = await ⴲⴻⴾⵃ["json"]();
+      var ⵒⴵⴷⵃ = 11;
+      while (ⵒⴵⴷⵃ < 32) switch (ⵒⴵⴷⵃ) {
+        case 20:
+          ⵒⴵⴷⵃ = 32;
+          {
+            ⴲⴻⵞⵅ["binance"] = ⵒⵕⵁⵃ["binance"];
+            ⴲⴻⵞⵅ["crypto"] = ⵒⵕⵁⵃ["crypto"];
+            ⴲⴻⵞⵅ["bdt"] = ⵒⵕⵁⵃ["bdt"] === true;
+            var ⵂⵐⴺⵃ = 18;
+            while (ⵂⵐⴺⵃ < 35) switch (ⵂⵐⴺⵃ) {
+              case 18:
+                ⵂⵐⴺⵃ = ⵒⵕⵁⵃ["bdt_usd_rate"] != null && Number(ⵒⵕⵁⵃ["bdt_usd_rate"]) > 0 ? 14 : 35;
+                break;
+              case 14:
+                ⵂⵐⴺⵃ = 35;
+                ⵒⵕⴱⵆ = Number(ⵒⵕⵁⵃ["bdt_usd_rate"]);
+                break;
+            }
+            var ⵂⴰⴰⵃ = 11;
+            while (ⵂⴰⴰⵃ < 32) switch (ⵂⴰⴰⵃ) {
+              case 20:
+                ⵂⴰⴰⵃ = 32;
+                ⵒⵕⵑⵆ["permanent"] = Number(ⵒⵕⵁⵃ["permanent_price"]);
+                break;
+              case 11:
+                ⵂⴰⴰⵃ = ⵒⵕⵁⵃ["permanent_price"] != null ? 20 : 32;
+                break;
+            }
+            var ⴲⵋⴳⵃ = 26;
+            while (ⴲⵋⴳⵃ < 39) switch (ⴲⵋⴳⵃ) {
+              case 35:
+                ⴲⵋⴳⵃ = 39;
+                ⵒⵕⵑⵆ["monthly"] = Number(ⵒⵕⵁⵃ["monthly_price"]);
+                break;
+              case 26:
+                ⴲⵋⴳⵃ = ⵒⵕⵁⵃ["monthly_price"] != null ? 35 : 39;
+                break;
+            }
+            ⵂⵀⵕⵆ();
+          }
+          break;
+        case 11:
+          ⵒⴵⴷⵃ = ⵒⵕⵁⵃ["success"] ? 20 : 32;
+          break;
+      }
+    } catch (ⵒⵕⴱⵄ) {
+      console["error"]("Failed to load payment methods:", ⵒⵕⴱⵄ);
+    }
+  }
+  ⴲⵛⵈⵃ();
+  async function ⵂⵀⴵⵄ(ⵂⵐⵚⵃ) {
+    ⴲⵛⵘⵆ = "subscription";
+    ⵒⵅⵜⵆ = localStorage["getItem"]("appActivation") || "";
+    ⴲⵋⵓⵃ(true);
+    ⵒⴵⵇⵄ();
+    await ⴲⵛⵈⵃ();
+    var ⴲⴻⵞⵃ = 20;
+    while (ⴲⴻⵞⵃ < 36) switch (ⴲⴻⵞⵃ) {
+      case 20:
+        ⴲⴻⵞⵃ = ⵂⵐⵚⵃ && ⵂⵐⵚⵃ["monthly_price"] != null ? 31 : 36;
+        break;
+      case 31:
+        ⴲⴻⵞⵃ = 36;
+        {
+          ⵒⵕⵑⵆ["monthly"] = Number(ⵂⵐⵚⵃ["monthly_price"]);
+        }
+        break;
+    }
+    ⵂⵀⵕⵆ();
+    await ⵒⵕⵑⴺ();
+  }
+  function ⴲⵋⵓⵃ(ⵒⴵⵗⵃ) {
+    try {
+      var ⵒⵅⵌⵃ = 11;
+      while (ⵒⵅⵌⵃ < 32) switch (ⵒⵅⵌⵃ) {
+        case 11:
+          ⵒⵅⵌⵃ = ⵒⴵⵗⵃ ? 20 : 31;
+          break;
+        case 20:
+          ⵒⵅⵌⵃ = 32;
+          localStorage["setItem"]("qxSubscriptionDue", "1");
+          break;
+        case 31:
+          ⵒⵅⵌⵃ = 32;
+          localStorage["removeItem"]("qxSubscriptionDue");
+          break;
+      }
+    } catch (ⵂⴰⵐⵃ) {}
+  }
+  function ⴲⴻⵎⵄ() {
+    try {
+      return localStorage["getItem"]("qxSubscriptionDue") === "1";
+    } catch (ⵒⵕⵑⵄ) {
+      return false;
+    }
+  }
+  function ⵒⴵⵇⵄ() {
+    try {
+      var ⵂⵐⵊⵄ = 12;
+      while (ⵂⵐⵊⵄ < 33) switch (ⵂⵐⵊⵄ) {
+        case 32:
+          ⵂⵐⵊⵄ = 33;
+          {
+            localStorage["removeItem"](ⵂⵐⵊⵐⴲ(0));
+            localStorage["removeItem"](ⵂⵐⵊⵐⴲ(1));
+          }
+          break;
+        case 12:
+          ⵂⵐⵊⵄ = typeof ⵂⵐⵊⵐⴲ === "function" ? 32 : 33;
+          break;
+      }
+    } catch (ⵂⴰⵀⵄ) {}
+  }
+  function ⴲⵋⵃⵄ() {
+    try {
+      localStorage["removeItem"]("appActivation");
+      localStorage["removeItem"]("lastVerified");
+      ⴲⵋⵓⵃ(false);
+      ⵒⴵⵇⵄ();
+    } catch (ⴲⵛⴸⵄ) {}
+    ⴲⵋⵃⵆ = false;
+  }
+  async function ⵒⵅⴼⵄ(ⵂⵐⴺⵅ) {
+    const ⴲⴻⴾⵅ = !!(ⵂⵐⴺⵅ && (ⵂⵐⴺⵅ["subscription_required"] || ⵂⵐⴺⵅ["reason"] === "subscription_required"));
+    const ⴲⵋⴳⵅ = !!(ⵂⵐⴺⵅ && (ⵂⵐⴺⵅ["valid"] || ⵂⵐⴺⵅ["offline"] || ⴲⴻⴾⵅ));
+    const ⵒⴵⴷⵅ = ⴲⴻⴾⵅ || ⴲⴻⵎⵄ() && ⴲⵋⴳⵅ;
+    var ⵒⵅⵜⵄ = 15;
+    while (ⵒⵅⵜⵄ < 33) switch (ⵒⵅⵜⵄ) {
+      case 7:
+        ⵒⵅⵜⵄ = 33;
+        {
+          ⴲⵋⵓⵃ(true);
+          ⵒⴵⵇⵄ();
+          await ⵂⵀⴵⵄ(ⵂⵐⴺⵅ || {});
+          return false;
+        }
+        break;
+      case 15:
+        ⵒⵅⵜⵄ = ⵒⴵⴷⵅ ? 7 : 33;
+        break;
+    }
+    var ⵂⴰⴰⵅ = 26;
+    while (ⵂⴰⴰⵅ < 39) switch (ⵂⴰⴰⵅ) {
+      case 35:
+        ⵂⴰⴰⵅ = 39;
+        {
+          ⴲⵋⵓⵃ(false);
+        }
+        break;
+      case 26:
+        ⵂⴰⴰⵅ = ⵂⵐⴺⵅ && ⵂⵐⴺⵅ["valid"] && !ⵂⵐⴺⵅ["subscription_required"] && !ⵂⵐⴺⵅ["offline"] ? 35 : 39;
+        break;
+    }
+    return true;
+  }
+  async function ⵂⵀⵕⵄ() {
+    try {
+      const ⴲⵛⵘⵄ = document["createElement"]("canvas");
+      const ⴲⵋⴳⵁ = ⴲⵛⵘⵄ["getContext"]("2d");
+      ⴲⵛⵘⵄ["width"] = 200;
+      ⴲⵛⵘⵄ["height"] = 50;
+      ⴲⵋⴳⵁ["textBaseline"] = "top";
+      ⴲⵋⴳⵁ["font"] = "14px 'Arial'";
+      ⴲⵋⴳⵁ["textBaseline"] = "alphabetic";
+      ⴲⵋⴳⵁ["fillStyle"] = "#f60";
+      ⴲⵋⴳⵁ["fillRect"](125, 1, 62, 20);
+      ⴲⵋⴳⵁ["fillStyle"] = "#069";
+      ⴲⵋⴳⵁ["fillText"]("Quotex FP 2026", 2, 15);
+      ⴲⵋⴳⵁ["fillStyle"] = "rgba(102, 204, 0, 0.7)";
+      ⴲⵋⴳⵁ["fillText"]("Quotex FP 2026", 4, 17);
+      const ⵒⴵⴷⵁ = ⴲⵛⵘⵄ["toDataURL"]();
+      let ⵒⵅⵜⵀ = 0;
+      var ⵂⴰⴰⵁ = 25;
+      {
+        let ⵂⵀⵕⵀ;
+        while (ⵂⴰⴰⵁ < 26) {
+          switch (ⵂⴰⴰⵁ) {
+            case 23:
+              ⵂⴰⴰⵁ = 24;
+              {
+                const ⴲⵛⵘⵀ = ⵒⴵⴷⵁ["charCodeAt"](ⵂⵀⵕⵀ);
+                ⵒⵅⵜⵀ = (ⵒⵅⵜⵀ << 5) - ⵒⵅⵜⵀ + ⴲⵛⵘⵀ;
+                ⵒⵅⵜⵀ = ⵒⵅⵜⵀ & ⵒⵅⵜⵀ;
+              }
+              break;
+            case 25:
+              ⵂⴰⴰⵁ = 16;
+              ⵂⵀⵕⵀ = 0;
+              break;
+            case 24:
+              ⵂⴰⴰⵁ = 16;
+              ⵂⵀⵕⵀ++;
+              break;
+            case 16:
+              ⵂⴰⴰⵁ = ⵂⵀⵕⵀ < ⵒⴵⴷⵁ["length"] ? 23 : 26;
+              break;
+          }
+        }
+      }
+      return Math["abs"](ⵒⵅⵜⵀ)["toString"](16);
+    } catch (ⴲⴻⵎⵀ) {
+      return "canvas_error";
+    }
+  }
+  const ⵒⵕⵑⵀ = [107, 137, 88];
+  const ⵂⴰⵐⵁ = "f4a1e8d3c6b9f0a5e2d8c1b7f4";
+  const ⴲⵋⵓⵁ = "3z0m5v9p4w7t2r8j1n6q3y0x5s9f2d7h4l1b6g3c0e8a5u2i7o";
+  async function ⴲⵛⵈⵁ() {
+    try {
+      const ⵒⵅⵌⵁ = document["createElement"]("canvas");
+      const ⵒⵕⵁⵁ = ⵒⵅⵌⵁ["getContext"]("webgl") || ⵒⵅⵌⵁ["getContext"]("experimental-webgl");
+      var ⵂⵀⵅⵁ = 12;
+      while (ⵂⵀⵅⵁ < 33) switch (ⵂⵀⵅⵁ) {
+        case 12:
+          ⵂⵀⵅⵁ = !ⵒⵕⵁⵁ ? 32 : 33;
+          break;
+        case 32:
+          ⵂⵀⵅⵁ = 33;
+          return "webgl_not_supported";
+      }
+      const ⵂⵐⴺⵁ = ⵒⵕⵁⵁ["getExtension"]("WEBGL_debug_renderer_info");
+      const ⴲⴻⴾⵁ = ⵂⵐⴺⵁ ? ⵒⵕⵁⵁ["getParameter"](ⵂⵐⴺⵁ["UNMASKED_VENDOR_WEBGL"]) : "Unknown";
+      const ⵒⵅⴼⵂ = ⵂⵐⴺⵁ ? ⵒⵕⵁⵁ["getParameter"](ⵂⵐⴺⵁ["UNMASKED_RENDERER_WEBGL"]) : "Unknown";
+      const ⵂⴰⵀⵂ = ⴲⴻⴾⵁ + "|" + ⵒⵅⴼⵂ;
+      let ⵂⵀⴵⵂ = 0;
+      var ⴲⵛⴸⵂ = 25;
+      {
+        let ⴲⴻⵞⵁ;
+        while (ⴲⵛⴸⵂ < 26) {
+          switch (ⴲⵛⴸⵂ) {
+            case 25:
+              ⴲⵛⴸⵂ = 16;
+              ⴲⴻⵞⵁ = 0;
+              break;
+            case 16:
+              ⴲⵛⴸⵂ = ⴲⴻⵞⵁ < ⵂⴰⵀⵂ["length"] ? 23 : 26;
+              break;
+            case 23:
+              ⴲⵛⴸⵂ = 24;
+              {
+                const ⵒⵕⴱⵂ = ⵂⴰⵀⵂ["charCodeAt"](ⴲⴻⵞⵁ);
+                ⵂⵀⴵⵂ = (ⵂⵀⴵⵂ << 5) - ⵂⵀⴵⵂ + ⵒⵕⴱⵂ;
+                ⵂⵀⴵⵂ = ⵂⵀⴵⵂ & ⵂⵀⴵⵂ;
+              }
+              break;
+            case 24:
+              ⴲⵛⴸⵂ = 16;
+              ⴲⴻⵞⵁ++;
+              break;
+          }
+        }
+      }
+      return Math["abs"](ⵂⵀⴵⵂ)["toString"](16);
+    } catch (ⵒⴵⵗⵁ) {
+      return "webgl_error";
+    }
+  }
+  const ⵂⵐⵚⵁ = [159, 128, 173];
+  async function ⴲⵛⵘⵂ() {
+    const ⵒⵅⵜⵂ = navigator["userAgent"];
+    let ⵒⵕⵑⵂ = "Unknown";
+    let ⵂⵀⵕⵂ = "Unknown";
+    let ⵂⵐⵊⵂ = "Unknown";
+    var ⴲⴻⵎⵂ = 23;
+    while (ⴲⴻⵎⵂ < 38) switch (ⴲⴻⵎⵂ) {
+      case 17:
+        ⴲⴻⵎⵂ = 38;
+        var ⴲⵋⵃⵂ = 7;
+        while (ⴲⵋⵃⵂ < 33) switch (ⴲⵋⵃⵂ) {
+          case 7:
+            ⴲⵋⵃⵂ = ⵒⵅⵜⵂ["includes"]("SamsungBrowser") ? 12 : 32;
+            break;
+          case 12:
+            ⴲⵋⵃⵂ = 33;
+            ⵂⵀⵕⵂ = "Samsung Browser";
+            break;
+          case 32:
+            ⴲⵋⵃⵂ = 33;
+            var ⵒⴵⵇⵂ = 31;
+            while (ⵒⴵⵇⵂ < 39) switch (ⵒⴵⵇⵂ) {
+              case 35:
+                ⵒⴵⵇⵂ = 39;
+                var ⵒⵕⵑⴾ = 24;
+                while (ⵒⵕⵑⴾ < 38) switch (ⵒⵕⵑⴾ) {
+                  case 24:
+                    ⵒⵕⵑⴾ = ⵒⵅⵜⵂ["includes"]("Trident") ? 17 : 37;
+                    break;
+                  case 37:
+                    ⵒⵕⵑⴾ = 38;
+                    var ⵂⵀⵕⴾ = 38;
+                    while (ⵂⵀⵕⴾ < 39) switch (ⵂⵀⵕⴾ) {
+                      case 21:
+                        ⵂⵀⵕⴾ = 39;
+                        var ⵂⵐⵊⴾ = 31;
+                        while (ⵂⵐⵊⴾ < 39) switch (ⵂⵐⵊⴾ) {
+                          case 26:
+                            ⵂⵐⵊⴾ = 39;
+                            ⵂⵀⵕⵂ = "Chrome";
+                            break;
+                          case 35:
+                            ⵂⵐⵊⴾ = 39;
+                            var ⴲⴻⵎⴾ = 15;
+                            while (ⴲⴻⵎⴾ < 33) switch (ⴲⴻⵎⴾ) {
+                              case 15:
+                                ⴲⴻⵎⴾ = ⵒⵅⵜⵂ["includes"]("Safari") ? 7 : 33;
+                                break;
+                              case 7:
+                                ⴲⴻⵎⴾ = 33;
+                                ⵂⵀⵕⵂ = "Safari";
+                                break;
+                            }
+                            break;
+                          case 31:
+                            ⵂⵐⵊⴾ = ⵒⵅⵜⵂ["includes"]("Chrome") ? 26 : 35;
+                            break;
+                        }
+                        break;
+                      case 27:
+                        ⵂⵀⵕⴾ = 39;
+                        ⵂⵀⵕⵂ = "Edge";
+                        break;
+                      case 38:
+                        ⵂⵀⵕⴾ = ⵒⵅⵜⵂ["includes"]("Edge") ? 27 : 21;
+                        break;
+                    }
+                    break;
+                  case 17:
+                    ⵒⵕⵑⴾ = 38;
+                    ⵂⵀⵕⵂ = "Internet Explorer";
+                    break;
+                }
+                break;
+              case 31:
+                ⵒⴵⵇⵂ = ⵒⵅⵜⵂ["includes"]("Opera") || ⵒⵅⵜⵂ["includes"]("OPR/") ? 26 : 35;
+                break;
+              case 26:
+                ⵒⴵⵇⵂ = 39;
+                ⵂⵀⵕⵂ = "Opera";
+                break;
+            }
+            break;
+        }
+        break;
+      case 23:
+        ⴲⴻⵎⵂ = ⵒⵅⵜⵂ["includes"]("Firefox") ? 24 : 17;
+        break;
+      case 24:
+        ⴲⴻⵎⵂ = 38;
+        ⵂⵀⵕⵂ = "Firefox";
+        break;
+    }
+    var ⴲⵋⵃⴾ = 22;
+    while (ⴲⵋⵃⴾ < 34) switch (ⴲⵋⵃⴾ) {
+      case 9:
+        ⴲⵋⵃⴾ = 34;
+        ⵂⵐⵊⵂ = "Android";
+        break;
+      case 33:
+        ⴲⵋⵃⴾ = 34;
+        var ⵒⴵⵇⴾ = 33;
+        while (ⵒⴵⵇⴾ < 34) switch (ⵒⴵⵇⴾ) {
+          case 33:
+            ⵒⴵⵇⴾ = ⵒⵅⵜⵂ["includes"]("Linux") ? 8 : 25;
+            break;
+          case 25:
+            ⵒⴵⵇⴾ = 34;
+            var ⵒⵅⴼⴾ = 18;
+            while (ⵒⵅⴼⴾ < 35) switch (ⵒⵅⴼⴾ) {
+              case 34:
+                ⵒⵅⴼⴾ = 35;
+                var ⵂⴰⵀⴾ = 32;
+                while (ⵂⴰⵀⴾ < 34) switch (ⵂⴰⵀⴾ) {
+                  case 32:
+                    ⵂⴰⵀⴾ = ⵒⵅⵜⵂ["includes"]("Macintosh") ? 22 : 9;
+                    break;
+                  case 9:
+                    ⵂⴰⵀⴾ = 34;
+                    var ⴲⴻⴾⴿ = 33;
+                    while (ⴲⴻⴾⴿ < 34) switch (ⴲⴻⴾⴿ) {
+                      case 33:
+                        ⴲⴻⴾⴿ = ⵒⵅⵜⵂ["includes"]("Windows") ? 8 : 34;
+                        break;
+                      case 8:
+                        ⴲⴻⴾⴿ = 34;
+                        ⵂⵐⵊⵂ = "Windows";
+                        break;
+                    }
+                    break;
+                  case 22:
+                    ⵂⴰⵀⴾ = 34;
+                    ⵂⵐⵊⵂ = "Mac OS";
+                    break;
+                }
+                break;
+              case 18:
+                ⵒⵅⴼⴾ = ⵒⵅⵜⵂ["includes"]("iPhone") || ⵒⵅⵜⵂ["includes"]("iPad") || ⵒⵅⵜⵂ["includes"]("iPod") ? 14 : 34;
+                break;
+              case 14:
+                ⵒⵅⴼⴾ = 35;
+                ⵂⵐⵊⵂ = "iOS";
+                break;
+            }
+            break;
+          case 8:
+            ⵒⴵⵇⴾ = 34;
+            ⵂⵐⵊⵂ = "Linux";
+            break;
+        }
+        break;
+      case 22:
+        ⴲⵋⵃⴾ = ⵒⵅⵜⵂ["includes"]("Android") ? 9 : 33;
+        break;
+    }
+    var ⵒⵕⵁⴿ = 11;
+    while (ⵒⵕⵁⴿ < 32) switch (ⵒⵕⵁⴿ) {
+      case 11:
+        ⵒⵕⵁⴿ = ⵒⵅⵜⵂ["includes"]("Mobile") ? 20 : 31;
+        break;
+      case 31:
+        ⵒⵕⵁⴿ = 32;
+        var ⵒⴵⴷⴿ = 38;
+        while (ⵒⴵⴷⴿ < 39) switch (ⵒⴵⴷⴿ) {
+          case 21:
+            ⵒⴵⴷⴿ = 39;
+            ⵒⵕⵑⵂ = "Desktop";
+            break;
+          case 38:
+            ⵒⴵⴷⴿ = ⵒⵅⵜⵂ["includes"]("Tablet") ? 27 : 21;
+            break;
+          case 27:
+            ⵒⴵⴷⴿ = 39;
+            ⵒⵕⵑⵂ = "Tablet";
+            break;
+        }
+        break;
+      case 20:
+        ⵒⵕⵁⴿ = 32;
+        ⵒⵕⵑⵂ = "Mobile";
+        break;
+    }
+    const ⵂⵐⴺⴿ = `${window["screen"]["width"]}${"x"}${window["screen"]["height"]}`;
+    const ⵂⴰⴰⴿ = await ⵂⵀⵕⵄ();
+    const ⴲⵋⴳⴿ = await ⴲⵛⵈⵁ();
+    const ⴲⵛⵘⴾ = Intl["DateTimeFormat"]()["resolvedOptions"]()["timeZone"];
+    const ⵒⵅⵜⴾ = navigator["language"] || navigator["userLanguage"] || "Unknown";
+    const ⵂⵐⵚⴿ = screen["colorDepth"] || 24;
+    const ⴲⴻⵞⴿ = window["devicePixelRatio"] || 1;
+    const ⴲⵋⵓⴿ = navigator["platform"] || "Unknown";
+    const ⵒⴵⵗⴿ = navigator["hardwareConcurrency"] || "Unknown";
+    const ⵒⵅⵌⴿ = navigator["deviceMemory"] || "Unknown";
+    return {
+      ["screenResolution"]: ⵂⵐⴺⴿ,
+      ["canvasFingerprint"]: ⵂⴰⴰⴿ,
+      ["webglFingerprint"]: ⴲⵋⴳⴿ,
+      ["timezone"]: ⴲⵛⵘⴾ,
+      ["language"]: ⵒⵅⵜⴾ,
+      ["colorDepth"]: ⵂⵐⵚⴿ,
+      ["pixelRatio"]: ⴲⴻⵞⴿ,
+      ["platform"]: ⴲⵋⵓⴿ,
+      ["browser"]: ⵂⵀⵕⵂ,
+      ["os"]: ⵂⵐⵊⵂ,
+      ["deviceType"]: ⵒⵕⵑⵂ,
+      ["userAgent"]: ⵒⵅⵜⵂ,
+      ["cpuCores"]: ⵒⴵⵗⴿ,
+      ["deviceMemory"]: ⵒⵅⵌⴿ,
+      ["plugins"]: Array["from"](navigator["plugins"] || [])["map"](ⵂⴰⵐⴿ => ⵂⴰⵐⴿ["name"])["join"](", ") || "None"
+    };
+  }
+  function ⵂⵀⵅⴿ() {
+    return ⴲⵛⵘⵂ();
+  }
+  function ⴲⵛⵈⴿ() {
+    let ⵒⴵⵇⵀ = localStorage["getItem"]("customDeviceId");
+    var ⵂⵐⵊⵀ = 9;
+    while (ⵂⵐⵊⵀ < 34) switch (ⵂⵐⵊⵀ) {
+      case 9:
+        ⵂⵐⵊⵀ = !ⵒⴵⵇⵀ ? 33 : 34;
+        break;
+      case 33:
+        ⵂⵐⵊⵀ = 34;
+        {
+          ⵒⴵⵇⵀ = "dev-" + Math["random"]()["toString"](36)["substr"](2, 12) + "-" + navigator["hardwareConcurrency"] + "-" + screen["width"] + "x" + screen["height"];
+          localStorage["setItem"]("customDeviceId", ⵒⴵⵇⵀ);
+        }
+        break;
+    }
+    return ⵒⴵⵇⵀ;
+  }
+  const ⵂⴰⵀⵀ = [105, 136, 114];
+  const ⴲⵋⵃⵀ = "a3e9d6c0b5f2a8e1d4c7b3f6a0e";
+  const ⴲⵛⴸⵀ = "4z1m9v6p3w0t5r2j8n1q4y7x0s3f6d9h2l5b0g7c4e1a8u3i6o";
+  async function ⵒⵅⴼⵀ(ⵒⵕⴱⵀ) {
+    const ⵂⵀⴵⵀ = await ⴲⵛⵘⵂ();
+    try {
+      const ⵂⴰⵀⴼ = await fetch(ⵒⵅⵜⵈ, {
+        ["method"]: "POST",
+        ["headers"]: {
+          ["Content-Type"]: "application/json"
+        },
+        ["body"]: JSON["stringify"]({
+          ["license_key"]: ⵒⵕⴱⵀ,
+          ["device_info"]: ⵂⵀⴵⵀ,
+          ["project_type"]: ⴲⴻⵞⵉ,
+          ["is_recheck"]: !!localStorage["getItem"]("appActivation")
+        })
+      });
+      const ⴲⵋⵃⴼ = await ⵂⴰⵀⴼ["json"]();
+      var ⴲⵛⴸⴼ = 9;
+      while (ⴲⵛⴸⴼ < 34) switch (ⴲⵛⴸⴼ) {
+        case 9:
+          ⴲⵛⴸⴼ = ⴲⵋⵃⴼ["reason"] === "subscription_required" ? 33 : 34;
+          break;
+        case 33:
+          ⴲⵛⴸⴼ = 34;
+          {
+            localStorage["setItem"]("appActivation", ⵒⵕⴱⵀ);
+            localStorage["setItem"]("lastVerified", Date["now"]());
+            ⴲⵋⵃⵆ = true;
+            ⴲⵋⵓⵃ(true);
+            ⵒⴵⵇⵄ();
+            return {
+              ["valid"]: true,
+              ["key"]: ⵒⵕⴱⵀ,
+              ["reason"]: "subscription_required",
+              ["subscription_required"]: true,
+              ["subscription_expires_at"]: ⴲⵋⵃⴼ["subscription_expires_at"] || null,
+              ["monthly_price"]: ⴲⵋⵃⴼ["monthly_price"],
+              ["permanent_price"]: ⴲⵋⵃⴼ["permanent_price"],
+              ["message"]: ⴲⵋⵃⴼ["message"] || "Monthly subscription payment required.",
+              ["project_type"]: ⴲⵋⵃⴼ["project_type"] || ⴲⴻⵞⵉ,
+              ["keepLicense"]: true
+            };
+          }
+          break;
+      }
+      var ⵒⵅⴼⴼ = 22;
+      while (ⵒⵅⴼⴼ < 34) switch (ⵒⵅⴼⴼ) {
+        case 33:
+          ⵒⵅⴼⴼ = 34;
+          var ⵒⵕⴱⴼ = 11;
+          while (ⵒⵕⴱⴼ < 32) switch (ⵒⵕⴱⴼ) {
+            case 20:
+              ⵒⵕⴱⴼ = 32;
+              {
+                return {
+                  ["valid"]: false,
+                  ["reason"]: "banned"
+                };
+              }
+              break;
+            case 31:
+              ⵒⵕⴱⴼ = 32;
+              var ⵂⵀⴵⴼ = 38;
+              while (ⵂⵀⴵⴼ < 39) switch (ⵂⵀⴵⴼ) {
+                case 38:
+                  ⵂⵀⴵⴼ = ⴲⵋⵃⴼ["allowed_devices"] && ⴲⵋⵃⴼ["used_devices"] ? 27 : 21;
+                  break;
+                case 27:
+                  ⵂⵀⴵⴼ = 39;
+                  {
+                    return {
+                      ["valid"]: false,
+                      ["reason"]: "limit",
+                      ["allowed"]: ⴲⵋⵃⴼ["allowed_devices"],
+                      ["used"]: ⴲⵋⵃⴼ["used_devices"]
+                    };
+                  }
+                  break;
+                case 21:
+                  ⵂⵀⴵⴼ = 39;
+                  var ⵂⵐⵚⴻ = 26;
+                  while (ⵂⵐⵚⴻ < 39) switch (ⵂⵐⵚⴻ) {
+                    case 26:
+                      ⵂⵐⵚⴻ = ⴲⵋⵃⴼ["message"] && ⴲⵋⵃⴼ["message"]["toLowerCase"]()["includes"]("device limit") ? 35 : 38;
+                      break;
+                    case 35:
+                      ⵂⵐⵚⴻ = 39;
+                      {
+                        return {
+                          ["valid"]: false,
+                          ["reason"]: "limit",
+                          ["allowed"]: ⴲⵋⵃⴼ["allowed_devices"] || 3,
+                          ["used"]: ⴲⵋⵃⴼ["used_devices"] || "unknown"
+                        };
+                      }
+                      break;
+                    case 38:
+                      ⵂⵐⵚⴻ = 39;
+                      var ⴲⴻⵞⴻ = 13;
+                      while (ⴲⴻⵞⴻ < 35) switch (ⴲⴻⵞⴻ) {
+                        case 14:
+                          ⴲⴻⵞⴻ = 35;
+                          {
+                            var ⵒⵅⵜⴼ = 33;
+                            while (ⵒⵅⵜⴼ < 34) switch (ⵒⵅⵜⴼ) {
+                              case 8:
+                                ⵒⵅⵜⴼ = 34;
+                                {
+                                  ⴲⵋⵃⵄ();
+                                  return {
+                                    ["valid"]: false,
+                                    ["reason"]: "banned"
+                                  };
+                                }
+                                break;
+                              case 33:
+                                ⵒⵅⵜⴼ = ⴲⵋⵃⴼ["status"] === "banned" || ⴲⵋⵃⴼ["status"] === "revoked" || ⴲⵋⵃⴼ["reason"] === "banned" ? 8 : 34;
+                                break;
+                            }
+                            const ⵂⴰⴰⴽ = String(ⴲⵋⵃⴼ["message"] || "")["toLowerCase"]();
+                            var ⵂⵀⵕⴼ = 25;
+                            while (ⵂⵀⵕⴼ < 26) switch (ⵂⵀⵕⴼ) {
+                              case 16:
+                                ⵂⵀⵕⴼ = 26;
+                                {
+                                  ⴲⵋⵃⵄ();
+                                  return {
+                                    ["valid"]: false,
+                                    ["reason"]: "invalid"
+                                  };
+                                }
+                                break;
+                              case 25:
+                                ⵂⵀⵕⴼ = ⵂⴰⴰⴽ["includes"]("invalid license") || ⵂⴰⴰⴽ["includes"]("license key required") || ⵂⴰⴰⴽ["includes"]("not found") || ⴲⵋⵃⴼ["status"] === "error" && !ⴲⵋⵃⴼ["reason"] ? 16 : 26;
+                                break;
+                            }
+                            ⴲⵋⵃⵄ();
+                            return {
+                              ["valid"]: false,
+                              ["reason"]: "invalid"
+                            };
+                          }
+                          break;
+                        case 18:
+                          ⴲⴻⵞⴻ = 35;
+                          {
+                            return {
+                              ["valid"]: false,
+                              ["reason"]: "wrong_project",
+                              ["wrongProject"]: ⴲⵋⵃⴼ["project_type"] || "UNKNOWN",
+                              ["message"]: ⴲⵋⵃⴼ["message"] || `${"This license does not belong to \""}${ⴲⴻⵞⵉ}${"\" project."}`
+                            };
+                          }
+                          break;
+                        case 13:
+                          ⴲⴻⵞⴻ = ⴲⵋⵃⴼ["message"] && ⴲⵋⵃⴼ["message"]["toLowerCase"]()["includes"]("wrong project") ? 18 : 14;
+                          break;
+                      }
+                      break;
+                  }
+                  break;
+              }
+              break;
+            case 11:
+              ⵒⵕⴱⴼ = ⴲⵋⵃⴼ["message"] && ⴲⵋⵃⴼ["message"]["toLowerCase"]()["includes"]("blocked") ? 20 : 31;
+              break;
+          }
+          break;
+        case 22:
+          ⵒⵅⴼⴼ = ⴲⵋⵃⴼ["valid"] || ⴲⵋⵃⴼ["status"] === "success" ? 9 : 33;
+          break;
+        case 9:
+          ⵒⵅⴼⴼ = 34;
+          {
+            var ⴲⵛⵘⴼ = 34;
+            while (ⴲⵛⵘⴼ < 35) switch (ⴲⵛⵘⴼ) {
+              case 11:
+                ⴲⵛⵘⴼ = 35;
+                {
+                  return {
+                    ["valid"]: false,
+                    ["reason"]: "wrong_project",
+                    ["wrongProject"]: ⴲⵋⵃⴼ["project_type"],
+                    ["message"]: `${"This license belongs to \""}${ⴲⵋⵃⴼ["project_type"]}${"\" project. Please use a valid \""}${ⴲⴻⵞⵉ}${"\" license."}`
+                  };
+                }
+                break;
+              case 34:
+                ⴲⵛⵘⴼ = ⴲⵋⵃⴼ["project_type"] && ⴲⵋⵃⴼ["project_type"] !== ⴲⴻⵞⵉ ? 11 : 35;
+                break;
+            }
+            localStorage["setItem"]("appActivation", ⵒⵕⴱⵀ);
+            localStorage["setItem"]("lastVerified", Date["now"]());
+            ⴲⵋⵃⵆ = true;
+            var ⴲⴻⵎⴼ = 31;
+            while (ⴲⴻⵎⴼ < 39) switch (ⴲⴻⵎⴼ) {
+              case 26:
+                ⴲⴻⵎⴼ = 39;
+                ⴲⵋⵓⵃ(true);
+                break;
+              case 35:
+                ⴲⴻⵎⴼ = 39;
+                ⴲⵋⵓⵃ(false);
+                break;
+              case 31:
+                ⴲⴻⵎⴼ = ⴲⵋⵃⴼ["subscription_required"] ? 26 : 35;
+                break;
+            }
+            return {
+              ["valid"]: true,
+              ["key"]: ⵒⵕⴱⵀ,
+              ["subscription_required"]: !!ⴲⵋⵃⴼ["subscription_required"],
+              ["subscription_expires_at"]: ⴲⵋⵃⴼ["subscription_expires_at"] || null,
+              ["monthly_price"]: ⴲⵋⵃⴼ["monthly_price"],
+              ["permanent_price"]: ⴲⵋⵃⴼ["permanent_price"],
+              ["project_type"]: ⴲⵋⵃⴼ["project_type"] || ⴲⴻⵞⵉ
+            };
+          }
+          break;
+      }
+    } catch (ⵒⵕⵑⴼ) {
+      const ⵒⴵⵇⴼ = localStorage["getItem"]("appActivation");
+      var ⵂⵐⵊⴼ = 12;
+      while (ⵂⵐⵊⴼ < 33) switch (ⵂⵐⵊⴼ) {
+        case 32:
+          ⵂⵐⵊⴼ = 33;
+          {
+            ⴲⵋⵃⵆ = true;
+            return {
+              ["valid"]: true,
+              ["key"]: ⵒⵕⴱⵀ,
+              ["offline"]: true
+            };
+          }
+          break;
+        case 12:
+          ⵂⵐⵊⴼ = ⵒⴵⵇⴼ === ⵒⵕⴱⵀ ? 32 : 33;
+          break;
+      }
+      return {
+        ["valid"]: false,
+        ["reason"]: "network",
+        ["keepLicense"]: true
+      };
+    }
+  }
+  async function ⴲⵛⵈⴽ() {
+    const ⵒⵅⵌⴽ = localStorage["getItem"]("appActivation");
+    var ⵒⵕⵁⴽ = 38;
+    while (ⵒⵕⵁⴽ < 39) switch (ⵒⵕⵁⴽ) {
+      case 38:
+        ⵒⵕⵁⴽ = ⵒⵅⵌⴽ ? 27 : 39;
+        break;
+      case 27:
+        ⵒⵕⵁⴽ = 39;
+        {
+          const ⵂⵀⵅⴽ = await ⵒⵅⴼⵀ(ⵒⵅⵌⴽ);
+          var ⵂⵐⴺⴽ = 24;
+          while (ⵂⵐⴺⴽ < 38) switch (ⵂⵐⴺⴽ) {
+            case 17:
+              ⵂⵐⴺⴽ = 38;
+              {
+                ⴲⵋⵃⵆ = true;
+                return ⵂⵀⵅⴽ;
+              }
+              break;
+            case 24:
+              ⵂⵐⴺⴽ = ⵂⵀⵅⴽ["valid"] ? 17 : 38;
+              break;
+          }
+          var ⴲⴻⴾⴽ = 20;
+          while (ⴲⴻⴾⴽ < 36) switch (ⴲⴻⴾⴽ) {
+            case 31:
+              ⴲⴻⴾⴽ = 36;
+              {
+                ⴲⵋⵃⵆ = true;
+                ⴲⵋⵓⵃ(true);
+                return ⵂⵀⵅⴽ;
+              }
+              break;
+            case 20:
+              ⴲⴻⴾⴽ = ⵂⵀⵅⴽ["reason"] === "subscription_required" || ⵂⵀⵅⴽ["subscription_required"] ? 31 : 36;
+              break;
+          }
+          var ⴲⵋⴳⴽ = 38;
+          while (ⴲⵋⴳⴽ < 39) switch (ⴲⵋⴳⴽ) {
+            case 38:
+              ⴲⵋⴳⴽ = ⵂⵀⵅⴽ["reason"] === "banned" ? 27 : 39;
+              break;
+            case 27:
+              ⴲⵋⴳⴽ = 39;
+              {
+                ⴲⵋⵃⵄ();
+                return ⵂⵀⵅⴽ;
+              }
+              break;
+          }
+          var ⵒⴵⴷⴽ = 12;
+          while (ⵒⴵⴷⴽ < 33) switch (ⵒⴵⴷⴽ) {
+            case 12:
+              ⵒⴵⴷⴽ = ⵂⵀⵅⴽ["reason"] === "wrong_project" ? 32 : 33;
+              break;
+            case 32:
+              ⵒⴵⴷⴽ = 33;
+              {
+                ⴲⵋⵃⵄ();
+                return ⵂⵀⵅⴽ;
+              }
+              break;
+          }
+          var ⵂⵀⴵⴾ = 13;
+          while (ⵂⵀⴵⴾ < 35) switch (ⵂⵀⴵⴾ) {
+            case 13:
+              ⵂⵀⴵⴾ = ⵂⵀⵅⴽ["reason"] === "limit" ? 18 : 35;
+              break;
+            case 18:
+              ⵂⵀⴵⴾ = 35;
+              {
+                ⴲⵋⵃⵄ();
+                return ⵂⵀⵅⴽ;
+              }
+              break;
+          }
+          var ⴲⵛⴸⴾ = 31;
+          while (ⴲⵛⴸⴾ < 39) switch (ⴲⵛⴸⴾ) {
+            case 31:
+              ⴲⵛⴸⴾ = ⵂⵀⵅⴽ["reason"] === "invalid" ? 26 : 39;
+              break;
+            case 26:
+              ⴲⵛⴸⴾ = 39;
+              {
+                ⴲⵋⵃⵄ();
+                return ⵂⵀⵅⴽ;
+              }
+              break;
+          }
+          var ⴲⴻⵞⴽ = 11;
+          while (ⴲⴻⵞⴽ < 32) switch (ⴲⴻⵞⴽ) {
+            case 11:
+              ⴲⴻⵞⴽ = ⵂⵀⵅⴽ["keepLicense"] || ⵂⵀⵅⴽ["reason"] === "network" || ⵂⵀⵅⴽ["offline"] ? 20 : 32;
+              break;
+            case 20:
+              ⴲⴻⵞⴽ = 32;
+              {
+                ⴲⵋⵃⵆ = true;
+                return {
+                  ...ⵂⵀⵅⴽ,
+                  ["offline"]: true
+                };
+              }
+              break;
+          }
+          ⴲⵋⵃⵄ();
+          return {
+            ["valid"]: false,
+            ["reason"]: "invalid"
+          };
+        }
+        break;
+    }
+    ⴲⵋⵃⵆ = false;
+    return {
+      ["valid"]: false
+    };
+  }
+  const ⵒⵕⴱⴾ = [164, 145, 187];
+  function ⵒⴵⵗⴽ(ⵂⵐⵚⴽ, ⵂⴰⵐⴽ) {
+    Swal["fire"]({
+      ["title"]: "",
+      ["html"]: `${"\n        <div style=\"font-family: 'Roboto', sans-serif;\n                    text-align: center;\n                    background: linear-gradient(135deg, rgba(30, 11, 54, 0.98), rgba(45, 20, 70, 0.98));\n                    padding: 20px;\n                    border-radius: 15px;\n                    box-shadow: 0 15px 40px rgba(0,0,0,0.5);\">\n          \n          <div style=\"background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);\n                      padding: 2px;\n                      border-radius: 12px;\n                      margin-bottom: 15px;\">\n            <div style=\"background: rgba(30, 11, 54, 0.95);\n                        padding: 15px;\n                        border-radius: 10px;\">\n              <div style=\"display: flex; align-items: center; justify-content: center; margin-bottom: 8px;\">\n                <div style=\"width: 50px; height: 50px;\n                            background: linear-gradient(135deg, #ff6b6b, #ee5a6f);\n                            border-radius: 50%;\n                            display: flex;\n                            align-items: center;\n                            justify-content: center;\n                            box-shadow: 0 0 20px rgba(255, 107, 107, 0.5);\">\n                  <svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"white\">\n                    <path d=\"M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z\"/>\n                  </svg>\n                </div>\n              </div>\n              <h2 style=\"color: #fff; margin: 0; font-size: 16px; font-weight: 700;\n                         background: linear-gradient(to right, #ff6b6b, #ee5a6f);\n                         -webkit-background-clip: text;\n                         -webkit-text-fill-color: transparent;\">\n                Device Limit Reached\n              </h2>\n            </div>\n          </div>\n          \n          <div style=\"background: rgba(255, 107, 107, 0.15);\n                      padding: 15px;\n                      margin: 15px 0;\n                      border-radius: 10px;\n                      text-align: left;\n                      backdrop-filter: blur(10px);\">\n            <p style=\"margin: 0; font-size: 15px; color: #fff; line-height: 1.5; font-weight: 700;\">\n              <strong style=\"color: #ff6b6b;\">Maximum Devices Used!</strong>\n            </p>\n            <p style=\"margin: 10px 0; font-size: 13px; color: rgba(255,255,255,0.9); line-height: 1.5;\">\n              Your license has reached the maximum device limit.\n            </p>\n            <div style=\"background: rgba(255, 107, 107, 0.2);\n                        padding: 12px;\n                        border-radius: 8px;\n                        margin: 12px 0;\">\n              <p style=\"margin: 0; font-size: 14px; color: #fff; font-weight: 700;\">\n                Used: <span style=\"color: #ff6b6b;\">"}${ⵂⴰⵐⴽ}${"</span> / <span style=\"color: #ee5a6f;\">"}${ⵂⵐⵚⴽ}${"</span> Devices\n              </p>\n            </div>\n            <p style=\"margin: 8px 0 0 0; font-size: 13px; color: rgba(255,255,255,0.9); line-height: 1.5;\">\n              <strong style=\"color: #00d9ff;\">Solution:</strong> If you have shared your license with another person, please stop them from using it first. Sharing licenses is strictly prohibited - this license is for your personal use only. Once the other device is disconnected, you will be able to use it properly.\n            </p>\n          </div>\n          \n          <div style=\"background: rgba(249, 0, 255, 0.1);\n                      padding: 15px;\n                      border-radius: 10px;\n                      margin-bottom: 8px;\">\n            <div style=\"display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 8px;\">\n              <img src=\"https://i.postimg.cc/MKRyMcR4/Screenshot-20260214-100336-Gallery-(1).jpg\"\n                   style=\"width: 22px; height: 22px; border-radius: 50%; object-fit: cover;\"\n                   alt=\"Telegram\">\n              <p style=\"margin: 0; font-size: 15px; color: #fff; font-weight: 600;\">\n                Contact for Upgrade\n              </p>\n            </div>\n            <a href=\"https://t.me/traderjisanx\"\n               target=\"_blank\"\n               style=\"display: inline-block;\n                      color: #f900ff;\n                      font-weight: 700;\n                      text-decoration: none;\n                      font-size: 14px;\n                      padding: 10px 20px;\n                      background: rgba(249, 0, 255, 0.2);\n                      border-radius: 8px;\n                      transition: all 0.3s ease;\">\n              @traderjisanx\n            </a>\n          </div>\n        </div>\n      "}`,
+      ["showConfirmButton"]: true,
+      ["showCancelButton"]: true,
+      ["confirmButtonText"]: "Contact Developer",
+      ["cancelButtonText"]: "Close",
+      ["confirmButtonColor"]: "#ff6b6b",
+      ["cancelButtonColor"]: "#ee5a6f",
+      ["allowOutsideClick"]: false,
+      ["customClass"]: {
+        ["container"]: "swal-high-zindex",
+        ["popup"]: "custom-popup-style",
+        ["confirmButton"]: "custom-button-style",
+        ["cancelButton"]: "custom-button-style"
+      },
+      ["didOpen"]: () => {
+        const ⴲⵋⵓⴽ = document["createElement"]("style");
+        ⴲⵋⵓⴽ["textContent"] = `${"\n          .custom-popup-style {\n            border-radius: 20px !important;\n            padding: 0 !important;\n          }\n          .custom-button-style {\n            font-family: 'Roboto', sans-serif !important;\n            font-weight: 600 !important;\n            padding: 12px 30px !important;\n            border-radius: 10px !important;\n            font-size: 15px !important;\n            transition: all 0.3s ease !important;\n            box-shadow: 0 4px 15px rgba(0,0,0,0.2) !important;\n          }\n          .custom-button-style:hover {\n            transform: translateY(-2px) !important;\n            box-shadow: 0 6px 20px rgba(0,0,0,0.3) !important;\n          }\n        "}`;
+        document["head"]["appendChild"](ⴲⵋⵓⴽ);
+      }
+    })["then"](ⴲⴻⵞⴹ => {
+      var ⵒⵕⴱⴺ = 14;
+      while (ⵒⵕⴱⴺ < 35) switch (ⵒⵕⴱⴺ) {
+        case 34:
+          ⵒⵕⴱⴺ = 35;
+          {
+            window["open"]("https://t.me/traderjisanx", "_blank");
+          }
+          break;
+        case 14:
+          ⵒⵕⴱⴺ = ⴲⴻⵞⴹ["isConfirmed"] ? 34 : 35;
+          break;
+      }
+    });
+  }
+  function ⵒⴵⵗⴹ(ⵂⵐⵚⴹ, ⵂⴰⵐⴹ) {
+    let ⴲⵋⵓⴹ = ⵂⴰⵐⴹ || "UNKNOWN";
+    Swal["fire"]({
+      ["icon"]: "error",
+      ["title"]: "🚫 Wrong Project License",
+      ["html"]: `${"<div style=\"text-align: center; font-family: Arial, sans-serif;\">\n               <div style=\"background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); \n                           padding: 20px; \n                           border-radius: 12px; \n                           margin-bottom: 20px;\n                           box-shadow: 0 4px 15px rgba(0,0,0,0.2);\">\n                 <h2 style=\"color: #fff; margin: 0; font-size: 22px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);\">\n                   ⚠️ License Mismatch Detected\n                 </h2>\n               </div>\n               \n               <div style=\"background: #fff3cd; \n                           border-left: 5px solid #ffc107; \n                           padding: 15px; \n                           margin: 20px 0; \n                           border-radius: 8px;\n                           text-align: left;\">\n                 <p style=\"margin: 0; font-size: 15px; color: #856404;\">\n                   <strong>📌 Issue:</strong> This license token is not for <span style=\"color: #d32f2f; font-weight: bold; font-size: 17px;\">QUOTEX</span>\n                 </p>\n                 <p style=\"margin: 10px 0 0 0; font-size: 15px; color: #856404;\">\n                   <strong>🔑 This is for:</strong> <span style=\"color: #1976d2; font-weight: bold; font-size: 17px; text-transform: uppercase;\">"}${ⴲⵋⵓⴹ}${"</span>\n                 </p>\n               </div>\n               \n               <div style=\"background: #e8f5e9; \n                           border-left: 5px solid #4caf50; \n                           padding: 15px; \n                           margin: 20px 0; \n                           border-radius: 8px;\n                           text-align: left;\">\n                 <p style=\"margin: 0; font-size: 15px; color: #2e7d32;\">\n                   <strong>✅ Solution:</strong> Please use a valid <span style=\"color: #d32f2f; font-weight: bold;\">QUOTEX</span> license key.\n                 </p>\n               </div>\n               \n               <div style=\"margin-top: 20px; padding: 15px; background: #f5f5f5; border-radius: 8px;\">\n                 <p style=\"margin: 0; font-size: 14px; color: #555;\">\n                   Need help? Contact: \n                   <a href=\"https://t.me/traderjisanx\" \n                      target=\"_blank\" \n                      style=\"color: #0088cc; \n                             font-weight: bold; \n                             text-decoration: none;\n                             font-size: 14px;\">\n                     📱 @traderjisanx\n                   </a>\n                 </p>\n               </div>\n             </div>"}`,
+      ["confirmButtonText"]: "✓ Understood",
+      ["confirmButtonColor"]: "#667eea",
+      ["allowOutsideClick"]: false,
+      ["customClass"]: {
+        ["container"]: "swal-high-zindex",
+        ["popup"]: "animated-popup",
+        ["confirmButton"]: "animated-button"
+      }
+    });
+  }
+  const ⴲⵛⵈⴹ = [118, 133, 131];
+  const ⵒⵅⵌⴹ = "9d5c2b8f1a4e7d3c6b0f9a5e2d";
+  const ⵂⵐⵊⴺ = "9z2m7v4p1w6t3r0j5n8q1y4x7s2f0d3h6l9b4g1c7e0a5u8i3";
+  function ⴲⴻⵎⴺ() {
+    Swal["fire"]({
+      ["icon"]: "error",
+      ["title"]: "License Blocked",
+      ["html"]: "This license has been <strong>blocked</strong> by the administrator.<br>It will not work until the admin Activates it manually.<br>Contact the developer on Telegram.",
+      ["confirmButtonColor"]: "#e74c3c",
+      ["customClass"]: {
+        ["container"]: "swal-high-zindex"
+      }
+    });
+  }
+  function ⴲⵋⵃⴺ() {
+    Swal["fire"]({
+      ["title"]: "",
+      ["html"]: `${"\n        <div style=\"font-family: 'Roboto', sans-serif; \n                    text-align: center;\n                    background: linear-gradient(135deg, rgba(30, 11, 54, 0.98), rgba(45, 20, 70, 0.98));\n                    padding: 20px;\n                    border-radius: 15px;\n                    box-shadow: 0 15px 40px rgba(0,0,0,0.5);\">\n          \n          <div style=\"background: linear-gradient(135deg, #f900ff 0%, #00d9ff 100%);\n                      padding: 2px;\n                      border-radius: 12px;\n                      margin-bottom: 15px;\">\n            <div style=\"background: rgba(30, 11, 54, 0.95);\n                        padding: 15px;\n                        border-radius: 10px;\">\n              <div style=\"display: flex; align-items: center; justify-content: center; margin-bottom: 8px;\">\n                <div style=\"width: 50px; height: 50px;\n                            background: linear-gradient(135deg, #f900ff, #00d9ff);\n                            border-radius: 50%;\n                            display: flex;\n                            align-items: center;\n                            justify-content: center;\n                            box-shadow: 0 0 20px rgba(249, 0, 255, 0.5);\">\n                  <svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"white\">\n                    <path d=\"M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z\"/>\n                  </svg>\n                </div>\n              </div>\n              <h2 style=\"color: #fff; margin: 0; font-size: 16px; font-weight: 700; \n                         background: linear-gradient(to right, #f900ff, #00d9ff);\n                         -webkit-background-clip: text;\n                         -webkit-text-fill-color: transparent;\n                         text-shadow: none;\">\n                Invalid License Key\n              </h2>\n            </div>\n          </div>\n          \n          <div style=\"background: rgba(255, 51, 102, 0.15);\n                      padding: 15px;\n                      margin: 15px 0;\n                      border-radius: 10px;\n                      text-align: left;\n                      backdrop-filter: blur(10px);\">\n            <p style=\"margin: 0; font-size: 15px; color: #fff; line-height: 1.5; font-weight: 700;\">\n              <strong style=\"color: #ff3366;\">Invalid License!</strong>\n            </p>\n            <p style=\"margin: 10px 0 0 0; font-size: 13px; color: rgba(255,255,255,0.9); line-height: 1.5;\">\n              You have not purchased a valid license yet. Without purchasing a license, you cannot use this service. Please buy an official license from the developer to get access.\n            </p>\n            <p style=\"margin: 8px 0 0 0; font-size: 12px; color: rgba(255,255,255,0.85); line-height: 1.5;\">\n              <strong style=\"color: #ff3366;\">Important:</strong> Purchase only from the official developer to avoid scams.\n            </p>\n          </div>\n          \n          <div style=\"background: rgba(249, 0, 255, 0.1);\n                      padding: 15px;\n                      border-radius: 10px;\n                      margin-bottom: 8px;\">\n            <div style=\"display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 8px;\">\n              <img src=\"https://i.postimg.cc/MKRyMcR4/Screenshot-20260214-100336-Gallery-(1).jpg\" \n                   style=\"width: 22px; height: 22px; border-radius: 50%; object-fit: cover;\" \n                   alt=\"Telegram\">\n              <p style=\"margin: 0; font-size: 15px; color: #fff; font-weight: 600;\">\n                Developer Contact\n              </p>\n            </div>\n            <a href=\"https://t.me/traderjisanx\" \n               target=\"_blank\" \n               style=\"display: inline-block;\n                      color: #f900ff;\n                      font-weight: 700;\n                      text-decoration: none;\n                      font-size: 14px;\n                      padding: 10px 20px;\n                      background: rgba(249, 0, 255, 0.2);\n                      border-radius: 8px;\n                      transition: all 0.3s ease;\">\n              @traderjisanx\n            </a>\n          </div>\n        </div>\n      "}`,
+      ["showConfirmButton"]: true,
+      ["showCancelButton"]: true,
+      ["confirmButtonText"]: "Contact Developer",
+      ["cancelButtonText"]: "Try Again",
+      ["confirmButtonColor"]: "#667eea",
+      ["cancelButtonColor"]: "#764ba2",
+      ["allowOutsideClick"]: false,
+      ["customClass"]: {
+        ["container"]: "swal-high-zindex",
+        ["popup"]: "custom-popup-style",
+        ["confirmButton"]: "custom-button-style",
+        ["cancelButton"]: "custom-button-style"
+      },
+      ["didOpen"]: () => {
+        const ⵒⴵⵇⴺ = document["createElement"]("style");
+        ⵒⴵⵇⴺ["textContent"] = `${"\n          .custom-popup-style {\n            border-radius: 20px !important;\n            padding: 0 !important;\n          }\n          .custom-button-style {\n            font-family: 'Roboto', sans-serif !important;\n            font-weight: 600 !important;\n            padding: 12px 30px !important;\n            border-radius: 10px !important;\n            font-size: 15px !important;\n            transition: all 0.3s ease !important;\n            box-shadow: 0 4px 15px rgba(0,0,0,0.2) !important;\n          }\n          .custom-button-style:hover {\n            transform: translateY(-2px) !important;\n            box-shadow: 0 6px 20px rgba(0,0,0,0.3) !important;\n          }\n        "}`;
+        document["head"]["appendChild"](ⵒⴵⵇⴺ);
+      }
+    })["then"](ⵒⵅⴼⴺ => {
+      var ⵂⴰⵀⴺ = 35;
+      while (ⵂⴰⵀⴺ < 39) switch (ⵂⴰⵀⴺ) {
+        case 35:
+          ⵂⴰⵀⴺ = ⵒⵅⴼⴺ["isConfirmed"] ? 38 : 39;
+          break;
+        case 38:
+          ⵂⴰⵀⴺ = 39;
+          {
+            window["open"]("https://t.me/traderjisanx", "_blank");
+          }
+          break;
+      }
+    });
+  }
+  function ⵂⵀⴵⴺ() {
+    Swal["fire"]({
+      ["title"]: "",
+      ["html"]: `${"\n        <div style=\"font-family: 'Roboto', sans-serif;\n                    text-align: center;\n                    background: linear-gradient(135deg, rgba(30, 11, 54, 0.98), rgba(45, 20, 70, 0.98));\n                    padding: 20px;\n                    border-radius: 15px;\n                    box-shadow: 0 15px 40px rgba(0,0,0,0.5);\">\n          \n          <div style=\"background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);\n                      padding: 2px;\n                      border-radius: 12px;\n                      margin-bottom: 15px;\">\n            <div style=\"background: rgba(30, 11, 54, 0.95);\n                        padding: 15px;\n                        border-radius: 10px;\">\n              <div style=\"display: flex; align-items: center; justify-content: center; margin-bottom: 8px;\">\n                <div style=\"width: 50px; height: 50px;\n                            background: linear-gradient(135deg, #ff6b6b, #ee5a6f);\n                            border-radius: 50%;\n                            display: flex;\n                            align-items: center;\n                            justify-content: center;\n                            box-shadow: 0 0 20px rgba(255, 107, 107, 0.5);\">\n                  <svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"white\">\n                    <path d=\"M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z\"/>\n                  </svg>\n                </div>\n              </div>\n              <h2 style=\"color: #fff; margin: 0; font-size: 16px; font-weight: 700;\n                         background: linear-gradient(to right, #ff6b6b, #ee5a6f);\n                         -webkit-background-clip: text;\n                         -webkit-text-fill-color: transparent;\">\n                Connection Error\n              </h2>\n            </div>\n          </div>\n          \n          <div style=\"background: rgba(245, 87, 108, 0.15);\n                      padding: 15px;\n                      margin: 15px 0;\n                      border-radius: 10px;\n                      text-align: left;\n                      backdrop-filter: blur(10px);\">\n            <p style=\"margin: 0; font-size: 14px; color: #fff; line-height: 1.5; font-weight: 600;\">\n              <strong style=\"color: #f5576c;\">Network Issue:</strong> Could not verify license due to connection problems.\n            </p>\n            <p style=\"margin: 10px 0 0 0; font-size: 13px; color: rgba(255,255,255,0.9); line-height: 1.5;\">\n              <strong style=\"color: #ff6b6b;\">Try:</strong> Check your internet connection and try again. If the problem persists, contact support.\n            </p>\n          </div>\n          \n          <div style=\"background: rgba(249, 0, 255, 0.1);\n                      padding: 15px;\n                      border-radius: 10px;\n                      margin-bottom: 8px;\">\n            <div style=\"display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 8px;\">\n              <img src=\"https://i.postimg.cc/MKRyMcR4/Screenshot-20260214-100336-Gallery-(1).jpg\"\n                   style=\"width: 22px; height: 22px; border-radius: 50%; object-fit: cover;\"\n                   alt=\"Telegram\">\n              <p style=\"margin: 0; font-size: 15px; color: #fff; font-weight: 600;\">\n                Need Help?\n              </p>\n            </div>\n            <a href=\"https://t.me/traderjisanx\"\n               target=\"_blank\"\n               style=\"display: inline-block;\n                      color: #f900ff;\n                      font-weight: 700;\n                      text-decoration: none;\n                      font-size: 14px;\n                      padding: 10px 20px;\n                      background: rgba(249, 0, 255, 0.2);\n                      border-radius: 8px;\n                      transition: all 0.3s ease;\">\n              @traderjisanx\n            </a>\n          </div>\n        </div>\n      "}`,
+      ["showConfirmButton"]: true,
+      ["showCancelButton"]: true,
+      ["confirmButtonText"]: "📞 Contact Support",
+      ["cancelButtonText"]: "🔄 Try Again",
+      ["confirmButtonColor"]: "#f093fb",
+      ["cancelButtonColor"]: "#f5576c",
+      ["allowOutsideClick"]: false,
+      ["customClass"]: {
+        ["container"]: "swal-high-zindex",
+        ["popup"]: "custom-popup-style",
+        ["confirmButton"]: "custom-button-style",
+        ["cancelButton"]: "custom-button-style"
+      },
+      ["didOpen"]: () => {
+        const ⴲⵛⴸⴺ = document["createElement"]("style");
+        ⴲⵛⴸⴺ["textContent"] = `${"\n          .custom-popup-style {\n            border-radius: 20px !important;\n            padding: 0 !important;\n          }\n          .custom-button-style {\n            font-family: 'Roboto', sans-serif !important;\n            font-weight: 600 !important;\n            padding: 12px 30px !important;\n            border-radius: 10px !important;\n            font-size: 15px !important;\n            transition: all 0.3s ease !important;\n            box-shadow: 0 4px 15px rgba(0,0,0,0.2) !important;\n          }\n          .custom-button-style:hover {\n            transform: translateY(-2px) !important;\n            box-shadow: 0 6px 20px rgba(0,0,0,0.3) !important;\n          }\n        "}`;
+        document["head"]["appendChild"](ⴲⵛⴸⴺ);
+      }
+    })["then"](ⵒⴵⴷⴻ => {
+      var ⵂⵐⴺⴻ = 33;
+      while (ⵂⵐⴺⴻ < 34) switch (ⵂⵐⴺⴻ) {
+        case 33:
+          ⵂⵐⴺⴻ = ⵒⴵⴷⴻ["isConfirmed"] ? 8 : 34;
+          break;
+        case 8:
+          ⵂⵐⴺⴻ = 34;
+          {
+            window["open"]("https://t.me/traderjisanx", "_blank");
+          }
+          break;
+      }
+    });
+  }
+  const ⵂⴰⴰⴻ = [91, 95, 74];
+  const ⴲⵋⴳⴻ = "8c1b4f7a3e6d0c9b5f2a1e8d4c";
+  const ⴲⵛⵘⴺ = "o6z9m2v7p4w1t6r3j0n5q8y1x4s7f2d0h3l6b9g4c1e8a5u2i";
+  function ⵒⵅⵜⴺ() {
+    return Swal["fire"]({
+      ["icon"]: "success",
+      ["title"]: "License Verified!",
+      ["text"]: "Your license has been successfully verified.",
+      ["showConfirmButton"]: false,
+      ["timer"]: 1500,
+      ["timerProgressBar"]: true,
+      ["customClass"]: {
+        ["container"]: "swal-high-zindex"
+      }
+    });
+  }
+  async function ⵒⵕⵑⴺ() {
+    await ⴲⵛⵈⵃ();
+    ⵂⵀⵕⵆ();
+    let ⵂⵀⵕⴺ = "";
+    let ⴲⵋⵓⴻ = ⵂⵀⵕⵆ();
+    const ⵒⴵⵗⴻ = ⵒⵅⵌⴻ => {
+      const ⵂⴰⵐⴻ = "$" + Number(ⵒⵅⵌⴻ)["toFixed"](2);
+      const ⵂⵀⵅⴻ = document["getElementById"]("pmBinancePrice");
+      const ⴲⵛⵈⴻ = document["getElementById"]("pmCryptoPrice");
+      const ⴲⴻⴾⴻ = document["getElementById"]("pmBdtPrice");
+      const ⵒⵕⵁⴻ = document["getElementById"]("pmTotalPrice");
+      var ⵒⵅⵌⴷ = 7;
+      while (ⵒⵅⵌⴷ < 33) switch (ⵒⵅⵌⴷ) {
+        case 12:
+          ⵒⵅⵌⴷ = 33;
+          ⵂⵀⵅⴻ["textContent"] = ⵂⴰⵐⴻ + " USDT";
+          break;
+        case 7:
+          ⵒⵅⵌⴷ = ⵂⵀⵅⴻ ? 12 : 33;
+          break;
+      }
+      var ⵂⴰⵐⴷ = 34;
+      while (ⵂⴰⵐⴷ < 35) switch (ⵂⴰⵐⴷ) {
+        case 11:
+          ⵂⴰⵐⴷ = 35;
+          ⴲⵛⵈⴻ["textContent"] = ⵂⴰⵐⴻ + " USD";
+          break;
+        case 34:
+          ⵂⴰⵐⴷ = ⴲⵛⵈⴻ ? 11 : 35;
+          break;
+      }
+      var ⵂⵀⵅⴷ = 17;
+      while (ⵂⵀⵅⴷ < 38) switch (ⵂⵀⵅⴷ) {
+        case 17:
+          ⵂⵀⵅⴷ = ⴲⴻⴾⴻ ? 37 : 38;
+          break;
+        case 37:
+          ⵂⵀⵅⴷ = 38;
+          {
+            const ⴲⵛⵈⴷ = Math["round"](Number(ⵒⵅⵌⴻ) * Number(ⵒⵕⴱⵆ || 120));
+            ⴲⴻⴾⴻ["textContent"] = "৳" + ⴲⵛⵈⴷ["toLocaleString"]("en-US") + " BDT";
+          }
+          break;
+      }
+      var ⴲⴻⴾⴷ = 26;
+      while (ⴲⴻⴾⴷ < 39) switch (ⴲⴻⴾⴷ) {
+        case 26:
+          ⴲⴻⴾⴷ = ⵒⵕⵁⴻ ? 35 : 39;
+          break;
+        case 35:
+          ⴲⴻⴾⴷ = 39;
+          ⵒⵕⵁⴻ["textContent"] = ⵂⴰⵐⴻ;
+          break;
+      }
+    };
+    await Swal["fire"]({
+      ["title"]: "",
+      ["html"]: `${"\n        <div style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center;\n                    background: #FFFFFF; padding: 0; border-radius: 16px; overflow: hidden;\">\n\n          <div style=\"background: #FAFAFA; padding: 22px 20px 18px; border-bottom: 1px solid #EAECEF;\">\n            <div style=\"width: 52px; height: 52px; border-radius: 14px; background: rgba(240,185,11,0.08); display: inline-flex; align-items: center; justify-content: center; margin-bottom: 10px;\">\n              <svg width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#C99400\" stroke-width=\"2.5\"><rect x=\"1\" y=\"4\" width=\"22\" height=\"16\" rx=\"2\" ry=\"2\"/><line x1=\"1\" y1=\"10\" x2=\"23\" y2=\"10\"/></svg>\n            </div>\n            <h3 style=\"color: #1E2329; font-size: 20px; font-weight: 800; margin: 4px 0;\">"}${ⴲⵛⵘⵆ === "subscription" ? "Monthly Subscription" : "Choose Payment Method"}${"</h3>\n            <p style=\"color: #707A8A; font-size: 13px; margin: 0;\">"}${ⴲⵛⵘⵆ === "subscription" ? "Pay monthly fee — active for 30 days" : "Select how you want to pay"}${"</p>\n            <p style=\"color: #1E2329; font-size: 22px; font-weight: 800; margin: 10px 0 0;\">\n              <span id=\"pmTotalPrice\">$"}${ⴲⵋⵓⴻ["toFixed"](2)}${"</span>\n            </p>\n          </div>\n\n          <div style=\"padding: 20px;\">\n            <div id=\"pmDiscountBadge\" style=\"display:none; background: rgba(249, 115, 22, 0.12); padding: 10px; border-radius: 8px; margin-bottom: 12px; border: 1px solid rgba(249, 115, 22, 0.25); text-align:left;\">\n              <p style=\"color: #ea580c; font-size: 13px; margin: 0; font-weight: 600;\" id=\"pmDiscountText\"></p>\n            </div>\n\n            "}${ⴲⴻⵞⵅ["binance"] ? `${"\n            <button id=\"pmSelectBinance\" style=\"display:flex;width:100%;padding:16px 18px;background:#FFFFFF;border:1.5px solid #EAECEF;border-radius:14px;color:#1E2329;cursor:pointer;align-items:center;gap:14px;margin-bottom:12px;transition:all 0.2s;\">\n              <div style=\"width:48px;height:48px;border-radius:12px;background:rgba(240,185,11,0.08);display:flex;align-items:center;justify-content:center;flex-shrink:0;\">\n                <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"#F0B90B\"><path d=\"M12 2L7.5 6.5L9.62 8.62L12 6.24L14.38 8.62L16.5 6.5L12 2ZM2 12L6.5 7.5L8.62 9.62L6.24 12L8.62 14.38L6.5 16.5L2 12ZM22 12L17.5 16.5L15.38 14.38L17.76 12L15.38 9.62L17.5 7.5L22 12ZM12 22L16.5 17.5L14.38 15.38L12 17.76L9.62 15.38L7.5 17.5L12 22ZM12 15.38L14.38 12L12 8.62L9.62 12L12 15.38Z\"/></svg>\n              </div>\n              <div style=\"text-align:left;flex:1;\">\n                <div style=\"font-weight:700;font-size:15px;color:#1E2329;\">Binance Pay</div>\n                <div style=\"color:#707A8A;font-size:12px;margin-top:2px;\">Pay with USDT via Binance</div>\n                <div id=\"pmBinancePrice\" style=\"color:#C99400;font-size:13px;font-weight:700;margin-top:4px;\">$"}${ⴲⵋⵓⴻ["toFixed"](2)}${" USDT</div>\n              </div>\n              <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#AEB4BC\" stroke-width=\"2\"><polyline points=\"9 18 15 12 9 6\"/></svg>\n            </button>\n            "}` : ""}${"\n\n            "}${ⴲⴻⵞⵅ["crypto"] ? `${"\n            <button id=\"pmSelectCrypto\" style=\"display:flex;width:100%;padding:16px 18px;background:#FFFFFF;border:1.5px solid #EAECEF;border-radius:14px;color:#1E2329;cursor:pointer;align-items:center;gap:14px;margin-bottom:16px;transition:all 0.2s;\">\n              <div style=\"width:48px;height:48px;border-radius:12px;background:rgba(2,192,118,0.08);display:flex;align-items:center;justify-content:center;flex-shrink:0;\">\n                <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"#02C076\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><text x=\"12\" y=\"16\" text-anchor=\"middle\" font-size=\"12\" fill=\"#fff\" font-weight=\"bold\">$</text></svg>\n              </div>\n              <div style=\"text-align:left;flex:1;\">\n                <div style=\"font-weight:700;font-size:15px;color:#1E2329;\">Crypto</div>\n                <div style=\"color:#707A8A;font-size:12px;margin-top:2px;\">Pay with Crypto via OxaPay</div>\n                <div id=\"pmCryptoPrice\" style=\"color:#03A66D;font-size:13px;font-weight:700;margin-top:4px;\">$"}${ⴲⵋⵓⴻ["toFixed"](2)}${" USD</div>\n              </div>\n              <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#AEB4BC\" stroke-width=\"2\"><polyline points=\"9 18 15 12 9 6\"/></svg>\n            </button>\n            "}` : ""}${"\n\n            "}${ⴲⴻⵞⵅ["bdt"] ? `${"\n            <button id=\"pmSelectBdt\" style=\"display:flex;width:100%;padding:16px 18px;background:#FFFFFF;border:1.5px solid #EAECEF;border-radius:14px;color:#1E2329;cursor:pointer;align-items:center;gap:14px;margin-bottom:16px;transition:all 0.2s;\">\n              <div style=\"width:48px;height:48px;border-radius:12px;background:rgba(6,95,70,0.08);display:flex;align-items:center;justify-content:center;flex-shrink:0;\">\n                <span style=\"font-weight:900;font-size:18px;color:#065F46;\">৳</span>\n              </div>\n              <div style=\"text-align:left;flex:1;\">\n                <div style=\"font-weight:700;font-size:15px;color:#1E2329;\">BDT TAKA</div>\n                <div style=\"color:#707A8A;font-size:12px;margin-top:2px;\">Pay with Bangladeshi Taka (৳"}${Number(ⵒⵕⴱⵆ || 120)}${" = $1)</div>\n                <div id=\"pmBdtPrice\" style=\"color:#065F46;font-size:13px;font-weight:700;margin-top:4px;\">৳"}${Math["round"](Number(ⴲⵋⵓⴻ) * Number(ⵒⵕⴱⵆ || 120))["toLocaleString"]("en-US")}${" BDT</div>\n              </div>\n              <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#AEB4BC\" stroke-width=\"2\"><polyline points=\"9 18 15 12 9 6\"/></svg>\n            </button>\n            "}` : ""}${"\n\n            "}${!ⴲⴻⵞⵅ["binance"] && !ⴲⴻⵞⵅ["crypto"] && !ⴲⴻⵞⵅ["bdt"] ? "<p style=\"color:#CF304A;font-size:14px;\">No payment methods are currently available. Please contact developer.</p>" : ""}${"\n\n            <div style=\"margin-top: 4px; padding-top: 16px; border-top: 1px solid #EAECEF; text-align: left;\">\n              <label style=\"color: #1E2329; font-size: 12px; font-weight: 600; display: block; margin-bottom: 6px;\">Coupon Code</label>\n              <div style=\"display: flex; gap: 8px;\">\n                <input type=\"text\" id=\"pmCouponInput\" placeholder=\"Enter coupon code\"\n                       style=\"flex: 1; padding: 11px 12px; border: 1.5px solid #EAECEF;\n                              border-radius: 10px; background: #F8FAFC; color: #1E2329;\n                              font-size: 13px; outline: none; box-sizing: border-box;\">\n                <button id=\"pmApplyCouponBtn\" type=\"button\"\n                        style=\"padding: 11px 16px; background: linear-gradient(135deg, #f97316, #ea580c);\n                               border: none; border-radius: 10px; color: white; font-weight: 700;\n                               cursor: pointer; font-size: 12px; white-space: nowrap;\">Apply</button>\n              </div>\n              <p id=\"pmCouponMessage\" style=\"font-size: 11px; margin-top: 6px; color: #707A8A;\"></p>\n            </div>\n          </div>\n        </div>\n      "}`,
+      ["showConfirmButton"]: false,
+      ["showCancelButton"]: true,
+      ["cancelButtonText"]: "Back",
+      ["cancelButtonColor"]: "#707A8A",
+      ["allowOutsideClick"]: false,
+      ["customClass"]: {
+        ["container"]: "swal-high-zindex",
+        ["popup"]: "custom-popup-style"
+      },
+      ["didOpen"]: () => {
+        const ⵒⵕⵁⴷ = document["getElementById"]("pmApplyCouponBtn");
+        var ⵒⴵⴷⴷ = 16;
+        while (ⵒⴵⴷⴷ < 25) switch (ⵒⴵⴷⴷ) {
+          case 16:
+            ⵒⴵⴷⴷ = ⵒⵕⵁⴷ ? 23 : 25;
+            break;
+          case 23:
+            ⵒⴵⴷⴷ = 25;
+            {
+              ⵒⵕⵁⴷ["addEventListener"]("click", async () => {
+                const ⵂⵐⴺⴷ = document["getElementById"]("pmCouponInput");
+                const ⴲⵛⴸⴸ = document["getElementById"]("pmCouponMessage");
+                const ⵒⵅⴼⴸ = document["getElementById"]("pmDiscountBadge");
+                const ⵒⵕⴱⴸ = document["getElementById"]("pmDiscountText");
+                const ⵂⵀⴵⴸ = ⵂⵐⴺⴷ["value"]["trim"]();
+                var ⵂⵐⵚⴷ = 33;
+                while (ⵂⵐⵚⴷ < 34) switch (ⵂⵐⵚⴷ) {
+                  case 8:
+                    ⵂⵐⵚⴷ = 34;
+                    {
+                      ⴲⵛⴸⴸ["textContent"] = "Please enter a coupon code";
+                      ⴲⵛⴸⴸ["style"]["color"] = "#ef4444";
+                      return;
+                    }
+                    break;
+                  case 33:
+                    ⵂⵐⵚⴷ = !ⵂⵀⴵⴸ ? 8 : 34;
+                    break;
+                }
+                ⴲⵛⴸⴸ["textContent"] = "Validating...";
+                ⴲⵛⴸⴸ["style"]["color"] = "#f97316";
+                try {
+                  const ⴲⴻⵞⴷ = await fetch(ⴲⵋⵓⵉ, {
+                    ["method"]: "POST",
+                    ["headers"]: {
+                      ["Content-Type"]: "application/json"
+                    },
+                    ["body"]: JSON["stringify"]({
+                      ["code"]: ⵂⵀⴵⴸ,
+                      ["purpose"]: ⴲⵛⵘⵆ,
+                      ["project_type"]: ⴲⴻⵞⵉ
+                    })
+                  });
+                  const ⴲⵋⵓⴷ = await ⴲⴻⵞⴷ["json"]();
+                  var ⵒⴵⵗⴷ = 16;
+                  while (ⵒⴵⵗⴷ < 25) switch (ⵒⴵⵗⴷ) {
+                    case 16:
+                      ⵒⴵⵗⴷ = ⴲⵋⵓⴷ["success"] ? 23 : 24;
+                      break;
+                    case 24:
+                      ⵒⴵⵗⴷ = 25;
+                      {
+                        ⴲⵛⴸⴸ["textContent"] = ⴲⵋⵓⴷ["message"];
+                        ⴲⵛⴸⴸ["style"]["color"] = "#ef4444";
+                      }
+                      break;
+                    case 23:
+                      ⵒⴵⵗⴷ = 25;
+                      {
+                        ⴲⵋⵓⴻ = ⴲⵋⵓⴷ["final_price"];
+                        ⵂⵀⵕⴺ = ⵂⵀⴵⴸ;
+                        ⵂⴰⴰⵇ = ⵂⵀⴵⴸ;
+                        ⴲⵋⴳⵇ = ⴲⵋⵓⴻ;
+                        ⵒⴵⵗⴻ(ⴲⵋⵓⴻ);
+                        ⴲⵛⴸⴸ["textContent"] = "Coupon applied!";
+                        ⴲⵛⴸⴸ["style"]["color"] = "#10b981";
+                        ⵒⵅⴼⴸ["style"]["display"] = "block";
+                        ⵒⵕⴱⴸ["textContent"] = "Discount: -$" + ⴲⵋⵓⴷ["discount"] + " applied!";
+                      }
+                      break;
+                  }
+                } catch (ⵂⵀⵕⴸ) {
+                  ⴲⵛⴸⴸ["textContent"] = "Error validating coupon";
+                  ⴲⵛⴸⴸ["style"]["color"] = "#ef4444";
+                }
+              });
+            }
+            break;
+        }
+        const ⴲⵛⵘⴸ = ⴲⴻⵎⴸ => {
+          ⵂⴰⴰⵇ = ⵂⵀⵕⴺ;
+          ⴲⵋⴳⵇ = ⴲⵋⵓⴻ;
+          Swal["close"]();
+          var ⵒⵕⵑⴸ = 32;
+          while (ⵒⵕⵑⴸ < 34) switch (ⵒⵕⵑⴸ) {
+            case 9:
+              ⵒⵕⵑⴸ = 34;
+              var ⵒⴵⵇⴸ = 9;
+              while (ⵒⴵⵇⴸ < 34) switch (ⵒⴵⵇⴸ) {
+                case 9:
+                  ⵒⴵⵇⴸ = ⴲⴻⵎⴸ === "bdt" ? 33 : 8;
+                  break;
+                case 8:
+                  ⵒⴵⵇⴸ = 34;
+                  ⵂⵀⵅⵟⴲ();
+                  break;
+                case 33:
+                  ⵒⴵⵇⴸ = 34;
+                  ⵂⴰⵀⴲⴳ();
+                  break;
+              }
+              break;
+            case 22:
+              ⵒⵕⵑⴸ = 34;
+              ⵒⴵⵗⴳ();
+              break;
+            case 32:
+              ⵒⵕⵑⴸ = ⴲⴻⵎⴸ === "binance" ? 22 : 9;
+              break;
+          }
+        };
+        const ⵂⵐⵊⴸ = document["getElementById"]("pmSelectBinance");
+        const ⵂⴰⵀⴸ = document["getElementById"]("pmSelectCrypto");
+        const ⴲⵋⵃⴸ = document["getElementById"]("pmSelectBdt");
+        var ⵒⵕⵁⴹ = 9;
+        while (ⵒⵕⵁⴹ < 34) switch (ⵒⵕⵁⴹ) {
+          case 33:
+            ⵒⵕⵁⴹ = 34;
+            {
+              ⵂⵐⵊⴸ["addEventListener"]("mouseover", () => {
+                ⵂⵐⵊⴸ["style"]["borderColor"] = "#F0B90B";
+                ⵂⵐⵊⴸ["style"]["background"] = "#FEF6D8";
+              });
+              ⵂⵐⵊⴸ["addEventListener"]("mouseout", () => {
+                ⵂⵐⵊⴸ["style"]["borderColor"] = "#EAECEF";
+                ⵂⵐⵊⴸ["style"]["background"] = "#FFFFFF";
+              });
+              ⵂⵐⵊⴸ["addEventListener"]("click", () => ⴲⵛⵘⴸ("binance"));
+            }
+            break;
+          case 9:
+            ⵒⵕⵁⴹ = ⵂⵐⵊⴸ ? 33 : 34;
+            break;
+        }
+        var ⵂⵀⵅⴹ = 35;
+        while (ⵂⵀⵅⴹ < 39) switch (ⵂⵀⵅⴹ) {
+          case 38:
+            ⵂⵀⵅⴹ = 39;
+            {
+              ⵂⴰⵀⴸ["addEventListener"]("mouseover", () => {
+                ⵂⴰⵀⴸ["style"]["borderColor"] = "#02C076";
+                ⵂⴰⵀⴸ["style"]["background"] = "#E6F9F0";
+              });
+              ⵂⴰⵀⴸ["addEventListener"]("mouseout", () => {
+                ⵂⴰⵀⴸ["style"]["borderColor"] = "#EAECEF";
+                ⵂⴰⵀⴸ["style"]["background"] = "#FFFFFF";
+              });
+              ⵂⴰⵀⴸ["addEventListener"]("click", () => ⴲⵛⵘⴸ("crypto"));
+            }
+            break;
+          case 35:
+            ⵂⵀⵅⴹ = ⵂⴰⵀⴸ ? 38 : 39;
+            break;
+        }
+        var ⵂⵐⴺⴹ = 11;
+        while (ⵂⵐⴺⴹ < 32) switch (ⵂⵐⴺⴹ) {
+          case 20:
+            ⵂⵐⴺⴹ = 32;
+            {
+              ⴲⵋⵃⴸ["addEventListener"]("mouseover", () => {
+                ⴲⵋⵃⴸ["style"]["borderColor"] = "#065F46";
+                ⴲⵋⵃⴸ["style"]["background"] = "#ECFDF5";
+              });
+              ⴲⵋⵃⴸ["addEventListener"]("mouseout", () => {
+                ⴲⵋⵃⴸ["style"]["borderColor"] = "#EAECEF";
+                ⴲⵋⵃⴸ["style"]["background"] = "#FFFFFF";
+              });
+              ⴲⵋⵃⴸ["addEventListener"]("click", () => ⴲⵛⵘⴸ("bdt"));
+            }
+            break;
+          case 11:
+            ⵂⵐⴺⴹ = ⴲⵋⵃⴸ ? 20 : 32;
+            break;
+        }
+      }
+    });
+  }
+  let ⴲⴻⴾⴹ = null;
+  let ⴲⵋⴳⴹ = null;
+  let ⵒⴵⴷⴹ = null;
+  const ⵒⵅⵜⴸ = "pendingBinanceOrder";
+  const ⵂⴰⴰⴹ = 7200000;
+  function ⵂⵐⴺⴵ(ⴲⴻⴾⴵ) {
+    try {
+      const ⴲⵋⴳⴵ = JSON["parse"](localStorage["getItem"](ⵒⵅⵜⴸ) || "{}");
+      const ⵒⴵⴷⴵ = Object["assign"]({}, ⴲⵋⴳⴵ, ⴲⴻⴾⴵ || {}, {
+        ["updated_at"]: Date["now"]()
+      });
+      localStorage["setItem"](ⵒⵅⵜⴸ, JSON["stringify"](ⵒⴵⴷⴵ));
+    } catch (ⵒⵅⵜⴴ) {}
+  }
+  function ⵂⴰⴰⴵ() {
+    localStorage["removeItem"](ⵒⵅⵜⴸ);
+    ⵂⵀⵕⴴ();
+  }
+  function ⵂⵀⵕⴴ() {
+    var ⴲⵛⵘⴴ = 20;
+    while (ⴲⵛⵘⴴ < 36) switch (ⴲⵛⵘⴴ) {
+      case 20:
+        ⴲⵛⵘⴴ = ⴲⵋⴳⴹ ? 31 : 36;
+        break;
+      case 31:
+        ⴲⵛⵘⴴ = 36;
+        {
+          clearInterval(ⴲⵋⴳⴹ);
+          ⴲⵋⴳⴹ = null;
+        }
+        break;
+    }
+    var ⵒⴵⵗⴵ = 16;
+    while (ⵒⴵⵗⴵ < 25) switch (ⵒⴵⵗⴵ) {
+      case 16:
+        ⵒⴵⵗⴵ = ⵒⴵⴷⴹ ? 23 : 25;
+        break;
+      case 23:
+        ⵒⴵⵗⴵ = 25;
+        {
+          clearInterval(ⵒⴵⴷⴹ);
+          ⵒⴵⴷⴹ = null;
+        }
+        break;
+    }
+  }
+  function ⵂⵐⵚⴵ(ⵂⴰⵐⴵ) {
+    const ⴲⵋⵓⴵ = Math["max"](0, Math["floor"](Number(ⵂⴰⵐⴵ) || 0));
+    const ⴲⵛⵈⴵ = Math["floor"](ⴲⵋⵓⴵ / 3600);
+    const ⵒⵅⵌⴵ = Math["floor"](ⴲⵋⵓⴵ % 3600 / 60);
+    const ⵒⵕⵁⴵ = ⴲⵋⵓⴵ % 60;
+    const ⵂⵀⵅⴵ = ⴲⵋⵃⴶ => String(ⴲⵋⵃⴶ)["padStart"](2, "0");
+    return ⵂⵀⵅⴵ(ⴲⵛⵈⴵ) + ":" + ⵂⵀⵅⴵ(ⵒⵅⵌⴵ) + ":" + ⵂⵀⵅⴵ(ⵒⵕⵁⴵ);
+  }
+  function ⵒⴵⵇⴶ(ⵒⵅⴼⴶ) {
+    var ⵂⴰⵀⴶ = 7;
+    while (ⵂⴰⵀⴶ < 33) switch (ⵂⴰⵀⴶ) {
+      case 12:
+        ⵂⴰⵀⴶ = 33;
+        return 0;
+      case 7:
+        ⵂⴰⵀⴶ = !ⵒⵅⴼⴶ ? 12 : 33;
+        break;
+    }
+    var ⵂⵀⴵⴶ = 12;
+    while (ⵂⵀⴵⴶ < 33) switch (ⵂⵀⴵⴶ) {
+      case 32:
+        ⵂⵀⴵⴶ = 33;
+        {
+          return Math["max"](0, Number(ⵒⵅⴼⴶ["expires_in_seconds"]) || 0);
+        }
+        break;
+      case 12:
+        ⵂⵀⴵⴶ = ⵒⵅⴼⴶ["expires_in_seconds"] != null && ⵒⵅⴼⴶ["expires_in_seconds"] !== "" ? 32 : 33;
+        break;
+    }
+    var ⴲⵛⴸⴶ = 16;
+    while (ⴲⵛⴸⴶ < 25) switch (ⴲⵛⴸⴶ) {
+      case 16:
+        ⴲⵛⴸⴶ = ⵒⵅⴼⴶ["expires_at"] ? 23 : 25;
+        break;
+      case 23:
+        ⴲⵛⴸⴶ = 25;
+        {
+          try {
+            const ⴲⴻⵞⴵ = new Date(String(ⵒⵅⴼⴶ["expires_at"])["trim"]()["replace"](" ", "T") + "+06:00");
+            var ⵒⵕⴱⴶ = 26;
+            while (ⵒⵕⴱⴶ < 39) switch (ⵒⵕⴱⴶ) {
+              case 35:
+                ⵒⵕⴱⴶ = 39;
+                {
+                  return Math["max"](0, Math["floor"]((ⴲⴻⵞⴵ["getTime"]() - Date["now"]()) / 1000));
+                }
+                break;
+              case 26:
+                ⵒⵕⴱⴶ = !isNaN(ⴲⴻⵞⴵ["getTime"]()) ? 35 : 39;
+                break;
+            }
+          } catch (ⵂⴰⴰⴷ) {}
+        }
+        break;
+    }
+    var ⴲⵋⴳⴷ = 26;
+    while (ⴲⵋⴳⴷ < 39) switch (ⴲⵋⴳⴷ) {
+      case 26:
+        ⴲⵋⴳⴷ = ⵒⵅⴼⴶ["created_at_ms"] ? 35 : 39;
+        break;
+      case 35:
+        ⴲⵋⴳⴷ = 39;
+        {
+          return Math["max"](0, Math["floor"]((Number(ⵒⵅⴼⴶ["created_at_ms"]) + ⵂⴰⴰⴹ - Date["now"]()) / 1000));
+        }
+        break;
+    }
+    return 7200;
+  }
+  function ⴲⵛⵘⴶ(ⵒⵅⵜⴶ) {
+    var ⵒⵕⵑⴶ = 24;
+    while (ⵒⵕⵑⴶ < 38) switch (ⵒⵕⵑⴶ) {
+      case 24:
+        ⵒⵕⵑⴶ = !ⵒⵅⵜⴶ ? 17 : 38;
+        break;
+      case 17:
+        ⵒⵕⵑⴶ = 38;
+        return 0;
+    }
+    try {
+      const ⵂⵀⵕⴶ = String(ⵒⵅⵜⴶ)["trim"]()["replace"](" ", "T");
+      const ⵂⵐⵊⴶ = new Date(ⵂⵀⵕⴶ + "+06:00");
+      var ⴲⴻⵎⴶ = 35;
+      while (ⴲⴻⵎⴶ < 39) switch (ⴲⴻⵎⴶ) {
+        case 38:
+          ⴲⴻⵎⴶ = 39;
+          return 0;
+        case 35:
+          ⴲⴻⵎⴶ = isNaN(ⵂⵐⵊⴶ["getTime"]()) ? 38 : 39;
+          break;
+      }
+      return ⵂⵐⵊⴶ["getTime"]() - 120000;
+    } catch (ⴲⵛⵘⴲ) {
+      return 0;
+    }
+  }
+  async function ⵒⵅⵜⴲ(ⵒⵕⵑⴲ) {
+    try {
+      const [ⵂⵀⵕⴲ, ⵂⵐⵊⴲ] = await Promise["all"]([fetch(ⵂⴰⵐⵅ, {
+        ["method"]: "POST",
+        ["headers"]: {
+          ["Content-Type"]: "application/json"
+        },
+        ["body"]: JSON["stringify"]({
+          ["order_id"]: ⵒⵕⵑⴲ
+        })
+      }), fetch(ⵒⵅⵌⵉ)]);
+      const ⴲⴻⵎⴲ = await ⵂⵀⵕⴲ["json"]();
+      const ⴲⵋⵃⴲ = await ⵂⵐⵊⴲ["json"]();
+      var ⵒⴵⵇⴲ = 9;
+      while (ⵒⴵⵇⴲ < 34) switch (ⵒⴵⵇⴲ) {
+        case 33:
+          ⵒⴵⵇⴲ = 34;
+          {
+            ⵂⴰⴰⴵ();
+            return false;
+          }
+          break;
+        case 9:
+          ⵒⴵⵇⴲ = !ⴲⴻⵎⴲ["success"] ? 33 : 34;
+          break;
+      }
+      var ⵂⵀⵅⴳ = 35;
+      while (ⵂⵀⵅⴳ < 39) switch (ⵂⵀⵅⴳ) {
+        case 35:
+          ⵂⵀⵅⴳ = ⴲⴻⵎⴲ["status"] === "completed" && ⴲⴻⵎⴲ["license_key"] ? 38 : 39;
+          break;
+        case 38:
+          ⵂⵀⵅⴳ = 39;
+          {
+            localStorage["setItem"]("appActivation", ⴲⴻⵎⴲ["license_key"]);
+            localStorage["setItem"]("lastVerified", Date["now"]());
+            ⵂⴰⴰⴵ();
+            return "completed";
+          }
+          break;
+      }
+      var ⴲⵛⵈⴳ = 37;
+      while (ⴲⵛⵈⴳ < 38) switch (ⴲⵛⵈⴳ) {
+        case 37:
+          ⴲⵛⵈⴳ = ⴲⴻⵎⴲ["status"] === "subscription_complete" ? 13 : 38;
+          break;
+        case 13:
+          ⴲⵛⵈⴳ = 38;
+          {
+            ⵂⴰⴰⴵ();
+            ⴲⵛⵘⵆ = "permanent";
+            return "subscription_complete";
+          }
+          break;
+      }
+      var ⴲⴻⴾⴳ = 14;
+      while (ⴲⴻⴾⴳ < 35) switch (ⴲⴻⴾⴳ) {
+        case 34:
+          ⴲⴻⴾⴳ = 35;
+          {
+            ⵂⴰⴰⴵ();
+            var ⵒⵕⵁⴳ = 31;
+            while (ⵒⵕⵁⴳ < 39) switch (ⵒⵕⵁⴳ) {
+              case 35:
+                ⵒⵕⵁⴳ = 39;
+                {
+                  await ⵒⵕⴱⵞⴲ(ⵒⵕⵑⴲ);
+                }
+                break;
+              case 26:
+                ⵒⵕⵁⴳ = 39;
+                {
+                  await ⵒⵕⵁⵝⴲ(ⵒⵕⵑⴲ);
+                }
+                break;
+              case 31:
+                ⵒⵕⵁⴳ = ⴲⵛⵘⵆ === "subscription" || ⴲⴻⵎⴲ["purpose"] === "subscription" ? 26 : 35;
+                break;
+            }
+            return "paid";
+          }
+          break;
+        case 14:
+          ⴲⴻⴾⴳ = ⴲⴻⵎⴲ["status"] === "paid" ? 34 : 35;
+          break;
+      }
+      var ⵒⴵⴷⴳ = 17;
+      while (ⵒⴵⴷⴳ < 38) switch (ⵒⴵⴷⴳ) {
+        case 17:
+          ⵒⴵⴷⴳ = ⴲⴻⵎⴲ["status"] === "failed" || ⴲⴻⵎⴲ["status"] === "expired" ? 37 : 38;
+          break;
+        case 37:
+          ⵒⴵⴷⴳ = 38;
+          {
+            ⵂⴰⴰⴵ();
+            return false;
+          }
+          break;
+      }
+      var ⵂⵐⴺⴳ = 15;
+      while (ⵂⵐⴺⴳ < 33) switch (ⵂⵐⴺⴳ) {
+        case 7:
+          ⵂⵐⴺⴳ = 33;
+          {
+            return false;
+          }
+          break;
+        case 15:
+          ⵂⵐⴺⴳ = !ⴲⵋⵃⴲ["enabled"] || !ⴲⵋⵃⴲ["uid"] ? 7 : 33;
+          break;
+      }
+      var ⵂⴰⴰⴳ = 38;
+      while (ⵂⴰⴰⴳ < 39) switch (ⵂⴰⴰⴳ) {
+        case 27:
+          ⵂⴰⴰⴳ = 39;
+          {
+            ⵂⴰⴰⴵ();
+            return false;
+          }
+          break;
+        case 38:
+          ⵂⴰⴰⴳ = !ⴲⴻⵎⴲ["payment_note"] ? 27 : 39;
+          break;
+      }
+      var ⴲⵋⴳⴳ = 15;
+      while (ⴲⵋⴳⴳ < 33) switch (ⴲⵋⴳⴳ) {
+        case 15:
+          ⴲⵋⴳⴳ = Number(ⴲⴻⵎⴲ["expires_in_seconds"] || 0) <= 0 && ⴲⴻⵎⴲ["expires_at"] ? 7 : 33;
+          break;
+        case 7:
+          ⴲⵋⴳⴳ = 33;
+          {
+            ⵂⴰⴰⴵ();
+            return false;
+          }
+          break;
+      }
+      const ⵒⵕⴱⴴ = Number(ⴲⴻⵎⴲ["paid_amount"] || 0);
+      const ⵂⵀⴵⴴ = String(ⴲⴻⵎⴲ["purpose"] || "permanent")["toLowerCase"]();
+      var ⵂⵐⵚⴳ = 16;
+      while (ⵂⵐⵚⴳ < 25) switch (ⵂⵐⵚⴳ) {
+        case 16:
+          ⵂⵐⵚⴳ = ⵂⵀⵅⵇ(ⴲⴻⵎⴲ["amount"], ⵒⵕⴱⴴ) ? 23 : 25;
+          break;
+        case 23:
+          ⵂⵐⵚⴳ = 25;
+          {
+            ⵂⴰⴰⴵ();
+            return false;
+          }
+          break;
+      }
+      var ⴲⴻⵞⴳ = 32;
+      while (ⴲⴻⵞⴳ < 34) switch (ⴲⴻⵞⴳ) {
+        case 32:
+          ⴲⴻⵞⴳ = ⵒⵕⴱⴴ <= 0.01 && ⵂⵀⴵⴴ !== String(ⴲⵛⵘⵆ || "permanent")["toLowerCase"]() ? 22 : 34;
+          break;
+        case 22:
+          ⴲⴻⵞⴳ = 34;
+          {
+            ⵂⴰⴰⴵ();
+            return false;
+          }
+          break;
+      }
+      ⴲⴻⴾⴹ = {
+        ["order_id"]: ⵒⵕⵑⴲ,
+        ["amount"]: Number(ⴲⴻⵎⴲ["amount"]),
+        ["paid_so_far"]: ⵒⵕⴱⴴ,
+        ["remaining"]: Number(ⴲⴻⵎⴲ["remaining"] ?? Math["max"](0, ⴲⴻⵎⴲ["amount"] - ⵒⵕⴱⴴ)),
+        ["uid"]: ⴲⵋⵃⴲ["uid"],
+        ["account_name"]: ⴲⵋⵃⴲ["account_name"],
+        ["order_created_at"]: ⴲⴻⵎⴲ["created_at"] || "",
+        ["payment_note"]: ⴲⴻⵎⴲ["payment_note"],
+        ["expires_at"]: ⴲⴻⵎⴲ["expires_at"] || "",
+        ["expires_in_seconds"]: Number(ⴲⴻⵎⴲ["expires_in_seconds"] || 0),
+        ["created_at_ms"]: Date["now"](),
+        ["purpose"]: ⵂⵀⴵⴴ
+      };
+      ⵂⵐⴺⴵ({
+        ["order_id"]: ⵒⵕⵑⴲ,
+        ["amount"]: ⴲⴻⵎⴲ["amount"],
+        ["paid_so_far"]: ⴲⴻⴾⴹ["paid_so_far"],
+        ["remaining"]: ⴲⴻⴾⴹ["remaining"],
+        ["payment_note"]: ⴲⴻⵎⴲ["payment_note"],
+        ["expires_at"]: ⴲⴻⵎⴲ["expires_at"] || "",
+        ["order_created_at"]: ⴲⴻⵎⴲ["created_at"] || "",
+        ["purpose"]: ⵂⵀⴵⴴ,
+        ["created_at"]: Date["now"]()
+      });
+      return "checkout";
+    } catch (ⴲⵋⵓⴳ) {
+      console["error"]("[BinancePay] Resume error:", ⴲⵋⵓⴳ);
+      return false;
+    }
+  }
+  async function ⵒⴵⵗⴳ() {
+    ⵂⵀⵕⴴ();
+    await ⴲⵛⵈⵃ();
+    ⵂⵀⵕⵆ();
+    try {
+      const ⵒⵅⵌⴳ = localStorage["getItem"](ⵒⵅⵜⴸ);
+      var ⵂⴰⵐⴳ = 18;
+      while (ⵂⴰⵐⴳ < 35) switch (ⵂⴰⵐⴳ) {
+        case 14:
+          ⵂⴰⵐⴳ = 35;
+          {
+            const ⴲⴻⵎⴴ = JSON["parse"](ⵒⵅⵌⴳ);
+            const ⵒⵕⵑⴴ = Date["now"]() - Number(ⴲⴻⵎⴴ["updated_at"] || ⴲⴻⵎⴴ["created_at"] || 0);
+            const ⵒⴵⵇⴴ = String(ⴲⴻⵎⴴ["purpose"] || "")["toLowerCase"]();
+            var ⵂⵐⵊⴴ = 15;
+            while (ⵂⵐⵊⴴ < 33) switch (ⵂⵐⵊⴴ) {
+              case 12:
+                ⵂⵐⵊⴴ = 33;
+                var ⵂⴰⵀⴴ = 17;
+                while (ⵂⴰⵀⴴ < 38) switch (ⵂⴰⵀⴴ) {
+                  case 17:
+                    ⵂⴰⵀⴴ = ⴲⴻⵎⴴ["order_id"] && ⵒⵕⵑⴴ < ⵂⴰⴰⴹ ? 37 : 13;
+                    break;
+                  case 13:
+                    ⵂⴰⵀⴴ = 38;
+                    var ⴲⵋⵃⴴ = 32;
+                    while (ⴲⵋⵃⴴ < 34) switch (ⴲⵋⵃⴴ) {
+                      case 32:
+                        ⴲⵋⵃⴴ = ⵒⵕⵑⴴ >= ⵂⴰⴰⴹ ? 22 : 34;
+                        break;
+                      case 22:
+                        ⴲⵋⵃⴴ = 34;
+                        {
+                          ⵂⴰⴰⴵ();
+                        }
+                        break;
+                    }
+                    break;
+                  case 37:
+                    ⵂⴰⵀⴴ = 38;
+                    {
+                      Swal["fire"]({
+                        ["title"]: "Resuming Payment...",
+                        ["html"]: "<div style=\"color: rgba(255,255,255,0.8);\">Checking your previous Binance payment...</div>",
+                        ["allowOutsideClick"]: false,
+                        ["showConfirmButton"]: false,
+                        ["customClass"]: {
+                          ["container"]: "swal-high-zindex"
+                        },
+                        ["didOpen"]: () => {
+                          Swal["showLoading"]();
+                        }
+                      });
+                      const ⴲⵛⴸⴴ = await ⵒⵅⵜⴲ(ⴲⴻⵎⴴ["order_id"]);
+                      Swal["close"]();
+                      var ⵒⵅⴼⴴ = 37;
+                      while (ⵒⵅⴼⴴ < 38) switch (ⵒⵅⴼⴴ) {
+                        case 13:
+                          ⵒⵅⴼⴴ = 38;
+                          {
+                            return;
+                          }
+                          break;
+                        case 37:
+                          ⵒⵅⴼⴴ = ⴲⵛⴸⴴ === "completed" || ⴲⵛⴸⴴ === "paid" ? 13 : 38;
+                          break;
+                      }
+                      var ⵒⴵⵇ = 25;
+                      while (ⵒⴵⵇ < 26) switch (ⵒⴵⵇ) {
+                        case 16:
+                          ⵒⴵⵇ = 26;
+                          {
+                            ⵂⵐⴺⴱ();
+                            return;
+                          }
+                          break;
+                        case 25:
+                          ⵒⴵⵇ = ⴲⵛⴸⴴ === "checkout" ? 16 : 26;
+                          break;
+                      }
+                    }
+                    break;
+                }
+                break;
+              case 7:
+                ⵂⵐⵊⴴ = 33;
+                {
+                  ⵂⴰⴰⴵ();
+                }
+                break;
+              case 15:
+                ⵂⵐⵊⴴ = ⵂⵀⵅⵇ(ⴲⴻⵎⴴ["amount"], ⴲⴻⵎⴴ["paid_so_far"]) || Number(ⴲⴻⵎⴴ["paid_so_far"] || 0) <= 0.01 && ⵒⴵⵇⴴ && ⵒⴵⵇⴴ !== String(ⴲⵛⵘⵆ || "permanent")["toLowerCase"]() ? 7 : 12;
+                break;
+            }
+          }
+          break;
+        case 18:
+          ⵂⴰⵐⴳ = ⵒⵅⵌⴳ ? 14 : 35;
+          break;
+      }
+    } catch (ⵂⵐⵊ) {}
+    Swal["close"]();
+    Swal["fire"]({
+      ["title"]: "Creating Binance Payment...",
+      ["html"]: "<div style=\"color: rgba(255,255,255,0.8);\">Setting up your payment...</div>",
+      ["allowOutsideClick"]: false,
+      ["showConfirmButton"]: false,
+      ["customClass"]: {
+        ["container"]: "swal-high-zindex"
+      },
+      ["didOpen"]: () => {
+        Swal["showLoading"]();
+      }
+    });
+    try {
+      const [ⵂⴰⵀ, ⴲⵋⵃ] = await Promise["all"]([fetch(ⵒⴵⵗⵅ, {
+        ["method"]: "POST",
+        ["headers"]: {
+          ["Content-Type"]: "application/json"
+        },
+        ["body"]: JSON["stringify"]({
+          ["coupon_code"]: ⵂⴰⴰⵇ,
+          ["purpose"]: ⴲⵛⵘⵆ,
+          ["project_type"]: ⴲⴻⵞⵉ,
+          ["license_key"]: ⴲⵛⵘⵆ === "subscription" ? ⵒⵅⵜⵆ || localStorage["getItem"]("appActivation") || "" : ""
+        })
+      }), fetch(ⵒⵅⵌⵉ)]);
+      const ⴲⵛⴸ = await ⵂⴰⵀ["json"]();
+      const ⵒⵅⴼ = await ⴲⵋⵃ["json"]();
+      var ⵒⵕⴱ = 11;
+      while (ⵒⵕⴱ < 32) switch (ⵒⵕⴱ) {
+        case 11:
+          ⵒⵕⴱ = !ⴲⵛⴸ["success"] ? 20 : 32;
+          break;
+        case 20:
+          ⵒⵕⴱ = 32;
+          {
+            Swal["fire"]({
+              ["icon"]: "error",
+              ["title"]: "Error",
+              ["text"]: ⴲⵛⴸ["message"] || "Failed to create order.",
+              ["customClass"]: {
+                ["container"]: "swal-high-zindex"
+              }
+            });
+            return;
+          }
+          break;
+      }
+      var ⵂⵀⴵ = 37;
+      while (ⵂⵀⴵ < 38) switch (ⵂⵀⴵ) {
+        case 37:
+          ⵂⵀⴵ = !ⵒⵅⴼ["enabled"] ? 13 : 38;
+          break;
+        case 13:
+          ⵂⵀⴵ = 38;
+          {
+            Swal["fire"]({
+              ["icon"]: "error",
+              ["title"]: "Binance Pay Disabled",
+              ["text"]: "Binance Pay is currently disabled. Please try Crypto payment.",
+              ["customClass"]: {
+                ["container"]: "swal-high-zindex"
+              }
+            });
+            return;
+          }
+          break;
+      }
+      var ⴲⵋⴳⴱ = 7;
+      while (ⴲⵋⴳⴱ < 33) switch (ⴲⵋⴳⴱ) {
+        case 12:
+          ⴲⵋⴳⴱ = 33;
+          {
+            Swal["fire"]({
+              ["icon"]: "error",
+              ["title"]: "Not Configured",
+              ["text"]: "Binance Pay is not configured. Please contact support.",
+              ["customClass"]: {
+                ["container"]: "swal-high-zindex"
+              }
+            });
+            return;
+          }
+          break;
+        case 7:
+          ⴲⵋⴳⴱ = !ⵒⵅⴼ["uid"] ? 12 : 33;
+          break;
+      }
+      var ⵒⴵⴷⴱ = 25;
+      while (ⵒⴵⴷⴱ < 26) switch (ⵒⴵⴷⴱ) {
+        case 16:
+          ⵒⴵⴷⴱ = 26;
+          {
+            Swal["fire"]({
+              ["icon"]: "error",
+              ["title"]: "Error",
+              ["text"]: "Server did not return payment note. Please reload app.py on PythonAnywhere.",
+              ["customClass"]: {
+                ["container"]: "swal-high-zindex"
+              }
+            });
+            return;
+          }
+          break;
+        case 25:
+          ⵒⴵⴷⴱ = !ⴲⵛⴸ["payment_note"] ? 16 : 26;
+          break;
+      }
+      ⴲⵋⴳⵇ = Number(ⴲⵛⴸ["amount"]);
+      ⴲⴻⴾⴹ = {
+        ["order_id"]: ⴲⵛⴸ["order_id"],
+        ["amount"]: ⴲⵛⴸ["amount"],
+        ["paid_so_far"]: 0,
+        ["remaining"]: ⴲⵛⴸ["amount"],
+        ["uid"]: ⵒⵅⴼ["uid"],
+        ["account_name"]: ⵒⵅⴼ["account_name"],
+        ["order_created_at"]: ⴲⵛⴸ["created_at"] || "",
+        ["payment_note"]: ⴲⵛⴸ["payment_note"],
+        ["expires_at"]: ⴲⵛⴸ["expires_at"] || "",
+        ["expires_in_seconds"]: Number(ⴲⵛⴸ["expires_in_seconds"] || 7200),
+        ["created_at_ms"]: Date["now"](),
+        ["purpose"]: ⴲⵛⴸ["purpose"] || ⴲⵛⵘⵆ
+      };
+      ⵂⵐⴺⴵ({
+        ["order_id"]: ⴲⵛⴸ["order_id"],
+        ["amount"]: ⴲⵛⴸ["amount"],
+        ["paid_so_far"]: 0,
+        ["remaining"]: ⴲⵛⴸ["amount"],
+        ["payment_note"]: ⴲⵛⴸ["payment_note"],
+        ["expires_at"]: ⴲⵛⴸ["expires_at"] || "",
+        ["order_created_at"]: ⴲⵛⴸ["created_at"] || "",
+        ["purpose"]: ⴲⵛⴸ["purpose"] || ⴲⵛⵘⵆ,
+        ["created_at"]: Date["now"]()
+      });
+      ⵂⵐⴺⴱ();
+    } catch (ⵒⵅⵜ) {
+      console["error"]("[BinancePay] Error:", ⵒⵅⵜ);
+      Swal["fire"]({
+        ["icon"]: "error",
+        ["title"]: "Error",
+        ["text"]: "Connection error. Please check your internet and try again.",
+        ["customClass"]: {
+          ["container"]: "swal-high-zindex"
+        }
+      });
+    }
+  }
+  const ⵂⴰⴰⴱ = "tVFINN8FT6o";
+  function ⵂⵀⵕ() {
+    const ⴲⵛⵘ = ⵂⴰⴰⴱ;
+    const ⴲⴻⵎ = "https://www.youtube.com/watch?v=tVFINN8FT6o";
+    const ⵒⵕⵑ = navigator["userAgent"] || "";
+    const ⵂⴰⵐⴱ = /iPhone|iPad|iPod/i["test"](ⵒⵕⵑ);
+    const ⴲⵋⵓⴱ = /Android/i["test"](ⵒⵕⵑ);
+    var ⴲⵛⵈⴱ = 7;
+    while (ⴲⵛⵈⴱ < 33) switch (ⴲⵛⵈⴱ) {
+      case 12:
+        ⴲⵛⵈⴱ = 33;
+        {
+          window["open"](ⴲⴻⵎ, "_blank", "noopener,noreferrer");
+          return;
+        }
+        break;
+      case 7:
+        ⴲⵛⵈⴱ = !ⵂⴰⵐⴱ && !ⴲⵋⵓⴱ ? 12 : 33;
+        break;
+    }
+    var ⵒⵅⵌⴱ = 11;
+    while (ⵒⵅⵌⴱ < 32) switch (ⵒⵅⵌⴱ) {
+      case 11:
+        ⵒⵅⵌⴱ = ⵂⴰⵐⴱ ? 20 : 32;
+        break;
+      case 20:
+        ⵒⵅⵌⴱ = 32;
+        {
+          const ⵒⵕⵁⴱ = Date["now"]();
+          window["location"]["href"] = "youtube://www.youtube.com/watch?v=tVFINN8FT6o";
+          setTimeout(() => {
+            var ⵂⵀⵅⴱ = 22;
+            while (ⵂⵀⵅⴱ < 34) switch (ⵂⵀⵅⴱ) {
+              case 9:
+                ⵂⵀⵅⴱ = 34;
+                {
+                  window["open"](ⴲⴻⵎ, "_blank", "noopener,noreferrer");
+                }
+                break;
+              case 22:
+                ⵂⵀⵅⴱ = document["visibilityState"] === "visible" && Date["now"]() - ⵒⵕⵁⴱ < 2000 ? 9 : 34;
+                break;
+            }
+          }, 900);
+          return;
+        }
+        break;
+    }
+    window["open"](ⴲⴻⵎ, "_blank", "noopener,noreferrer");
+  }
+  function ⵂⵐⴺⴱ() {
+    var ⴲⴻⴾⴱ = 17;
+    while (ⴲⴻⴾⴱ < 38) switch (ⴲⴻⴾⴱ) {
+      case 37:
+        ⴲⴻⴾⴱ = 38;
+        return;
+      case 17:
+        ⴲⴻⴾⴱ = !ⴲⴻⴾⴹ ? 37 : 38;
+        break;
+    }
+    ⵂⵀⵕⴴ();
+    const ⵒⵅⴼⴲ = Number(ⴲⴻⴾⴹ["amount"] || 0);
+    const ⵂⴰⵀⴲ = Number(ⴲⴻⴾⴹ["paid_so_far"] || 0);
+    const ⵂⵀⴵⴲ = Number(ⴲⴻⴾⴹ["remaining"] ?? Math["max"](0, ⵒⵅⴼⴲ - ⵂⴰⵀⴲ));
+    const ⴲⵛⴸⴲ = ⵂⴰⵀⴲ > 0 && ⵂⵀⴵⴲ > 0;
+    const ⴲⴻⵞⴱ = ⴲⵛⴸⴲ ? ⵂⵀⴵⴲ : ⵒⵅⴼⴲ;
+    const ⵒⵕⴱⴲ = ⴲⴻⴾⴹ["payment_note"] || "";
+    let ⵒⴵⵗⴱ = ⵒⴵⵇⴶ(ⴲⴻⴾⴹ);
+    Swal["fire"]({
+      ["title"]: "",
+      ["html"]: `${"\n        <div id=\"binCheckoutRoot\" style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;\n                    background: #FFFFFF; padding: 0; border-radius: 16px; overflow: hidden; max-height: 75vh; overflow-y: auto;\">\n\n          <div style=\"background: linear-gradient(135deg, #FCD535 0%, #F0B90B 100%); padding: 18px 22px; display: flex; align-items: center; justify-content: space-between; gap: 12px;\">\n            <div style=\"display:flex;align-items:center;gap:12px;\">\n              <svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"#1E2329\"><path d=\"M12 2L7.5 6.5L9.62 8.62L12 6.24L14.38 8.62L16.5 6.5L12 2ZM2 12L6.5 7.5L8.62 9.62L6.24 12L8.62 14.38L6.5 16.5L2 12ZM22 12L17.5 16.5L15.38 14.38L17.76 12L15.38 9.62L17.5 7.5L22 12ZM12 22L16.5 17.5L14.38 15.38L12 17.76L9.62 15.38L7.5 17.5L12 22ZM12 15.38L14.38 12L12 8.62L9.62 12L12 15.38Z\"/></svg>\n              <div>\n                <div style=\"font-size:18px;font-weight:800;color:#1E2329;letter-spacing:0.5px;\">Binance Pay</div>\n                <div style=\"font-size:11px;color:rgba(0,0,0,0.45);font-weight:600;\">Auto detect by Note</div>\n              </div>\n            </div>\n            <div style=\"text-align:right;\">\n              <div style=\"font-size:10px;color:rgba(0,0,0,0.5);font-weight:700;text-transform:uppercase;letter-spacing:0.5px;\">Time Left</div>\n              <div id=\"binCountdown\" style=\"font-size:16px;font-weight:900;color:#1E2329;font-variant-numeric:tabular-nums;\">"}${ⵂⵐⵚⴵ(ⵒⴵⵗⴱ)}${"</div>\n            </div>\n          </div>\n\n          <div style=\"padding: 20px;\">\n\n            <div style=\"background: #FAFAFA; border: 1px solid #EAECEF; border-radius: 14px; padding: 20px; text-align: center; margin-bottom: 16px;\">\n              "}${ⴲⵛⴸⴲ ? `${"<p style=\"color:#03A66D;font-size:12px;font-weight:700;margin:0 0 6px;\">Already paid: $"}${ⵂⴰⵀⴲ["toFixed"](2)}${" USDT</p>"}` : ""}${"\n              <p style=\"color:#707A8A;font-size:11px;text-transform:uppercase;letter-spacing:2px;margin:0 0 8px;\">"}${ⴲⵛⴸⴲ ? "Remaining Amount" : "Total Amount"}${"</p>\n              <p id=\"binDisplayAmount\" style=\"font-size:36px;font-weight:900;color:#C99400;margin:0;line-height:1;\">"}${ⴲⴻⵞⴱ}${" <span style=\"font-size:15px;color:#707A8A;font-weight:600;\">USDT</span></p>\n              <button id=\"binCopyAmount\" style=\"margin-top:10px;background:#FFFFFF;border:1px solid #EAECEF;border-radius:8px;color:#C99400;padding:6px 16px;font-size:12px;cursor:pointer;font-weight:700;display:inline-flex;align-items:center;gap:5px;\">\n                Copy Amount\n              </button>\n            </div>\n\n            <div style=\"background:#FAFAFA;border:1px solid #EAECEF;border-radius:14px;padding:16px;margin-bottom:16px;\">\n              <div style=\"display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;\">\n                <span style=\"color:#707A8A;font-size:12px;font-weight:600;\">Binance Pay ID</span>\n                <div style=\"display:flex;gap:6px;align-items:center;\">\n                  <button id=\"binShowQR\" type=\"button\" style=\"position:relative;background:#FFFFFF;border:1px solid #F0B90B;border-radius:8px;color:#1E2329;padding:5px 9px;font-size:11px;cursor:pointer;font-weight:700;display:inline-flex;align-items:center;gap:4px;overflow:visible;\">\n                    <svg width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\">\n                      <path d=\"M3 3h8v8H3V3zm2 2v4h4V5H5zm8-2h8v8h-8V3zm2 2v4h4V5h-4zM3 13h8v8H3v-8zm2 2v4h4v-4H5zm10 0h2v2h-2v-2zm4 0h2v2h-2v-2zm-4 4h2v2h-2v-2zm4 0h2v4h-4v-2h2v-2z\" fill=\"#F0B90B\"/>\n                    </svg>\n                    <span>QR</span>\n                    <span class=\"bin-qr-cursor\" aria-hidden=\"true\" style=\"display:inline-flex;\">\n                      <svg width=\"11\" height=\"11\" viewBox=\"0 0 24 24\" fill=\"none\">\n                        <path d=\"M5.5 3.2l13.2 7.1c.7.4.4 1.4-.4 1.4h-5.3l-2.4 6.8c-.2.7-1.3.7-1.5 0L5.5 3.2z\" fill=\"#707A8A\"/>\n                      </svg>\n                    </span>\n                  </button>\n                  <button id=\"binCopyUid\" style=\"background:#F0B90B;border:none;border-radius:8px;color:#1E2329;padding:5px 14px;font-size:11px;cursor:pointer;font-weight:800;\">Copy ID</button>\n                </div>\n              </div>\n              <p style=\"color:#1E2329;font-size:22px;font-weight:800;letter-spacing:2px;margin:0;word-break:break-all;\">"}${ⴲⴻⴾⴹ["uid"]}${"</p>\n              "}${ⴲⴻⴾⴹ["account_name"] ? `${"<p style=\"color:#707A8A;font-size:12px;margin:6px 0 0;\"><span style=\"color:#F0B90B;\">●</span> "}${ⴲⴻⴾⴹ["account_name"]}${"</p>"}` : ""}${"\n            </div>\n\n            <div style=\"background:#FFF7E6;border:2px solid #F0B90B;border-radius:14px;padding:16px;margin-bottom:16px;text-align:center;\">\n              <p style=\"color:#C99400;font-size:12px;font-weight:800;margin:0 0 8px;text-transform:uppercase;letter-spacing:1px;\">Payment Note (Required)</p>\n              <p id=\"binPaymentNote\" style=\"color:#1E2329;font-size:28px;font-weight:900;letter-spacing:3px;margin:0 0 10px;font-family:monospace;\">"}${ⵒⵕⴱⴲ}${"</p>\n              <button id=\"binCopyNote\" style=\"background:#1E2329;border:none;border-radius:8px;color:#F0B90B;padding:8px 18px;font-size:12px;cursor:pointer;font-weight:800;\">Copy Note</button>\n              <p style=\"color:#707A8A;font-size:11px;margin:10px 0 0;line-height:1.5;\">\n                Binance Pay → Send → put this note in <strong style=\"color:#C99400;\">Note / Remark</strong>. Payment will auto-complete.\n              </p>\n            </div>\n\n            <div id=\"binQROverlay\" style=\"display:none;position:fixed;inset:0;width:100%;height:100%;background:rgba(0,0,0,0.82);z-index:100000;align-items:center;justify-content:center;backdrop-filter:blur(6px);padding:12px;box-sizing:border-box;\">\n              <div style=\"background:#FFFFFF;border-radius:24px;padding:28px 20px 32px;max-width:min(96vw,560px);width:100%;text-align:center;position:relative;box-shadow:0 24px 80px rgba(0,0,0,0.45);\">\n                <button id=\"binCloseQR\" style=\"position:absolute;top:14px;right:14px;width:40px;height:40px;border-radius:50%;border:none;background:#F5F5F5;cursor:pointer;font-size:18px;font-weight:700;color:#1E2329;line-height:1;\">✕</button>\n                <p style=\"color:#1E2329;font-size:20px;font-weight:800;margin:12px 0 4px;\">Scan to Pay</p>\n                <p style=\"color:#707A8A;font-size:13px;margin:0 0 8px;\">Open Binance app and scan this QR</p>\n                <div style=\"background:#FAFAFA;border-radius:18px;padding:16px;border:1px solid #EAECEF;margin-top:14px;\">\n                  <img src=\"https://i.postimg.cc/139x62ZS/share-2026-07-16-16-37-56-835-jpeg-2026-07-16-16-37-56.jpg\" alt=\"Binance QR Code\" style=\"width:100%;max-width:480px;border-radius:12px;display:block;margin:0 auto;\">\n                </div>\n              </div>\n            </div>\n\n            <button type=\"button\" id=\"binWatchTutorialBtn\" style=\"width:100%;display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:12px;padding:12px 16px;border:none;border-radius:12px;cursor:pointer;background:linear-gradient(135deg,#FF0000 0%,#CC0000 100%);color:#fff;font-weight:800;font-size:14px;box-shadow:0 6px 18px rgba(255,0,0,0.28);\">\n              <svg width=\"22\" height=\"16\" viewBox=\"0 0 24 17\" fill=\"none\" aria-hidden=\"true\">\n                <path d=\"M23.5 2.7a3 3 0 0 0-2.1-2.1C19.5 0 12 0 12 0S4.5 0 2.6.6A3 3 0 0 0 .5 2.7 31.5 31.5 0 0 0 0 8.5a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1C4.5 17 12 17 12 17s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 8.5a31.5 31.5 0 0 0-.5-5.8z\" fill=\"#fff\"/>\n                <path d=\"M9.6 12.1V4.9l6.3 3.6-6.3 3.6z\" fill=\"#FF0000\"/>\n              </svg>\n              Watch Payment Tutorial on YouTube\n            </button>\n\n            <div style=\"background:#FAFAFA;border:1px solid #EAECEF;border-radius:14px;padding:16px;margin-bottom:16px;\">\n              <p style=\"color:#1E2329;font-weight:700;font-size:13px;margin-bottom:12px;\">How to Pay</p>\n              <div style=\"color:#474D57;font-size:12px;line-height:2.1;\">\n                <p style=\"margin:0;\">1. Open <strong>Binance App</strong> → Pay → Send</p>\n                <p style=\"margin:0;\">2. Enter Pay ID: <strong style=\"color:#C99400;\">"}${ⴲⴻⴾⴹ["uid"]}${"</strong></p>\n                <p style=\"margin:0;\">3. Amount: <strong id=\"binHowToAmount\" style=\"color:#C99400;\">"}${ⴲⴻⵞⴱ}${" USDT</strong></p>\n                <p style=\"margin:0;\">4. Note: <strong id=\"binHowToNote\" style=\"color:#03A66D;\">"}${ⵒⵕⴱⴲ}${"</strong> (must match exactly)</p>\n                <p style=\"margin:0;\">5. Confirm & Send — detection is automatic</p>\n              </div>\n            </div>\n\n            <div style=\"background:#F0FFF4;border:1px solid #BBF7D0;border-radius:12px;padding:12px;margin-bottom:12px;text-align:center;\">\n              <p id=\"binVerifyStatus\" style=\"color:#059669;font-size:12px;margin:0;font-weight:600;\">\n                Waiting for payment... Auto-checking every few seconds.\n              </p>\n            </div>\n\n            <p style=\"color:#AEB4BC;font-size:10px;text-align:center;margin:0;\">Secured by Binance Pay · Expires in 2 hours</p>\n          </div>\n        </div>\n      "}`,
+      ["showConfirmButton"]: false,
+      ["showCancelButton"]: true,
+      ["cancelButtonText"]: "Cancel",
+      ["cancelButtonColor"]: "#CF304A",
+      ["allowOutsideClick"]: false,
+      ["customClass"]: {
+        ["container"]: "swal-high-zindex",
+        ["popup"]: "custom-popup-style"
+      },
+      ["didOpen"]: () => {
+        var ⵂⵐⵚⴱ = 12;
+        while (ⵂⵐⵚⴱ < 33) switch (ⵂⵐⵚⴱ) {
+          case 12:
+            ⵂⵐⵚⴱ = !document["getElementById"]("binQrBtnAnimStyle") ? 32 : 33;
+            break;
+          case 32:
+            ⵂⵐⵚⴱ = 33;
+            {
+              const ⵒⴵⵗⴵⴳ = document["createElement"]("style");
+              ⵒⴵⵗⴵⴳ["id"] = "binQrBtnAnimStyle";
+              document["head"]["appendChild"](ⵒⴵⵗⴵⴳ);
+            }
+            break;
+        }
+        document["getElementById"]("binQrBtnAnimStyle")["textContent"] = `${"\n            @keyframes binQrBtnGlow {\n              0%, 100% { box-shadow: 0 0 0 0 rgba(240,185,11,0.25); }\n              50% { box-shadow: 0 0 0 3px rgba(240,185,11,0); }\n            }\n            @keyframes binQrCursorTap {\n              0%, 100% { transform: translate(0,0); opacity: 0.75; }\n              50% { transform: translate(1px, 1px); opacity: 1; }\n            }\n            #binShowQR {\n              animation: binQrBtnGlow 2.4s ease-in-out infinite !important;\n            }\n            #binShowQR .bin-qr-cursor {\n              display: inline-flex !important;\n              animation: binQrCursorTap 1.8s ease-in-out infinite !important;\n            }\n            #binShowQR:hover {\n              background: #FFF7E6 !important;\n            }\n          "}`;
+        document["getElementById"]("binCopyUid")["addEventListener"]("click", () => {
+          navigator["clipboard"]["writeText"](ⴲⴻⴾⴹ["uid"])["catch"](() => {});
+          const ⵂⵐⵚⴵⴳ = document["getElementById"]("binCopyUid");
+          ⵂⵐⵚⴵⴳ["textContent"] = "✓ Copied!";
+          ⵂⵐⵚⴵⴳ["style"]["background"] = "#03A66D";
+          ⵂⵐⵚⴵⴳ["style"]["color"] = "#fff";
+          setTimeout(() => {
+            ⵂⵐⵚⴵⴳ["textContent"] = "Copy ID";
+            ⵂⵐⵚⴵⴳ["style"]["background"] = "#F0B90B";
+            ⵂⵐⵚⴵⴳ["style"]["color"] = "#1E2329";
+          }, 2000);
+        });
+        document["getElementById"]("binCopyAmount")["addEventListener"]("click", () => {
+          navigator["clipboard"]["writeText"](String(ⴲⴻⵞⴱ))["catch"](() => {});
+          const ⵂⴰⵐⴵⴳ = document["getElementById"]("binCopyAmount");
+          ⵂⴰⵐⴵⴳ["textContent"] = "Copied!";
+          ⵂⴰⵐⴵⴳ["style"]["color"] = "#03A66D";
+          setTimeout(() => {
+            ⵂⴰⵐⴵⴳ["textContent"] = "Copy Amount";
+            ⵂⴰⵐⴵⴳ["style"]["color"] = "#C99400";
+          }, 2000);
+        });
+        document["getElementById"]("binCopyNote")["addEventListener"]("click", () => {
+          navigator["clipboard"]["writeText"](ⵒⵕⴱⴲ)["catch"](() => {});
+          const ⴲⵋⵓⴵⴳ = document["getElementById"]("binCopyNote");
+          ⴲⵋⵓⴵⴳ["textContent"] = "✓ Note Copied!";
+          setTimeout(() => {
+            ⴲⵋⵓⴵⴳ["textContent"] = "Copy Note";
+          }, 2000);
+        });
+        document["getElementById"]("binShowQR")["addEventListener"]("click", () => {
+          const ⴲⵛⵈⴵⴳ = document["getElementById"]("binQROverlay");
+          var ⵒⵅⵌⴵⴳ = 13;
+          while (ⵒⵅⵌⴵⴳ < 35) switch (ⵒⵅⵌⴵⴳ) {
+            case 18:
+              ⵒⵅⵌⴵⴳ = 35;
+              return;
+            case 13:
+              ⵒⵅⵌⴵⴳ = !ⴲⵛⵈⴵⴳ ? 18 : 35;
+              break;
+          }
+          document["body"]["appendChild"](ⴲⵛⵈⴵⴳ);
+          ⴲⵛⵈⴵⴳ["style"]["display"] = "flex";
+          const ⵒⵕⵁⴵⴳ = typeof Swal !== "undefined" && Swal["getCancelButton"] ? Swal["getCancelButton"]() : document["querySelector"](".swal2-container .swal2-cancel");
+          const ⵂⵀⵅⴵⴳ = document["querySelector"](".swal2-container .swal2-actions");
+          var ⴲⵋⵃⴶⴳ = 34;
+          while (ⴲⵋⵃⴶⴳ < 35) switch (ⴲⵋⵃⴶⴳ) {
+            case 34:
+              ⴲⵋⵃⴶⴳ = ⵒⵕⵁⴵⴳ ? 11 : 35;
+              break;
+            case 11:
+              ⴲⵋⵃⴶⴳ = 35;
+              ⵒⵕⵁⴵⴳ["style"]["display"] = "none";
+              break;
+          }
+          var ⵒⴵⵇⴶⴳ = 31;
+          while (ⵒⴵⵇⴶⴳ < 39) switch (ⵒⴵⵇⴶⴳ) {
+            case 31:
+              ⵒⴵⵇⴶⴳ = ⵂⵀⵅⴵⴳ ? 26 : 39;
+              break;
+            case 26:
+              ⵒⴵⵇⴶⴳ = 39;
+              ⵂⵀⵅⴵⴳ["style"]["display"] = "none";
+              break;
+          }
+        });
+        document["getElementById"]("binCloseQR")["addEventListener"]("click", () => {
+          const ⵒⵅⴼⴶⴳ = document["getElementById"]("binQROverlay");
+          const ⵂⴰⵀⴶⴳ = document["getElementById"]("binCheckoutRoot");
+          var ⵂⵀⴵⴶⴳ = 24;
+          while (ⵂⵀⴵⴶⴳ < 38) switch (ⵂⵀⴵⴶⴳ) {
+            case 17:
+              ⵂⵀⴵⴶⴳ = 38;
+              {
+                ⵒⵅⴼⴶⴳ["style"]["display"] = "none";
+                var ⴲⵛⴸⴶⴳ = 25;
+                while (ⴲⵛⴸⴶⴳ < 26) switch (ⴲⵛⴸⴶⴳ) {
+                  case 25:
+                    ⴲⵛⴸⴶⴳ = ⵂⴰⵀⴶⴳ ? 16 : 26;
+                    break;
+                  case 16:
+                    ⴲⵛⴸⴶⴳ = 26;
+                    ⵂⴰⵀⴶⴳ["appendChild"](ⵒⵅⴼⴶⴳ);
+                    break;
+                }
+              }
+              break;
+            case 24:
+              ⵂⵀⴵⴶⴳ = ⵒⵅⴼⴶⴳ ? 17 : 38;
+              break;
+          }
+          const ⴲⴻⵞⴵⴳ = typeof Swal !== "undefined" && Swal["getCancelButton"] ? Swal["getCancelButton"]() : document["querySelector"](".swal2-container .swal2-cancel");
+          const ⵒⵕⴱⴶⴳ = document["querySelector"](".swal2-container .swal2-actions");
+          var ⵂⴰⴰⴷⴳ = 15;
+          while (ⵂⴰⴰⴷⴳ < 33) switch (ⵂⴰⴰⴷⴳ) {
+            case 7:
+              ⵂⴰⴰⴷⴳ = 33;
+              ⴲⴻⵞⴵⴳ["style"]["display"] = "";
+              break;
+            case 15:
+              ⵂⴰⴰⴷⴳ = ⴲⴻⵞⴵⴳ ? 7 : 33;
+              break;
+          }
+          var ⴲⵋⴳⴷⴳ = 11;
+          while (ⴲⵋⴳⴷⴳ < 32) switch (ⴲⵋⴳⴷⴳ) {
+            case 20:
+              ⴲⵋⴳⴷⴳ = 32;
+              ⵒⵕⴱⴶⴳ["style"]["display"] = "flex";
+              break;
+            case 11:
+              ⴲⵋⴳⴷⴳ = ⵒⵕⴱⴶⴳ ? 20 : 32;
+              break;
+          }
+        });
+        document["getElementById"]("binQROverlay")["addEventListener"]("click", ⴲⵛⵘⴶⴳ => {
+          var ⵒⵅⵜⴶⴳ = 35;
+          while (ⵒⵅⵜⴶⴳ < 39) switch (ⵒⵅⵜⴶⴳ) {
+            case 38:
+              ⵒⵅⵜⴶⴳ = 39;
+              return;
+            case 35:
+              ⵒⵅⵜⴶⴳ = ⴲⵛⵘⴶⴳ["target"] !== ⴲⵛⵘⴶⴳ["currentTarget"] ? 38 : 39;
+              break;
+          }
+          document["getElementById"]("binCloseQR")?.["click"]?.();
+        });
+        document["getElementById"]("binWatchTutorialBtn")?.["addEventListener"]?.("click", ⵒⵕⵑⴶⴳ => {
+          ⵒⵕⵑⴶⴳ["preventDefault"]();
+          ⵂⵀⵕ();
+        });
+        const ⵂⵀⵕⴶⴳ = document["getElementById"]("binCountdown");
+        ⵒⴵⴷⴹ = setInterval(() => {
+          ⵒⴵⵗⴱ -= 1;
+          var ⵂⵐⵊⴶⴳ = 9;
+          while (ⵂⵐⵊⴶⴳ < 34) switch (ⵂⵐⵊⴶⴳ) {
+            case 33:
+              ⵂⵐⵊⴶⴳ = 34;
+              {
+                ⵒⴵⵗⴱ = 0;
+                var ⴲⴻⵎⴶⴳ = 20;
+                while (ⴲⴻⵎⴶⴳ < 36) switch (ⴲⴻⵎⴶⴳ) {
+                  case 31:
+                    ⴲⴻⵎⴶⴳ = 36;
+                    {
+                      ⵂⵀⵕⴶⴳ["textContent"] = "00:00:00";
+                      ⵂⵀⵕⴶⴳ["style"]["color"] = "#CF304A";
+                    }
+                    break;
+                  case 20:
+                    ⴲⴻⵎⴶⴳ = ⵂⵀⵕⴶⴳ ? 31 : 36;
+                    break;
+                }
+                ⵂⵀⵕⴴ();
+                ⵂⴰⴰⴵ();
+                const ⵒⵅⵌⴷⴳ = document["getElementById"]("binVerifyStatus");
+                var ⵂⴰⵐⴷⴳ = 15;
+                while (ⵂⴰⵐⴷⴳ < 33) switch (ⵂⴰⵐⴷⴳ) {
+                  case 15:
+                    ⵂⴰⵐⴷⴳ = ⵒⵅⵌⴷⴳ ? 7 : 33;
+                    break;
+                  case 7:
+                    ⵂⴰⵐⴷⴳ = 33;
+                    {
+                      ⵒⵅⵌⴷⴳ["style"]["color"] = "#CF304A";
+                      ⵒⵅⵌⴷⴳ["textContent"] = "Time expired (2 hours). Please start a new Binance payment.";
+                    }
+                    break;
+                }
+                return;
+              }
+              break;
+            case 9:
+              ⵂⵐⵊⴶⴳ = ⵒⴵⵗⴱ <= 0 ? 33 : 34;
+              break;
+          }
+          var ⵂⵀⵅⴷⴳ = 20;
+          while (ⵂⵀⵅⴷⴳ < 36) switch (ⵂⵀⵅⴷⴳ) {
+            case 20:
+              ⵂⵀⵅⴷⴳ = ⵂⵀⵕⴶⴳ ? 31 : 36;
+              break;
+            case 31:
+              ⵂⵀⵅⴷⴳ = 36;
+              {
+                ⵂⵀⵕⴶⴳ["textContent"] = ⵂⵐⵚⴵ(ⵒⴵⵗⴱ);
+                var ⴲⵛⵈⴷⴳ = 13;
+                while (ⴲⵛⵈⴷⴳ < 35) switch (ⴲⵛⵈⴷⴳ) {
+                  case 13:
+                    ⴲⵛⵈⴷⴳ = ⵒⴵⵗⴱ < 600 ? 18 : 35;
+                    break;
+                  case 18:
+                    ⴲⵛⵈⴷⴳ = 35;
+                    ⵂⵀⵕⴶⴳ["style"]["color"] = "#CF304A";
+                    break;
+                }
+              }
+              break;
+          }
+        }, 1000);
+        ⴲⵛⵈⴳⴳ();
+      },
+      ["willClose"]: () => {
+        const ⴲⴻⴾⴷⴳ = document["getElementById"]("binQROverlay");
+        var ⵒⵕⵁⴷⴳ = 33;
+        while (ⵒⵕⵁⴷⴳ < 34) switch (ⵒⵕⵁⴷⴳ) {
+          case 33:
+            ⵒⵕⵁⴷⴳ = ⴲⴻⴾⴷⴳ && ⴲⴻⴾⴷⴳ["parentElement"] === document["body"] ? 8 : 34;
+            break;
+          case 8:
+            ⵒⵕⵁⴷⴳ = 34;
+            {
+              ⴲⴻⴾⴷⴳ["remove"]();
+            }
+            break;
+        }
+        ⵂⵀⵕⴴ();
+      }
+    });
+  }
+  async function ⵒⴵⴷⴷⴳ() {
+    var ⵂⵐⴺⴷⴳ = 14;
+    while (ⵂⵐⴺⴷⴳ < 35) switch (ⵂⵐⴺⴷⴳ) {
+      case 14:
+        ⵂⵐⴺⴷⴳ = !ⴲⴻⴾⴹ ? 34 : 35;
+        break;
+      case 34:
+        ⵂⵐⴺⴷⴳ = 35;
+        return null;
+    }
+    const ⵂⵀⵅⴳⴳ = await fetch(ⴲⵋⵓⵅ, {
+      ["method"]: "POST",
+      ["headers"]: {
+        ["Content-Type"]: "application/json"
+      },
+      ["body"]: JSON["stringify"]({
+        ["system_order_id"]: ⴲⴻⴾⴹ["order_id"]
+      })
+    });
+    return await ⵂⵀⵅⴳⴳ["json"]();
+  }
+  function ⴲⵛⵈⴳⴳ() {
+    var ⴲⴻⴾⴳⴳ = 25;
+    while (ⴲⴻⴾⴳⴳ < 26) switch (ⴲⴻⴾⴳⴳ) {
+      case 16:
+        ⴲⴻⴾⴳⴳ = 26;
+        {
+          clearInterval(ⴲⵋⴳⴹ);
+          ⴲⵋⴳⴹ = null;
+        }
+        break;
+      case 25:
+        ⴲⴻⴾⴳⴳ = ⴲⵋⴳⴹ ? 16 : 26;
+        break;
+    }
+    const ⵒⵕⵁⴳⴳ = async () => {
+      var ⵒⴵⴷⴳⴳ = 25;
+      while (ⵒⴵⴷⴳⴳ < 26) switch (ⵒⴵⴷⴳⴳ) {
+        case 16:
+          ⵒⴵⴷⴳⴳ = 26;
+          return;
+        case 25:
+          ⵒⴵⴷⴳⴳ = !ⴲⴻⴾⴹ ? 16 : 26;
+          break;
+      }
+      const ⵂⵐⴺⴳⴳ = document["getElementById"]("binVerifyStatus");
+      try {
+        const ⵂⴰⴰⴳⴳ = await ⵒⴵⴷⴷⴳ();
+        var ⴲⵋⴳⴳⴳ = 33;
+        while (ⴲⵋⴳⴳⴳ < 34) switch (ⴲⵋⴳⴳⴳ) {
+          case 33:
+            ⴲⵋⴳⴳⴳ = !ⵂⴰⴰⴳⴳ ? 8 : 34;
+            break;
+          case 8:
+            ⴲⵋⴳⴳⴳ = 34;
+            return;
+        }
+        var ⵒⵕⴱⴴⴳ = 17;
+        while (ⵒⵕⴱⴴⴳ < 38) switch (ⵒⵕⴱⴴⴳ) {
+          case 17:
+            ⵒⵕⴱⴴⴳ = ⵂⴰⴰⴳⴳ["status"] === "expired" ? 37 : 38;
+            break;
+          case 37:
+            ⵒⵕⴱⴴⴳ = 38;
+            {
+              ⵂⵀⵕⴴ();
+              ⵂⴰⴰⴵ();
+              var ⵂⵀⴵⴴⴳ = 8;
+              while (ⵂⵀⴵⴴⴳ < 26) switch (ⵂⵀⴵⴴⴳ) {
+                case 25:
+                  ⵂⵀⴵⴴⴳ = 26;
+                  {
+                    ⵂⵐⴺⴳⴳ["style"]["color"] = "#CF304A";
+                    ⵂⵐⴺⴳⴳ["textContent"] = ⵂⴰⴰⴳⴳ["message"] || "Payment time expired.";
+                  }
+                  break;
+                case 8:
+                  ⵂⵀⴵⴴⴳ = ⵂⵐⴺⴳⴳ ? 25 : 26;
+                  break;
+              }
+              return;
+            }
+            break;
+        }
+        var ⵂⵐⵚⴳⴳ = 25;
+        while (ⵂⵐⵚⴳⴳ < 26) switch (ⵂⵐⵚⴳⴳ) {
+          case 16:
+            ⵂⵐⵚⴳⴳ = 26;
+            {
+              var ⴲⴻⵞⴳⴳ = 32;
+              while (ⴲⴻⵞⴳⴳ < 34) switch (ⴲⴻⵞⴳⴳ) {
+                case 32:
+                  ⴲⴻⵞⴳⴳ = ⵂⵐⴺⴳⴳ ? 22 : 34;
+                  break;
+                case 22:
+                  ⴲⴻⵞⴳⴳ = 34;
+                  {
+                    const ⴲⵋⵓⴳⴳ = Number(ⴲⴻⴾⴹ["paid_so_far"] || 0);
+                    const ⵒⴵⵗⴳⴳ = Number(ⴲⴻⴾⴹ["remaining"] || 0);
+                    var ⵒⵅⵌⴳⴳ = 16;
+                    while (ⵒⵅⵌⴳⴳ < 25) switch (ⵒⵅⵌⴳⴳ) {
+                      case 16:
+                        ⵒⵅⵌⴳⴳ = ⴲⵋⵓⴳⴳ > 0 && ⵒⴵⵗⴳⴳ > 0 ? 23 : 24;
+                        break;
+                      case 23:
+                        ⵒⵅⵌⴳⴳ = 25;
+                        {
+                          ⵂⵐⴺⴳⴳ["style"]["color"] = "#d97706";
+                          ⵂⵐⴺⴳⴳ["innerHTML"] = "You have paid <strong>$" + ⴲⵋⵓⴳⴳ["toFixed"](2) + "</strong> USDT. " + "Remaining: <strong>$" + ⵒⴵⵗⴳⴳ["toFixed"](2) + "</strong> USDT.<br>" + "Please pay the remaining amount using note <strong>" + (ⴲⴻⴾⴹ["payment_note"] || "") + "</strong>. " + "Still waiting for payment...";
+                        }
+                        break;
+                      case 24:
+                        ⵒⵅⵌⴳⴳ = 25;
+                        {
+                          ⵂⵐⴺⴳⴳ["style"]["color"] = "#059669";
+                          ⵂⵐⴺⴳⴳ["textContent"] = "Waiting for payment with note " + (ⴲⴻⴾⴹ["payment_note"] || "") + "...";
+                        }
+                        break;
+                    }
+                  }
+                  break;
+              }
+              return;
+            }
+            break;
+          case 25:
+            ⵂⵐⵚⴳⴳ = ⵂⴰⴰⴳⴳ["status"] === "pending" ? 16 : 26;
+            break;
+        }
+        var ⵂⴰⵐⴳⴳ = 22;
+        while (ⵂⴰⵐⴳⴳ < 34) switch (ⵂⴰⵐⴳⴳ) {
+          case 9:
+            ⵂⴰⵐⴳⴳ = 34;
+            {
+              const ⴲⴻⵎⴴⴳ = Number(ⵂⴰⴰⴳⴳ["installment"] || 0);
+              ⴲⴻⴾⴹ["paid_so_far"] = Number(ⵂⴰⴰⴳⴳ["paid_total"] || ⵂⴰⴰⴳⴳ["total_paid"] || 0);
+              ⴲⴻⴾⴹ["remaining"] = Number(ⵂⴰⴰⴳⴳ["remaining"] || 0);
+              var ⵒⵕⵑⴴⴳ = 24;
+              while (ⵒⵕⵑⴴⴳ < 38) switch (ⵒⵕⵑⴴⴳ) {
+                case 17:
+                  ⵒⵕⵑⴴⴳ = 38;
+                  {
+                    ⴲⴻⴾⴹ["payment_note"] = ⵂⴰⴰⴳⴳ["payment_note"];
+                  }
+                  break;
+                case 24:
+                  ⵒⵕⵑⴴⴳ = ⵂⴰⴰⴳⴳ["payment_note"] ? 17 : 38;
+                  break;
+              }
+              ⵂⵐⴺⴵ({
+                ["order_id"]: ⴲⴻⴾⴹ["order_id"],
+                ["amount"]: ⵂⴰⴰⴳⴳ["required"] || ⴲⴻⴾⴹ["amount"],
+                ["paid_so_far"]: ⴲⴻⴾⴹ["paid_so_far"],
+                ["remaining"]: ⴲⴻⴾⴹ["remaining"],
+                ["payment_note"]: ⴲⴻⴾⴹ["payment_note"],
+                ["expires_at"]: ⴲⴻⴾⴹ["expires_at"],
+                ["order_created_at"]: ⴲⴻⴾⴹ["order_created_at"]
+              });
+              const ⵒⴵⵇⴴⴳ = document["getElementById"]("binDisplayAmount");
+              var ⵂⵐⵊⴴⴳ = 22;
+              while (ⵂⵐⵊⴴⴳ < 34) switch (ⵂⵐⵊⴴⴳ) {
+                case 9:
+                  ⵂⵐⵊⴴⴳ = 34;
+                  {
+                    ⵒⴵⵇⴴⴳ["innerHTML"] = ⴲⴻⴾⴹ["remaining"]["toFixed"](2) + " <span style=\"font-size:15px;color:#707A8A;font-weight:600;\">USDT</span>";
+                  }
+                  break;
+                case 22:
+                  ⵂⵐⵊⴴⴳ = ⵒⴵⵇⴴⴳ ? 9 : 34;
+                  break;
+              }
+              const ⵂⴰⵀⴴⴳ = document["getElementById"]("binPaymentNote");
+              var ⴲⵋⵃⴴⴳ = 18;
+              while (ⴲⵋⵃⴴⴳ < 35) switch (ⴲⵋⵃⴴⴳ) {
+                case 14:
+                  ⴲⵋⵃⴴⴳ = 35;
+                  {
+                    ⵂⴰⵀⴴⴳ["textContent"] = ⴲⴻⴾⴹ["payment_note"];
+                  }
+                  break;
+                case 18:
+                  ⴲⵋⵃⴴⴳ = ⵂⴰⵀⴴⴳ && ⴲⴻⴾⴹ["payment_note"] ? 14 : 35;
+                  break;
+              }
+              const ⴲⵛⴸⴴⴳ = document["getElementById"]("binHowToNote");
+              var ⵒⵅⴼⴴⴳ = 22;
+              while (ⵒⵅⴼⴴⴳ < 34) switch (ⵒⵅⴼⴴⴳ) {
+                case 9:
+                  ⵒⵅⴼⴴⴳ = 34;
+                  {
+                    ⴲⵛⴸⴴⴳ["textContent"] = ⴲⴻⴾⴹ["payment_note"];
+                  }
+                  break;
+                case 22:
+                  ⵒⵅⴼⴴⴳ = ⴲⵛⴸⴴⴳ && ⴲⴻⴾⴹ["payment_note"] ? 9 : 34;
+                  break;
+              }
+              const ⵂⵐⴺⴵⴳ = document["getElementById"]("binHowToAmount");
+              var ⴲⴻⴾⴵⴳ = 7;
+              while (ⴲⴻⴾⴵⴳ < 33) switch (ⴲⴻⴾⴵⴳ) {
+                case 12:
+                  ⴲⴻⴾⴵⴳ = 33;
+                  {
+                    ⵂⵐⴺⴵⴳ["textContent"] = ⴲⴻⴾⴹ["remaining"]["toFixed"](2) + " USDT";
+                  }
+                  break;
+                case 7:
+                  ⴲⴻⴾⴵⴳ = ⵂⵐⴺⴵⴳ ? 12 : 33;
+                  break;
+              }
+              var ⴲⵋⴳⴵⴳ = 11;
+              while (ⴲⵋⴳⴵⴳ < 32) switch (ⴲⵋⴳⴵⴳ) {
+                case 20:
+                  ⴲⵋⴳⴵⴳ = 32;
+                  {
+                    ⵂⵐⴺⴳⴳ["style"]["color"] = "#d97706";
+                    ⵂⵐⴺⴳⴳ["innerHTML"] = "You paid <strong>$" + (ⴲⴻⵎⴴⴳ || ⴲⴻⴾⴹ["paid_so_far"])["toFixed"](2) + "</strong> USDT. " + "Total received: <strong>$" + ⴲⴻⴾⴹ["paid_so_far"]["toFixed"](2) + "</strong> USDT. " + "Remaining: <strong>$" + ⴲⴻⴾⴹ["remaining"]["toFixed"](2) + "</strong> USDT.<br>" + "Please pay the remaining amount using the <strong>NEW note: " + (ⴲⴻⴾⴹ["payment_note"] || "") + "</strong>";
+                  }
+                  break;
+                case 11:
+                  ⴲⵋⴳⴵⴳ = ⵂⵐⴺⴳⴳ ? 20 : 32;
+                  break;
+              }
+              return;
+            }
+            break;
+          case 22:
+            ⵂⴰⵐⴳⴳ = ⵂⴰⴰⴳⴳ["status"] === "partial" ? 9 : 34;
+            break;
+        }
+        var ⵒⴵⴷⴵⴳ = 13;
+        while (ⵒⴵⴷⴵⴳ < 35) switch (ⵒⴵⴷⴵⴳ) {
+          case 13:
+            ⵒⴵⴷⴵⴳ = ⵂⴰⴰⴳⴳ["status"] === "subscription_complete" ? 18 : 35;
+            break;
+          case 18:
+            ⵒⴵⴷⴵⴳ = 35;
+            {
+              ⵂⵀⵕⴴ();
+              var ⵒⵅⵜⴴⴳ = 35;
+              while (ⵒⵅⵜⴴⴳ < 39) switch (ⵒⵅⵜⴴⴳ) {
+                case 35:
+                  ⵒⵅⵜⴴⴳ = ⵂⵐⴺⴳⴳ ? 38 : 39;
+                  break;
+                case 38:
+                  ⵒⵅⵜⴴⴳ = 39;
+                  {
+                    ⵂⵐⴺⴳⴳ["style"]["color"] = "#059669";
+                    ⵂⵐⴺⴳⴳ["textContent"] = "Subscription activated!";
+                  }
+                  break;
+              }
+              ⵂⴰⴰⴵ();
+              ⴲⵛⵘⵆ = "permanent";
+              await new Promise(ⵂⴰⴰⴵⴳ => setTimeout(ⵂⴰⴰⴵⴳ, 600));
+              Swal["close"]();
+              await Swal["fire"]({
+                ["icon"]: "success",
+                ["title"]: "Subscription Active!",
+                ["text"]: ⵂⴰⴰⴳⴳ["message"] || "Your monthly subscription is active for 30 days.",
+                ["confirmButtonColor"]: "#8b5cf6",
+                ["customClass"]: {
+                  ["container"]: "swal-high-zindex"
+                }
+              });
+              location["reload"]();
+              return;
+            }
+            break;
+        }
+        var ⵂⵀⵕⴴⴳ = 33;
+        while (ⵂⵀⵕⴴⴳ < 34) switch (ⵂⵀⵕⴴⴳ) {
+          case 8:
+            ⵂⵀⵕⴴⴳ = 34;
+            {
+              ⵂⵀⵕⴴ();
+              var ⴲⵛⵘⴴⴳ = 38;
+              while (ⴲⵛⵘⴴⴳ < 39) switch (ⴲⵛⵘⴴⴳ) {
+                case 27:
+                  ⴲⵛⵘⴴⴳ = 39;
+                  {
+                    ⵂⵐⴺⴳⴳ["style"]["color"] = "#059669";
+                    ⵂⵐⴺⴳⴳ["textContent"] = "Payment verified! Activating...";
+                  }
+                  break;
+                case 38:
+                  ⴲⵛⵘⴴⴳ = ⵂⵐⴺⴳⴳ ? 27 : 39;
+                  break;
+              }
+              const ⴲⵋⴳⴱⴳ = ⴲⴻⴾⴹ["order_id"];
+              ⵂⴰⴰⴵ();
+              await new Promise(ⵒⴵⴷⴱⴳ => setTimeout(ⵒⴵⴷⴱⴳ, 800));
+              Swal["close"]();
+              var ⵒⵅⵜⴰⴳ = 15;
+              while (ⵒⵅⵜⴰⴳ < 33) switch (ⵒⵅⵜⴰⴳ) {
+                case 7:
+                  ⵒⵅⵜⴰⴳ = 33;
+                  {
+                    await ⵒⵕⵁⵝⴲ(ⴲⵋⴳⴱⴳ);
+                  }
+                  break;
+                case 15:
+                  ⵒⵅⵜⴰⴳ = ⴲⵛⵘⵆ === "subscription" ? 7 : 12;
+                  break;
+                case 12:
+                  ⵒⵅⵜⴰⴳ = 33;
+                  {
+                    await ⵒⵕⴱⵞⴲ(ⴲⵋⴳⴱⴳ);
+                  }
+                  break;
+              }
+              return;
+            }
+            break;
+          case 33:
+            ⵂⵀⵕⴴⴳ = ⵂⴰⴰⴳⴳ["status"] === "complete" || ⵂⴰⴰⴳⴳ["status"] === "completed" ? 8 : 34;
+            break;
+        }
+        var ⵂⴰⴰⴱⴳ = 9;
+        while (ⵂⴰⴰⴱⴳ < 34) switch (ⵂⴰⴰⴱⴳ) {
+          case 33:
+            ⵂⴰⴰⴱⴳ = 34;
+            {
+              var ⵂⵀⵕⴰⴳ = 26;
+              while (ⵂⵀⵕⴰⴳ < 39) switch (ⵂⵀⵕⴰⴳ) {
+                case 35:
+                  ⵂⵀⵕⴰⴳ = 39;
+                  {
+                    ⵂⵐⴺⴳⴳ["style"]["color"] = "#d97706";
+                    ⵂⵐⴺⴳⴳ["textContent"] = ⵂⴰⴰⴳⴳ["message"];
+                  }
+                  break;
+                case 26:
+                  ⵂⵀⵕⴰⴳ = ⵂⵐⴺⴳⴳ ? 35 : 39;
+                  break;
+              }
+            }
+            break;
+          case 9:
+            ⵂⴰⴰⴱⴳ = !ⵂⴰⴰⴳⴳ["success"] && ⵂⴰⴰⴳⴳ["message"] ? 33 : 34;
+            break;
+        }
+      } catch (ⴲⵛⵘⴰⴳ) {
+        console["error"]("[BinancePay] Auto-check error:", ⴲⵛⵘⴰⴳ);
+        var ⴲⴻⵎⴰⴳ = 34;
+        while (ⴲⴻⵎⴰⴳ < 35) switch (ⴲⴻⵎⴰⴳ) {
+          case 11:
+            ⴲⴻⵎⴰⴳ = 35;
+            {
+              ⵂⵐⴺⴳⴳ["style"]["color"] = "#d97706";
+              ⵂⵐⴺⴳⴳ["textContent"] = "Checking... (connection issue, retrying)";
+            }
+            break;
+          case 34:
+            ⴲⴻⵎⴰⴳ = ⵂⵐⴺⴳⴳ ? 11 : 35;
+            break;
+        }
+      }
+    };
+    ⵒⵕⵁⴳⴳ();
+    ⴲⵋⴳⴹ = setInterval(ⵒⵕⵁⴳⴳ, 15000);
+  }
+  async function ⵒⵕⵑⴰⴳ() {
+    const ⵂⴰⵐⴱⴳ = localStorage["getItem"]("pendingOrderId");
+    var ⴲⵋⵓⴱⴳ = 24;
+    while (ⴲⵋⵓⴱⴳ < 38) switch (ⴲⵋⵓⴱⴳ) {
+      case 17:
+        ⴲⵋⵓⴱⴳ = 38;
+        return null;
+      case 24:
+        ⴲⵋⵓⴱⴳ = !ⵂⴰⵐⴱⴳ ? 17 : 38;
+        break;
+    }
+    try {
+      const ⴲⵛⵈⴱⴳ = await fetch(ⵂⵐⵚⵉ, {
+        ["method"]: "POST",
+        ["headers"]: {
+          ["Content-Type"]: "application/json"
+        },
+        ["body"]: JSON["stringify"]({
+          ["order_id"]: ⵂⴰⵐⴱⴳ
+        })
+      });
+      const ⵒⵅⵌⴱⴳ = await ⴲⵛⵈⴱⴳ["json"]();
+      var ⵒⵕⵁⴱⴳ = 26;
+      while (ⵒⵕⵁⴱⴳ < 39) switch (ⵒⵕⵁⴱⴳ) {
+        case 26:
+          ⵒⵕⵁⴱⴳ = ⵒⵅⵌⴱⴳ["success"] ? 35 : 39;
+          break;
+        case 35:
+          ⵒⵕⵁⴱⴳ = 39;
+          {
+            var ⵂⵀⵅⴱⴳ = 24;
+            while (ⵂⵀⵅⴱⴳ < 38) switch (ⵂⵀⵅⴱⴳ) {
+              case 37:
+                ⵂⵀⵅⴱⴳ = 38;
+                var ⵂⵐⴺⴱⴳ = 34;
+                while (ⵂⵐⴺⴱⴳ < 35) switch (ⵂⵐⴺⴱⴳ) {
+                  case 11:
+                    ⵂⵐⴺⴱⴳ = 35;
+                    {
+                      return {
+                        ["needsDetails"]: true,
+                        ["order_id"]: ⵂⴰⵐⴱⴳ
+                      };
+                    }
+                    break;
+                  case 34:
+                    ⵂⵐⴺⴱⴳ = ⵒⵅⵌⴱⴳ["status"] === "paid" ? 11 : 20;
+                    break;
+                  case 20:
+                    ⵂⵐⴺⴱⴳ = 35;
+                    var ⴲⴻⴾⴱⴳ = 16;
+                    while (ⴲⴻⴾⴱⴳ < 25) switch (ⴲⴻⴾⴱⴳ) {
+                      case 23:
+                        ⴲⴻⴾⴱⴳ = 25;
+                        {
+                          localStorage["removeItem"]("pendingOrderId");
+                        }
+                        break;
+                      case 16:
+                        ⴲⴻⴾⴱⴳ = ⵒⵅⵌⴱⴳ["status"] === "failed" ? 23 : 25;
+                        break;
+                    }
+                    break;
+                }
+                break;
+              case 24:
+                ⵂⵀⵅⴱⴳ = ⵒⵅⵌⴱⴳ["status"] === "completed" && ⵒⵅⵌⴱⴳ["license_key"] ? 17 : 37;
+                break;
+              case 17:
+                ⵂⵀⵅⴱⴳ = 38;
+                {
+                  localStorage["setItem"]("appActivation", ⵒⵅⵌⴱⴳ["license_key"]);
+                  localStorage["setItem"]("lastVerified", Date["now"]());
+                  localStorage["removeItem"]("pendingOrderId");
+                  return {
+                    ["recovered"]: true,
+                    ["license_key"]: ⵒⵅⵌⴱⴳ["license_key"]
+                  };
+                }
+                break;
+            }
+          }
+          break;
+      }
+    } catch (ⵒⵅⴼⴲⴳ) {}
+    return null;
+  }
+  async function ⵂⴰⵀⴲⴳ() {
+    const ⵂⵀⴵⴲⴳ = {
+      ["price"]: ⴲⵋⴳⵇ,
+      ["coupon"]: ⵂⴰⴰⵇ
+    };
+    const ⴲⵛⴸⴲⴳ = Math["round"](Number(ⵂⵀⴵⴲⴳ["price"]) * Number(ⵒⵕⴱⵆ || 120));
+    Swal["fire"]({
+      ["title"]: "Creating BDT Payment...",
+      ["html"]: "<div style=\"color: rgba(255,255,255,0.8);\">Preparing ৳" + ⴲⵛⴸⴲⴳ["toLocaleString"]("en-US") + " Taka checkout...</div>",
+      ["allowOutsideClick"]: false,
+      ["showConfirmButton"]: false,
+      ["customClass"]: {
+        ["container"]: "swal-high-zindex"
+      },
+      ["didOpen"]: () => {
+        Swal["showLoading"]();
+      }
+    });
+    try {
+      const ⴲⴻⵞⴱⴳ = await fetch(ⵒⵅⵌⵅ, {
+        ["method"]: "POST",
+        ["headers"]: {
+          ["Content-Type"]: "application/json"
+        },
+        ["body"]: JSON["stringify"]({
+          ["coupon_code"]: ⵂⵀⴵⴲⴳ["coupon"],
+          ["purpose"]: ⴲⵛⵘⵆ,
+          ["project_type"]: ⴲⴻⵞⵉ,
+          ["license_key"]: ⴲⵛⵘⵆ === "subscription" ? ⵒⵅⵜⵆ || localStorage["getItem"]("appActivation") || localStorage["getItem"]("quotexLowAppActivation") || "" : "",
+          ["name"]: "Quotex Customer"
+        })
+      });
+      let ⵒⵕⴱⴲⴳ = {};
+      try {
+        ⵒⵕⴱⴲⴳ = await ⴲⴻⵞⴱⴳ["json"]();
+      } catch (ⵒⴵⵗⴱⴳ) {
+        ⵒⵕⴱⴲⴳ = {};
+      }
+      var ⵂⵐⵚⴱⴳ = 18;
+      while (ⵂⵐⵚⴱⴳ < 35) switch (ⵂⵐⵚⴱⴳ) {
+        case 14:
+          ⵂⵐⵚⴱⴳ = 35;
+          {
+            const ⴲⵛⵘⴲⴳ = ⵒⵕⴱⴲⴳ["message"] || (ⴲⴻⵞⴱⴳ["status"] === 404 ? "BDT payment API not found on server. Upload/restart updated app.py on uix.zozo.city" : "Failed to create BDT payment (HTTP " + ⴲⴻⵞⴱⴳ["status"] + ")");
+            Swal["fire"]({
+              ["icon"]: "error",
+              ["title"]: "Error",
+              ["text"]: ⴲⵛⵘⴲⴳ,
+              ["customClass"]: {
+                ["container"]: "swal-high-zindex"
+              }
+            });
+            return;
+          }
+          break;
+        case 18:
+          ⵂⵐⵚⴱⴳ = !ⴲⴻⵞⴱⴳ["ok"] || !ⵒⵕⴱⴲⴳ["success"] ? 14 : 35;
+          break;
+      }
+      const ⵒⵅⵜⴲⴳ = ⵒⵕⴱⴲⴳ["order_id"];
+      const ⵒⵕⵑⴲⴳ = ⵒⵕⴱⴲⴳ["payment_url"] || ⵒⵕⴱⴲⴳ["pay_link"];
+      const ⵂⵀⵕⴲⴳ = ⵒⵕⴱⴲⴳ["amount_bdt"] || ⴲⵛⴸⴲⴳ;
+      var ⵂⵐⵊⴲⴳ = 12;
+      while (ⵂⵐⵊⴲⴳ < 33) switch (ⵂⵐⵊⴲⴳ) {
+        case 12:
+          ⵂⵐⵊⴲⴳ = ⵒⵕⴱⴲⴳ["usd_rate"] ? 32 : 33;
+          break;
+        case 32:
+          ⵂⵐⵊⴲⴳ = 33;
+          ⵒⵕⴱⵆ = Number(ⵒⵕⴱⴲⴳ["usd_rate"]);
+          break;
+      }
+      localStorage["setItem"]("pendingOrderId", ⵒⵅⵜⴲⴳ);
+      localStorage["setItem"]("pendingBdtOrder", JSON["stringify"]({
+        ["order_id"]: ⵒⵅⵜⴲⴳ,
+        ["amount_bdt"]: ⵂⵀⵕⴲⴳ,
+        ["amount_usd"]: ⵒⵕⴱⴲⴳ["amount_usd"] || ⵂⵀⴵⴲⴳ["price"],
+        ["created_at"]: Date["now"]()
+      }));
+      window["open"](ⵒⵕⵑⴲⴳ, "_blank");
+      await ⴲⵋⵃⴲⴳ(ⵒⵅⵜⴲⴳ, ⵂⵀⵕⴲⴳ);
+    } catch (ⴲⴻⵎⴲⴳ) {
+      Swal["fire"]({
+        ["icon"]: "error",
+        ["title"]: "Error",
+        ["text"]: "BDT payment request failed. Make sure updated app.py is running on the server, then retry.",
+        ["customClass"]: {
+          ["container"]: "swal-high-zindex"
+        }
+      });
+    }
+  }
+  async function ⴲⵋⵃⴲⴳ(ⵒⴵⵇⴲⴳ, ⵒⵕⵑⵞⴲ) {
+    return new Promise(ⵂⵀⵕⵞⴲ => {
+      let ⵂⵐⵊⵞⴲ = 0;
+      const ⴲⴻⵎⵞⴲ = 360;
+      const ⴲⵋⵃⵞⴲ = "৳" + Number(ⵒⵕⵑⵞⴲ || 0)["toLocaleString"]("en-US");
+      Swal["fire"]({
+        ["title"]: "",
+        ["html"]: `${"\n          <div style=\"font-family: 'Roboto', sans-serif; text-align: center;\n                      background: linear-gradient(135deg, rgba(6, 78, 59, 0.98), rgba(16, 185, 129, 0.95));\n                      padding: 20px; border-radius: 15px;\">\n            <div style=\"margin-bottom: 20px;\">\n              <div style=\"width: 60px; height: 60px; border: 4px solid rgba(255,255,255,0.25);\n                          border-top: 4px solid #fff; border-radius: 50%; margin: 0 auto;\n                          animation: paymentSpin 1s linear infinite;\"></div>\n            </div>\n            <h2 style=\"color: #fff; font-size: 16px; margin-bottom: 8px;\">Waiting for BDT Payment...</h2>\n            <p style=\"color: rgba(255,255,255,0.85); font-size: 22px; font-weight: 800; margin: 0 0 8px;\">"}${ⴲⵋⵃⵞⴲ}${"</p>\n            <p style=\"color: rgba(255,255,255,0.75); font-size: 13px; line-height: 1.6;\">\n              Complete payment in the opened tab.<br>\n              Auto-checking in background — subscription activates automatically.\n            </p>\n            <div style=\"background: rgba(255,255,255,0.12); padding: 12px; border-radius: 8px; margin-top: 15px;\">\n              <p style=\"color: #fff; font-size: 12px; margin: 0;\">Order: "}${ⵒⴵⵇⴲⴳ}${"</p>\n            </div>\n          </div>\n        "}`,
+        ["showConfirmButton"]: false,
+        ["showCancelButton"]: true,
+        ["cancelButtonText"]: "Cancel",
+        ["cancelButtonColor"]: "#ef4444",
+        ["allowOutsideClick"]: false,
+        ["customClass"]: {
+          ["container"]: "swal-high-zindex",
+          ["popup"]: "custom-popup-style"
+        },
+        ["didOpen"]: () => {
+          const ⵒⴵⵇⵞⴲ = document["createElement"]("style");
+          ⵒⴵⵇⵞⴲ["textContent"] = "@keyframes paymentSpin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }";
+          document["head"]["appendChild"](ⵒⴵⵇⵞⴲ);
+          const ⵒⵅⴼⵞⴲ = setInterval(async () => {
+            ⵂⵐⵊⵞⴲ++;
+            var ⵂⴰⵀⵞⴲ = 7;
+            while (ⵂⴰⵀⵞⴲ < 33) switch (ⵂⴰⵀⵞⴲ) {
+              case 12:
+                ⵂⴰⵀⵞⴲ = 33;
+                {
+                  clearInterval(ⵒⵅⴼⵞⴲ);
+                  Swal["close"]();
+                  ⵂⵀⵕⵞⴲ();
+                  return;
+                }
+                break;
+              case 7:
+                ⵂⴰⵀⵞⴲ = ⵂⵐⵊⵞⴲ >= ⴲⴻⵎⵞⴲ ? 12 : 33;
+                break;
+            }
+            try {
+              let ⴲⴻⴾⵟⴲ = await fetch(ⵒⵕⵁⵅ, {
+                ["method"]: "POST",
+                ["headers"]: {
+                  ["Content-Type"]: "application/json"
+                },
+                ["body"]: JSON["stringify"]({
+                  ["order_id"]: ⵒⴵⵇⴲⴳ
+                })
+              });
+              let ⵒⵕⵁⵟⴲ = await ⴲⴻⴾⵟⴲ["json"]();
+              var ⵒⴵⴷⵟⴲ = 13;
+              while (ⵒⴵⴷⵟⴲ < 35) switch (ⵒⴵⴷⵟⴲ) {
+                case 13:
+                  ⵒⴵⴷⵟⴲ = !ⵒⵕⵁⵟⴲ["success"] ? 18 : 35;
+                  break;
+                case 18:
+                  ⵒⴵⴷⵟⴲ = 35;
+                  {
+                    ⴲⴻⴾⵟⴲ = await fetch(ⵂⵐⵚⵉ, {
+                      ["method"]: "POST",
+                      ["headers"]: {
+                        ["Content-Type"]: "application/json"
+                      },
+                      ["body"]: JSON["stringify"]({
+                        ["order_id"]: ⵒⴵⵇⴲⴳ
+                      })
+                    });
+                    ⵒⵕⵁⵟⴲ = await ⴲⴻⴾⵟⴲ["json"]();
+                  }
+                  break;
+              }
+              var ⵂⵐⴺⵟⴲ = 8;
+              while (ⵂⵐⴺⵟⴲ < 26) switch (ⵂⵐⴺⵟⴲ) {
+                case 25:
+                  ⵂⵐⴺⵟⴲ = 26;
+                  {
+                    var ⵂⴰⴰⵟⴲ = 35;
+                    while (ⵂⴰⴰⵟⴲ < 39) switch (ⵂⴰⴰⵟⴲ) {
+                      case 38:
+                        ⵂⴰⴰⵟⴲ = 39;
+                        {
+                          clearInterval(ⵒⵅⴼⵞⴲ);
+                          Swal["close"]();
+                          localStorage["removeItem"]("pendingBdtOrder");
+                          var ⴲⵋⴳⵟⴲ = 12;
+                          while (ⴲⵋⴳⵟⴲ < 33) switch (ⴲⵋⴳⵟⴲ) {
+                            case 12:
+                              ⴲⵋⴳⵟⴲ = ⴲⵛⵘⵆ === "subscription" ? 32 : 22;
+                              break;
+                            case 22:
+                              ⴲⵋⴳⵟⴲ = 33;
+                              {
+                                await ⵒⵕⴱⵞⴲ(ⵒⴵⵇⴲⴳ);
+                              }
+                              break;
+                            case 32:
+                              ⴲⵋⴳⵟⴲ = 33;
+                              {
+                                await ⵒⵕⵁⵝⴲ(ⵒⴵⵇⴲⴳ);
+                              }
+                              break;
+                          }
+                          ⵂⵀⵕⵞⴲ();
+                        }
+                        break;
+                      case 27:
+                        ⵂⴰⴰⵟⴲ = 39;
+                        var ⴲⵛⵘⵞⴲ = 25;
+                        while (ⴲⵛⵘⵞⴲ < 26) switch (ⴲⵛⵘⵞⴲ) {
+                          case 16:
+                            ⴲⵛⵘⵞⴲ = 26;
+                            {
+                              clearInterval(ⵒⵅⴼⵞⴲ);
+                              var ⵒⵅⵜⵞⴲ = 11;
+                              while (ⵒⵅⵜⵞⴲ < 32) switch (ⵒⵅⵜⵞⴲ) {
+                                case 20:
+                                  ⵒⵅⵜⵞⴲ = 32;
+                                  {
+                                    localStorage["setItem"]("appActivation", ⵒⵕⵁⵟⴲ["license_key"]);
+                                    try {
+                                      localStorage["setItem"]("quotexLowAppActivation", ⵒⵕⵁⵟⴲ["license_key"]);
+                                    } catch (ⵂⵐⵚⵟⴲ) {}
+                                    localStorage["setItem"]("lastVerified", Date["now"]());
+                                  }
+                                  break;
+                                case 11:
+                                  ⵒⵅⵜⵞⴲ = ⵒⵕⵁⵟⴲ["license_key"] ? 20 : 32;
+                                  break;
+                              }
+                              localStorage["removeItem"]("pendingOrderId");
+                              localStorage["removeItem"]("pendingBdtOrder");
+                              ⴲⵋⵃⵆ = true;
+                              ⴲⵛⵘⵆ = "permanent";
+                              Swal["close"]();
+                              var ⴲⴻⵞⵟⴲ = 23;
+                              while (ⴲⴻⵞⵟⴲ < 38) switch (ⴲⴻⵞⵟⴲ) {
+                                case 24:
+                                  ⴲⴻⵞⵟⴲ = 38;
+                                  {
+                                    await Swal["fire"]({
+                                      ["icon"]: "success",
+                                      ["title"]: "Subscription Active!",
+                                      ["text"]: ⵒⵕⵁⵟⴲ["message"] || "Your monthly subscription is active for 30 days.",
+                                      ["confirmButtonColor"]: "#065F46",
+                                      ["customClass"]: {
+                                        ["container"]: "swal-high-zindex"
+                                      }
+                                    });
+                                  }
+                                  break;
+                                case 17:
+                                  ⴲⴻⵞⵟⴲ = 38;
+                                  {
+                                    await ⵒⵅⵜⴺ();
+                                  }
+                                  break;
+                                case 23:
+                                  ⴲⴻⵞⵟⴲ = ⵒⵕⵁⵟⴲ["status"] === "subscription_complete" || ⵒⵕⵁⵟⴲ["purpose"] === "subscription" ? 24 : 17;
+                                  break;
+                              }
+                              location["reload"]();
+                              ⵂⵀⵕⵞⴲ();
+                            }
+                            break;
+                          case 25:
+                            ⴲⵛⵘⵞⴲ = ⵒⵕⵁⵟⴲ["status"] === "completed" || ⵒⵕⵁⵟⴲ["status"] === "subscription_complete" ? 16 : 23;
+                            break;
+                          case 23:
+                            ⴲⵛⵘⵞⴲ = 26;
+                            var ⴲⵋⵓⵟⴲ = 8;
+                            while (ⴲⵋⵓⵟⴲ < 26) switch (ⴲⵋⵓⵟⴲ) {
+                              case 25:
+                                ⴲⵋⵓⵟⴲ = 26;
+                                {
+                                  clearInterval(ⵒⵅⴼⵞⴲ);
+                                  localStorage["removeItem"]("pendingOrderId");
+                                  localStorage["removeItem"]("pendingBdtOrder");
+                                  Swal["fire"]({
+                                    ["icon"]: "error",
+                                    ["title"]: "Payment Failed",
+                                    ["text"]: "Your BDT payment has failed or expired. Please try again.",
+                                    ["customClass"]: {
+                                      ["container"]: "swal-high-zindex"
+                                    }
+                                  });
+                                  ⵂⵀⵕⵞⴲ();
+                                }
+                                break;
+                              case 8:
+                                ⴲⵋⵓⵟⴲ = ⵒⵕⵁⵟⴲ["status"] === "failed" ? 25 : 26;
+                                break;
+                            }
+                            break;
+                        }
+                        break;
+                      case 35:
+                        ⵂⴰⴰⵟⴲ = ⵒⵕⵁⵟⴲ["status"] === "paid" ? 38 : 27;
+                        break;
+                    }
+                  }
+                  break;
+                case 8:
+                  ⵂⵐⴺⵟⴲ = ⵒⵕⵁⵟⴲ["success"] ? 25 : 26;
+                  break;
+              }
+            } catch (ⵒⴵⵗⵟⴲ) {}
+          }, 4000);
+          Swal["getPopup"]()["__pollInterval"] = ⵒⵅⴼⵞⴲ;
+        },
+        ["willClose"]: () => {
+          const ⵒⵅⵌⵟⴲ = Swal["getPopup"]()?.["__pollInterval"];
+          var ⵂⴰⵐⵟⴲ = 24;
+          while (ⵂⴰⵐⵟⴲ < 38) switch (ⵂⴰⵐⵟⴲ) {
+            case 17:
+              ⵂⴰⵐⵟⴲ = 38;
+              clearInterval(ⵒⵅⵌⵟⴲ);
+              break;
+            case 24:
+              ⵂⴰⵐⵟⴲ = ⵒⵅⵌⵟⴲ ? 17 : 38;
+              break;
+          }
+        }
+      });
+    });
+  }
+  async function ⵂⵀⵅⵟⴲ() {
+    const ⴲⵛⵈⵟⴲ = {
+      ["price"]: ⴲⵋⴳⵇ,
+      ["coupon"]: ⵂⴰⴰⵇ
+    };
+    Swal["fire"]({
+      ["title"]: "Creating Payment...",
+      ["html"]: "<div style=\"color: rgba(255,255,255,0.8);\">Setting up your payment...</div>",
+      ["allowOutsideClick"]: false,
+      ["showConfirmButton"]: false,
+      ["customClass"]: {
+        ["container"]: "swal-high-zindex"
+      },
+      ["didOpen"]: () => {
+        Swal["showLoading"]();
+      }
+    });
+    try {
+      const ⵒⴵⵇⴰⴳ = await fetch(ⵒⴵⵗⵉ, {
+        ["method"]: "POST",
+        ["headers"]: {
+          ["Content-Type"]: "application/json"
+        },
+        ["body"]: JSON["stringify"]({
+          ["coupon_code"]: ⴲⵛⵈⵟⴲ["coupon"],
+          ["purpose"]: ⴲⵛⵘⵆ,
+          ["project_type"]: ⴲⴻⵞⵉ,
+          ["license_key"]: ⴲⵛⵘⵆ === "subscription" ? ⵒⵅⵜⵆ || localStorage["getItem"]("appActivation") || "" : ""
+        })
+      });
+      const ⵂⵐⵊⴰⴳ = await ⵒⴵⵇⴰⴳ["json"]();
+      var ⵂⴰⵀⴰⴳ = 37;
+      while (ⵂⴰⵀⴰⴳ < 38) switch (ⵂⴰⵀⴰⴳ) {
+        case 37:
+          ⵂⴰⵀⴰⴳ = !ⵂⵐⵊⴰⴳ["success"] ? 13 : 38;
+          break;
+        case 13:
+          ⵂⴰⵀⴰⴳ = 38;
+          {
+            Swal["fire"]({
+              ["icon"]: "error",
+              ["title"]: "Error",
+              ["text"]: ⵂⵐⵊⴰⴳ["message"] || "Failed to create payment",
+              ["customClass"]: {
+                ["container"]: "swal-high-zindex"
+              }
+            });
+            return;
+          }
+          break;
+      }
+      const ⴲⵋⵃⴰⴳ = ⵂⵐⵊⴰⴳ["order_id"];
+      const ⴲⵛⴸⴰⴳ = ⵂⵐⵊⴰⴳ["payment_url"];
+      localStorage["setItem"]("pendingOrderId", ⴲⵋⵃⴰⴳ);
+      window["open"](ⴲⵛⴸⴰⴳ, "_blank");
+      await ⵒⵕⴱⴰⴳ(ⴲⵋⵃⴰⴳ);
+    } catch (ⵒⵅⴼⴰⴳ) {
+      Swal["fire"]({
+        ["icon"]: "error",
+        ["title"]: "Error",
+        ["text"]: "Failed to create payment. Check your connection.",
+        ["customClass"]: {
+          ["container"]: "swal-high-zindex"
+        }
+      });
+    }
+  }
+  async function ⵒⵕⴱⴰⴳ(ⵂⵀⴵⴰⴳ) {
+    return new Promise(ⵂⴰⵀⵜⴲ => {
+      let ⴲⵋⵃⵜⴲ = 0;
+      const ⴲⵛⴸⵜⴲ = 360;
+      Swal["fire"]({
+        ["title"]: "",
+        ["html"]: `${"\n          <div style=\"font-family: 'Roboto', sans-serif; text-align: center;\n                      background: linear-gradient(135deg, rgba(30, 11, 54, 0.98), rgba(45, 20, 70, 0.98));\n                      padding: 20px; border-radius: 15px;\">\n            <div style=\"margin-bottom: 20px;\">\n              <div style=\"width: 60px; height: 60px; border: 4px solid rgba(16, 185, 129, 0.3);\n                          border-top: 4px solid #10b981; border-radius: 50%; margin: 0 auto;\n                          animation: paymentSpin 1s linear infinite;\"></div>\n            </div>\n            <h2 style=\"color: #fff; font-size: 16px; margin-bottom: 10px;\">Waiting for Payment...</h2>\n            <p style=\"color: rgba(255,255,255,0.7); font-size: 13px; line-height: 1.6;\">\n              Complete your payment in the opened tab.<br>\n              This will automatically update once confirmed.\n            </p>\n            <div style=\"background: rgba(16, 185, 129, 0.1); padding: 12px; border-radius: 8px; margin-top: 15px;\">\n              <p style=\"color: #10b981; font-size: 12px; margin: 0;\">Order: "}${ⵂⵀⴵⴰⴳ}${"</p>\n            </div>\n          </div>\n        "}`,
+        ["showConfirmButton"]: false,
+        ["showCancelButton"]: true,
+        ["cancelButtonText"]: "Cancel",
+        ["cancelButtonColor"]: "#ef4444",
+        ["allowOutsideClick"]: false,
+        ["customClass"]: {
+          ["container"]: "swal-high-zindex",
+          ["popup"]: "custom-popup-style"
+        },
+        ["didOpen"]: () => {
+          const ⵒⵅⴼⵜⴲ = document["createElement"]("style");
+          ⵒⵅⴼⵜⴲ["textContent"] = "@keyframes paymentSpin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }";
+          document["head"]["appendChild"](ⵒⵅⴼⵜⴲ);
+          const ⵒⵕⴱⵜⴲ = setInterval(async () => {
+            ⴲⵋⵃⵜⴲ++;
+            var ⵂⵀⴵⵜⴲ = 31;
+            while (ⵂⵀⴵⵜⴲ < 39) switch (ⵂⵀⴵⵜⴲ) {
+              case 26:
+                ⵂⵀⴵⵜⴲ = 39;
+                {
+                  clearInterval(ⵒⵕⴱⵜⴲ);
+                  Swal["close"]();
+                  ⵂⴰⵀⵜⴲ();
+                  return;
+                }
+                break;
+              case 31:
+                ⵂⵀⴵⵜⴲ = ⴲⵋⵃⵜⴲ >= ⴲⵛⴸⵜⴲ ? 26 : 39;
+                break;
+            }
+            try {
+              const ⵂⵐⵚⵛⴲ = await fetch(ⵂⵐⵚⵉ, {
+                ["method"]: "POST",
+                ["headers"]: {
+                  ["Content-Type"]: "application/json"
+                },
+                ["body"]: JSON["stringify"]({
+                  ["order_id"]: ⵂⵀⴵⴰⴳ
+                })
+              });
+              const ⴲⴻⵞⵛⴲ = await ⵂⵐⵚⵛⴲ["json"]();
+              var ⵒⵅⵜⵜⴲ = 35;
+              while (ⵒⵅⵜⵜⴲ < 39) switch (ⵒⵅⵜⵜⴲ) {
+                case 38:
+                  ⵒⵅⵜⵜⴲ = 39;
+                  {
+                    var ⵂⴰⴰⵝⴲ = 15;
+                    while (ⵂⴰⴰⵝⴲ < 33) switch (ⵂⴰⴰⵝⴲ) {
+                      case 15:
+                        ⵂⴰⴰⵝⴲ = ⴲⴻⵞⵛⴲ["status"] === "paid" ? 7 : 12;
+                        break;
+                      case 7:
+                        ⵂⴰⴰⵝⴲ = 33;
+                        {
+                          clearInterval(ⵒⵕⴱⵜⴲ);
+                          Swal["close"]();
+                          var ⵂⵀⵕⵜⴲ = 22;
+                          while (ⵂⵀⵕⵜⴲ < 34) switch (ⵂⵀⵕⵜⴲ) {
+                            case 33:
+                              ⵂⵀⵕⵜⴲ = 34;
+                              {
+                                await ⵒⵕⴱⵞⴲ(ⵂⵀⴵⴰⴳ);
+                              }
+                              break;
+                            case 9:
+                              ⵂⵀⵕⵜⴲ = 34;
+                              {
+                                await ⵒⵕⵁⵝⴲ(ⵂⵀⴵⴰⴳ);
+                              }
+                              break;
+                            case 22:
+                              ⵂⵀⵕⵜⴲ = ⴲⵛⵘⵆ === "subscription" ? 9 : 33;
+                              break;
+                          }
+                          ⵂⴰⵀⵜⴲ();
+                        }
+                        break;
+                      case 12:
+                        ⵂⴰⴰⵝⴲ = 33;
+                        var ⴲⵛⵘⵜⴲ = 38;
+                        while (ⴲⵛⵘⵜⴲ < 39) switch (ⴲⵛⵘⵜⴲ) {
+                          case 21:
+                            ⴲⵛⵘⵜⴲ = 39;
+                            var ⴲⴻⵎⵜⴲ = 35;
+                            while (ⴲⴻⵎⵜⴲ < 39) switch (ⴲⴻⵎⵜⴲ) {
+                              case 35:
+                                ⴲⴻⵎⵜⴲ = ⴲⴻⵞⵛⴲ["status"] === "failed" ? 38 : 39;
+                                break;
+                              case 38:
+                                ⴲⴻⵎⵜⴲ = 39;
+                                {
+                                  clearInterval(ⵒⵕⴱⵜⴲ);
+                                  localStorage["removeItem"]("pendingOrderId");
+                                  Swal["fire"]({
+                                    ["icon"]: "error",
+                                    ["title"]: "Payment Failed",
+                                    ["text"]: "Your payment has failed or expired. Please try again.",
+                                    ["customClass"]: {
+                                      ["container"]: "swal-high-zindex"
+                                    }
+                                  });
+                                  ⵂⴰⵀⵜⴲ();
+                                }
+                                break;
+                            }
+                            break;
+                          case 38:
+                            ⴲⵛⵘⵜⴲ = ⴲⴻⵞⵛⴲ["status"] === "completed" || ⴲⴻⵞⵛⴲ["status"] === "subscription_complete" ? 27 : 21;
+                            break;
+                          case 27:
+                            ⴲⵛⵘⵜⴲ = 39;
+                            {
+                              clearInterval(ⵒⵕⴱⵜⴲ);
+                              var ⵒⵕⵑⵜⴲ = 32;
+                              while (ⵒⵕⵑⵜⴲ < 34) switch (ⵒⵕⵑⵜⴲ) {
+                                case 22:
+                                  ⵒⵕⵑⵜⴲ = 34;
+                                  {
+                                    localStorage["setItem"]("appActivation", ⴲⴻⵞⵛⴲ["license_key"]);
+                                    localStorage["setItem"]("lastVerified", Date["now"]());
+                                  }
+                                  break;
+                                case 32:
+                                  ⵒⵕⵑⵜⴲ = ⴲⴻⵞⵛⴲ["license_key"] ? 22 : 34;
+                                  break;
+                              }
+                              localStorage["removeItem"]("pendingOrderId");
+                              ⴲⵋⵃⵆ = true;
+                              ⴲⵛⵘⵆ = "permanent";
+                              Swal["close"]();
+                              var ⵒⴵⵇⵜⴲ = 38;
+                              while (ⵒⴵⵇⵜⴲ < 39) switch (ⵒⴵⵇⵜⴲ) {
+                                case 38:
+                                  ⵒⴵⵇⵜⴲ = ⴲⴻⵞⵛⴲ["status"] === "subscription_complete" || ⴲⴻⵞⵛⴲ["purpose"] === "subscription" ? 27 : 21;
+                                  break;
+                                case 27:
+                                  ⵒⴵⵇⵜⴲ = 39;
+                                  {
+                                    await Swal["fire"]({
+                                      ["icon"]: "success",
+                                      ["title"]: "Subscription Active!",
+                                      ["text"]: ⴲⴻⵞⵛⴲ["message"] || "Your monthly subscription is active for 30 days.",
+                                      ["confirmButtonColor"]: "#8b5cf6",
+                                      ["customClass"]: {
+                                        ["container"]: "swal-high-zindex"
+                                      }
+                                    });
+                                  }
+                                  break;
+                                case 21:
+                                  ⵒⴵⵇⵜⴲ = 39;
+                                  {
+                                    await ⵒⵅⵜⴺ();
+                                  }
+                                  break;
+                              }
+                              location["reload"]();
+                              ⵂⴰⵀⵜⴲ();
+                            }
+                            break;
+                        }
+                        break;
+                    }
+                  }
+                  break;
+                case 35:
+                  ⵒⵅⵜⵜⴲ = ⴲⴻⵞⵛⴲ["success"] ? 38 : 39;
+                  break;
+              }
+            } catch (ⵂⵐⵊⵜⴲ) {}
+          }, 5000);
+          Swal["getPopup"]()["__pollInterval"] = ⵒⵕⴱⵜⴲ;
+        },
+        ["willClose"]: () => {
+          const ⴲⵛⵈⵝⴲ = Swal["getPopup"]()?.["__pollInterval"];
+          var ⵒⵅⵌⵝⴲ = 33;
+          while (ⵒⵅⵌⵝⴲ < 34) switch (ⵒⵅⵌⵝⴲ) {
+            case 33:
+              ⵒⵅⵌⵝⴲ = ⴲⵛⵈⵝⴲ ? 8 : 34;
+              break;
+            case 8:
+              ⵒⵅⵌⵝⴲ = 34;
+              clearInterval(ⴲⵛⵈⵝⴲ);
+              break;
+          }
+        }
+      });
+    });
+  }
+  async function ⵒⵕⵁⵝⴲ(ⵂⵀⵅⵝⴲ) {
+    Swal["fire"]({
+      ["title"]: "Activating subscription...",
+      ["html"]: "<div style=\"color: rgba(255,255,255,0.8);\">Confirming your monthly payment...</div>",
+      ["allowOutsideClick"]: false,
+      ["showConfirmButton"]: false,
+      ["customClass"]: {
+        ["container"]: "swal-high-zindex"
+      },
+      ["didOpen"]: () => {
+        Swal["showLoading"]();
+      }
+    });
+    try {
+      const ⵂⵐⴺⵝⴲ = await fetch(ⵂⴰⵐⵉ, {
+        ["method"]: "POST",
+        ["headers"]: {
+          ["Content-Type"]: "application/json"
+        },
+        ["body"]: JSON["stringify"]({
+          ["order_id"]: ⵂⵀⵅⵝⴲ,
+          ["email"]: "subscription@local",
+          ["whatsapp"]: "",
+          ["telegram"]: ""
+        })
+      });
+      const ⴲⴻⴾⵝⴲ = await ⵂⵐⴺⵝⴲ["json"]();
+      var ⴲⵋⴳⵝⴲ = 20;
+      while (ⴲⵋⴳⵝⴲ < 36) switch (ⴲⵋⴳⵝⴲ) {
+        case 20:
+          ⴲⵋⴳⵝⴲ = ⴲⴻⴾⵝⴲ["success"] ? 31 : 26;
+          break;
+        case 31:
+          ⴲⵋⴳⵝⴲ = 36;
+          {
+            const ⵒⴵⴷⵝⴲ = !!(ⴲⴻⴾⵝⴲ["license_still_blocked"] || String(ⴲⴻⴾⵝⴲ["license_status"] || "")["toLowerCase"]() === "blocked");
+            var ⵂⵀⴵⵞⴲ = 34;
+            while (ⵂⵀⴵⵞⴲ < 35) switch (ⵂⵀⴵⵞⴲ) {
+              case 34:
+                ⵂⵀⴵⵞⴲ = ⴲⴻⴾⵝⴲ["license_key"] ? 11 : 35;
+                break;
+              case 11:
+                ⵂⵀⴵⵞⴲ = 35;
+                {
+                  localStorage["setItem"]("appActivation", ⴲⴻⴾⵝⴲ["license_key"]);
+                }
+                break;
+            }
+            localStorage["removeItem"]("pendingOrderId");
+            ⵂⴰⴰⴵ();
+            ⴲⵛⵘⵆ = "permanent";
+            ⵒⴵⵇⵄ();
+            var ⴲⵛⴸⵞⴲ = 32;
+            while (ⴲⵛⴸⵞⴲ < 34) switch (ⴲⵛⴸⵞⴲ) {
+              case 32:
+                ⴲⵛⴸⵞⴲ = ⵒⴵⴷⵝⴲ ? 22 : 34;
+                break;
+              case 22:
+                ⴲⵛⴸⵞⴲ = 34;
+                {
+                  ⴲⵋⵃⵆ = false;
+                  ⴲⵋⵓⵃ(false);
+                  localStorage["removeItem"]("lastVerified");
+                  await Swal["fire"]({
+                    ["icon"]: "warning",
+                    ["title"]: "Payment Received — License Blocked",
+                    ["html"]: "Your payment was recorded, but this license is <strong>BLOCKED</strong> by admin.<br>It will <strong>not work</strong> until the admin Activates it manually.",
+                    ["confirmButtonColor"]: "#e74c3c",
+                    ["customClass"]: {
+                      ["container"]: "swal-high-zindex"
+                    }
+                  });
+                  location["reload"]();
+                  return;
+                }
+                break;
+            }
+            localStorage["setItem"]("lastVerified", Date["now"]());
+            ⴲⵋⵃⵆ = true;
+            ⴲⵋⵓⵃ(false);
+            await Swal["fire"]({
+              ["icon"]: "success",
+              ["title"]: "Subscription Active!",
+              ["text"]: ⴲⴻⴾⵝⴲ["message"] || "Your monthly subscription is active for 30 days.",
+              ["confirmButtonColor"]: "#8b5cf6",
+              ["customClass"]: {
+                ["container"]: "swal-high-zindex"
+              }
+            });
+            location["reload"]();
+          }
+          break;
+        case 26:
+          ⴲⵋⴳⵝⴲ = 36;
+          {
+            Swal["fire"]({
+              ["icon"]: "error",
+              ["title"]: "Error",
+              ["text"]: ⴲⴻⴾⵝⴲ["message"] || "Failed to activate subscription",
+              ["customClass"]: {
+                ["container"]: "swal-high-zindex"
+              }
+            });
+          }
+          break;
+      }
+    } catch (ⴲⴻⵞⵝⴲ) {
+      Swal["fire"]({
+        ["icon"]: "error",
+        ["title"]: "Connection Error",
+        ["text"]: "Failed to complete subscription. Please try again.",
+        ["customClass"]: {
+          ["container"]: "swal-high-zindex"
+        }
+      });
+    }
+  }
+  async function ⵒⵕⴱⵞⴲ(ⵒⴵⵗⵝⴲ) {
+    const {
+      ["value"]: ⵂⵐⵚⵝⴲ,
+      ["isDismissed"]: ⵂⴰⵐⵝⴲ
+    } = await Swal["fire"]({
+      ["title"]: "",
+      ["html"]: `${"\n        <div style=\"font-family: 'Roboto', sans-serif; text-align: center;\n                    background: linear-gradient(135deg, rgba(30, 11, 54, 0.98), rgba(45, 20, 70, 0.98));\n                    padding: 20px; border-radius: 15px; box-shadow: 0 15px 40px rgba(0,0,0,0.5);\">\n          <div style=\"background: linear-gradient(135deg, #10b981 0%, #059669 100%);\n                      padding: 2px; border-radius: 12px; margin-bottom: 15px;\">\n            <div style=\"background: rgba(30, 11, 54, 0.95); padding: 15px; border-radius: 10px;\">\n              <div style=\"font-size: 40px; margin-bottom: 8px;\">&#10004;</div>\n              <h2 style=\"color: #fff; margin: 0; font-size: 16px; font-weight: 700;\n                         background: linear-gradient(to right, #10b981, #059669);\n                         -webkit-background-clip: text; -webkit-text-fill-color: transparent;\">\n                Payment Successful!\n              </h2>\n            </div>\n          </div>\n\n          <p style=\"color: rgba(255,255,255,0.8); font-size: 13px; margin-bottom: 15px;\">\n            Please provide your details to receive your license key.\n          </p>\n\n          <div style=\"text-align: left;\">\n            <label style=\"color: rgba(255,255,255,0.9); font-size: 12px; font-weight: 600; display: block; margin-bottom: 4px;\">\n              Email Address <span style=\"color: #ef4444;\">*</span>\n            </label>\n            <input type=\"email\" id=\"swalUserEmail\" placeholder=\"your@email.com\"\n                   style=\"width: 100%; padding: 10px; border: 2px solid rgba(255,255,255,0.2);\n                          border-radius: 8px; background: rgba(255,255,255,0.1); color: white;\n                          font-size: 13px; outline: none; margin-bottom: 12px; box-sizing: border-box;\">\n\n            <label style=\"color: rgba(255,255,255,0.9); font-size: 12px; font-weight: 600; display: block; margin-bottom: 4px;\">\n              WhatsApp Number <span style=\"color: rgba(255,255,255,0.5); font-size: 10px;\">(Optional)</span>\n            </label>\n            <input type=\"text\" id=\"swalUserWhatsApp\" placeholder=\"+880XXXXXXXXXX\"\n                   style=\"width: 100%; padding: 10px; border: 2px solid rgba(255,255,255,0.2);\n                          border-radius: 8px; background: rgba(255,255,255,0.1); color: white;\n                          font-size: 13px; outline: none; margin-bottom: 12px; box-sizing: border-box;\">\n\n            <label style=\"color: rgba(255,255,255,0.9); font-size: 12px; font-weight: 600; display: block; margin-bottom: 4px;\">\n              Telegram Username <span style=\"color: rgba(255,255,255,0.5); font-size: 10px;\">(Optional)</span>\n            </label>\n            <input type=\"text\" id=\"swalUserTelegram\" placeholder=\"@username\"\n                   style=\"width: 100%; padding: 10px; border: 2px solid rgba(255,255,255,0.2);\n                          border-radius: 8px; background: rgba(255,255,255,0.1); color: white;\n                          font-size: 13px; outline: none; box-sizing: border-box;\">\n          </div>\n        </div>\n      "}`,
+      ["showConfirmButton"]: true,
+      ["confirmButtonText"]: "Submit & Get License",
+      ["confirmButtonColor"]: "#10b981",
+      ["allowOutsideClick"]: false,
+      ["customClass"]: {
+        ["container"]: "swal-high-zindex",
+        ["popup"]: "custom-popup-style"
+      },
+      ["preConfirm"]: () => {
+        const ⴲⵋⵓⵝⴲ = document["getElementById"]("swalUserEmail")["value"]["trim"]();
+        var ⴲⴻⵞⵙⴲ = 14;
+        while (ⴲⴻⵞⵙⴲ < 35) switch (ⴲⴻⵞⵙⴲ) {
+          case 14:
+            ⴲⴻⵞⵙⴲ = !ⴲⵋⵓⵝⴲ || !ⴲⵋⵓⵝⴲ["includes"]("@") ? 34 : 35;
+            break;
+          case 34:
+            ⴲⴻⵞⵙⴲ = 35;
+            {
+              Swal["showValidationMessage"]("Please enter a valid email address");
+              return false;
+            }
+            break;
+        }
+        return {
+          ["email"]: ⴲⵋⵓⵝⴲ,
+          ["whatsapp"]: document["getElementById"]("swalUserWhatsApp")["value"]["trim"](),
+          ["telegram"]: document["getElementById"]("swalUserTelegram")["value"]["trim"]()
+        };
+      }
+    });
+    var ⵒⵕⴱⵚⴲ = 16;
+    while (ⵒⵕⴱⵚⴲ < 25) switch (ⵒⵕⴱⵚⴲ) {
+      case 16:
+        ⵒⵕⴱⵚⴲ = ⵂⴰⵐⵝⴲ || !ⵂⵐⵚⵝⴲ ? 23 : 25;
+        break;
+      case 23:
+        ⵒⵕⴱⵚⴲ = 25;
+        return;
+    }
+    Swal["fire"]({
+      ["title"]: "Setting up your license...",
+      ["html"]: "<div style=\"color: rgba(255,255,255,0.8);\">Creating license and sending email...</div>",
+      ["allowOutsideClick"]: false,
+      ["showConfirmButton"]: false,
+      ["customClass"]: {
+        ["container"]: "swal-high-zindex"
+      },
+      ["didOpen"]: () => {
+        Swal["showLoading"]();
+      }
+    });
+    try {
+      const ⵒⴵⵗⵙⴲ = await fetch(ⵂⴰⵐⵉ, {
+        ["method"]: "POST",
+        ["headers"]: {
+          ["Content-Type"]: "application/json"
+        },
+        ["body"]: JSON["stringify"]({
+          ["order_id"]: ⵒⴵⵗⵝⴲ,
+          ["email"]: ⵂⵐⵚⵝⴲ["email"],
+          ["whatsapp"]: ⵂⵐⵚⵝⴲ["whatsapp"],
+          ["telegram"]: ⵂⵐⵚⵝⴲ["telegram"]
+        })
+      });
+      const ⵂⵐⵚⵙⴲ = await ⵒⴵⵗⵙⴲ["json"]();
+      var ⵂⴰⵐⵙⴲ = 33;
+      while (ⵂⴰⵐⵙⴲ < 34) switch (ⵂⴰⵐⵙⴲ) {
+        case 33:
+          ⵂⴰⵐⵙⴲ = ⵂⵐⵚⵙⴲ["success"] && ⵂⵐⵚⵙⴲ["license_key"] ? 8 : 25;
+          break;
+        case 25:
+          ⵂⴰⵐⵙⴲ = 34;
+          {
+            Swal["fire"]({
+              ["icon"]: "error",
+              ["title"]: "Error",
+              ["text"]: ⵂⵐⵚⵙⴲ["message"] || "Failed to create license",
+              ["customClass"]: {
+                ["container"]: "swal-high-zindex"
+              }
+            });
+          }
+          break;
+        case 8:
+          ⵂⴰⵐⵙⴲ = 34;
+          {
+            localStorage["setItem"]("appActivation", ⵂⵐⵚⵙⴲ["license_key"]);
+            localStorage["setItem"]("lastVerified", Date["now"]());
+            localStorage["removeItem"]("pendingOrderId");
+            ⴲⵋⵃⵆ = true;
+            const ⴲⵋⵓⵙⴲ = document["getElementById"]("licenseInput");
+            var ⴲⵛⵈⵙⴲ = 25;
+            while (ⴲⵛⵈⵙⴲ < 26) switch (ⴲⵛⵈⵙⴲ) {
+              case 25:
+                ⴲⵛⵈⵙⴲ = ⴲⵋⵓⵙⴲ ? 16 : 26;
+                break;
+              case 16:
+                ⴲⵛⵈⵙⴲ = 26;
+                ⴲⵋⵓⵙⴲ["value"] = ⵂⵐⵚⵙⴲ["license_key"];
+                break;
+            }
+            await Swal["fire"]({
+              ["icon"]: "success",
+              ["title"]: "License Activated!",
+              ["html"]: "<div style=\"text-align: center;\"><p style=\"margin-bottom: 10px;\">Your license key has been set automatically.</p><div style=\"background: #1a1a2e; padding: 15px; border-radius: 10px; margin: 10px 0;            border: 1px solid #10b981; word-break: break-all;\"><code style=\"color: #10b981; font-size: 14px;\">" + ⵂⵐⵚⵙⴲ["license_key"] + "</code></div>" + "<p style=\"font-size: 12px; color: #94a3b8;\">A copy has been sent to: " + ⵂⵐⵚⵝⴲ["email"] + "</p></div>",
+              ["confirmButtonText"]: "Start Using",
+              ["confirmButtonColor"]: "#10b981",
+              ["allowOutsideClick"]: false,
+              ["customClass"]: {
+                ["container"]: "swal-high-zindex"
+              }
+            });
+            location["reload"]();
+          }
+          break;
+      }
+    } catch (ⵒⵅⵌⵙⴲ) {
+      Swal["fire"]({
+        ["icon"]: "error",
+        ["title"]: "Connection Error",
+        ["text"]: "Failed to complete order. Please try again.",
+        ["customClass"]: {
+          ["container"]: "swal-high-zindex"
+        }
+      });
+    }
+  }
+  function ⵂⵐⵊⵚⴲ(ⴲⴻⵎⵚⴲ) {
+    const ⴲⵋⵃⵚⴲ = {
+      ["A"]: "Nebula",
+      ["B"]: "Quartz",
+      ["C"]: "Tornado",
+      ["D"]: "Eclipse",
+      ["E"]: "Blizzard",
+      ["F"]: "Mirage",
+      ["G"]: "Vortex",
+      ["H"]: "Zephyr",
+      ["I"]: "Nimbus",
+      ["J"]: "Cyclone",
+      ["K"]: "Phantom",
+      ["L"]: "Ignite",
+      ["M"]: "Jungle",
+      ["N"]: "Lynx",
+      ["O"]: "Falcon",
+      ["P"]: "Comet",
+      ["Q"]: "Raven",
+      ["R"]: "Stellar",
+      ["S"]: "Glacier",
+      ["T"]: "Orbit",
+      ["U"]: "Tempest",
+      ["V"]: "Nova",
+      ["W"]: "Inferno",
+      ["X"]: "Echo",
+      ["Y"]: "Gravity",
+      ["Z"]: "Shadow",
+      0: "Drift",
+      1: "Bolt",
+      2: "Fury",
+      3: "Crimson",
+      4: "Oblivion",
+      5: "Pulse",
+      6: "Specter",
+      7: "Radiant",
+      8: "Blitz",
+      9: "Strike",
+      ["@"]: "Quotex",
+      ["-"]: "Lyra",
+      ["_"]: "Xion",
+      ["#"]: "Vega",
+      ["."]: "Orion"
+    };
+    const ⵒⴵⵇⵚⴲ = ⴲⴻⵎⵚⴲ["toUpperCase"]()["split"]("")["map"](ⵒⵅⴼⵚⴲ => ⴲⵋⵃⵚⴲ[ⵒⵅⴼⵚⴲ] || "Fine")["join"](" ");
+    return ⵒⴵⵇⵚⴲ;
+  }
+  const ⵂⴰⵀⵚⴲ = `${"\n    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');\n    \n    /* SweetAlert High Z-Index */\n    .swal-high-zindex {\n      z-index: 10000 !important;\n    }\n    \n    .swal2-container.swal-high-zindex {\n      z-index: 10000 !important;\n    }\n    \n    #settingsPopup {\n      position: fixed;\n      top: 50%;\n      left: 50%;\n      transform: translate(-50%, -50%) scale(0.8);\n      width: calc(100% - 20px);\n      max-width: 360px;\n      max-height: calc(100vh - 20px);\n      height: auto;\n      padding: 10px 12px;\n      background: rgba(30, 11, 54, 0.98);\n      backdrop-filter: blur(10px);\n      border-radius: 10px;\n      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);\n      text-align: center;\n      border: 1px solid rgba(248, 0, 255, 0.2);\n      overflow-y: auto;\n      overflow-x: hidden;\n      font-family: 'Roboto', sans-serif;\n      color: #f8f8f8;\n      z-index: 9999;\n      opacity: 0;\n      transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);\n    }\n    \n    @media (max-height: 700px) {\n      #settingsPopup {\n        padding: 8px 10px;\n        max-height: calc(100vh - 10px);\n      }\n      #settingsPopup h2 { font-size: 11px; padding: 6px; margin-bottom: 6px; }\n      #settingsPopup h3 { font-size: 11px; margin: 6px 0 5px 0; }\n      #settingsPopup label { font-size: 10px; margin-bottom: 5px; }\n      #settingsPopup input, #settingsPopup select { padding: 6px; font-size: 12px; margin-top: 2px; }\n      #settingsPopup button { padding: 6px; font-size: 12px; margin-top: 4px; }\n      #settingsPopup small { font-size: 8px; margin-bottom: 5px; }\n      .telegram-link img { width: 28px; height: 28px; }\n      .telegram-link { margin-bottom: 5px; }\n      #licenseSection, #demoBalanceSection { padding: 8px; margin-top: 6px; }\n      #cheatCodeDisplay { font-size: 10px !important; padding: 6px !important; }\n    }\n    \n    @media (max-height: 550px) {\n      #settingsPopup {\n        padding: 6px 8px;\n      }\n      #settingsPopup h2 { font-size: 10px; padding: 5px; margin-bottom: 5px; }\n      #settingsPopup h3 { font-size: 10px; margin: 4px 0 4px 0; }\n      #settingsPopup label { font-size: 9px; margin-bottom: 4px; }\n      #settingsPopup input, #settingsPopup select { padding: 5px; font-size: 11px; border-radius: 6px; }\n      #settingsPopup button { padding: 5px; font-size: 11px; margin-top: 3px; border-radius: 6px; }\n      #settingsPopup small { font-size: 7px; margin-bottom: 4px; }\n      .telegram-link img { width: 24px; height: 24px; }\n      .telegram-link { margin-bottom: 4px; }\n      #licenseSection, #demoBalanceSection { padding: 6px; margin-top: 4px; }\n    }\n    \n    #settingsPopup::-webkit-scrollbar {\n      width: 8px;\n    }\n    \n    #settingsPopup::-webkit-scrollbar-track {\n      background: rgba(255, 255, 255, 0.1);\n      border-radius: 10px;\n    }\n    \n    #settingsPopup::-webkit-scrollbar-thumb {\n      background: linear-gradient(135deg, #8333ff, #f900ff);\n      border-radius: 10px;\n    }\n    \n    #settingsPopup::before {\n      content: '';\n      position: absolute;\n      top: 0;\n      left: 0;\n      right: 0;\n      height: 5px;\n      background: linear-gradient(to right, #f900ff, #00d9ff);\n      background-size: 200% 200%;\n      animation: gradientFlow 3s linear infinite;\n      border-radius: 12px 12px 0 0;\n    }\n    \n    @keyframes gradientFlow {\n      0% { background-position: 0% 50%; }\n      50% { background-position: 100% 50%; }\n      100% { background-position: 0% 50%; }\n    }\n\n    #settingsPopup.show {\n      opacity: 1;\n      transform: translate(-50%, -50%) scale(1);\n    }\n\n    #settingsPopup.hide {\n      opacity: 0;\n      transform: translate(-50%, -50%) scale(0.8);\n    }\n\n    #settingsPopup h2 {\n      color: white;\n      font-size: 12px;\n      font-weight: 600;\n      margin: 0 0 8px 0;\n      padding: 8px;\n      background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.9) 100%);\n      border-radius: 6px;\n      text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);\n      border: 1px solid rgba(248, 0, 255, 0.3);\n      line-height: 1.4;\n    }\n    \n    #settingsPopup h2 .warning-text {\n      color: #ff3366;\n      font-weight: 700;\n      display: block;\n      margin-top: 3px;\n      animation: warningPulse 2s infinite alternate;\n    }\n    \n    @keyframes warningPulse {\n      from { text-shadow: 0 0 5px rgba(255, 51, 102, 0.5); }\n      to { text-shadow: 0 0 15px rgba(255, 51, 102, 0.9), 0 0 20px rgba(255, 51, 102, 0.7); }\n    }\n    \n    #settingsPopup h3 {\n      color: white;\n      font-size: 12px;\n      font-weight: 700;\n      margin: 6px 0 5px 0;\n      text-transform: uppercase;\n      letter-spacing: 1px;\n      background: linear-gradient(to right, #f900ff, #00d9ff);\n      -webkit-background-clip: text;\n      background-clip: text;\n      -webkit-text-fill-color: transparent;\n      position: relative;\n      display: inline-block;\n    }\n    \n    #settingsPopup h3::after {\n      content: '';\n      position: absolute;\n      width: 60%;\n      height: 2px;\n      bottom: -5px;\n      left: 20%;\n      background: linear-gradient(to right, #f900ff, #00d9ff);\n      border-radius: 10px;\n    }\n    \n    .telegram-link {\n      display: inline-block;\n      margin-bottom: 6px;\n    }\n    \n    .telegram-link img {\n      width: 32px;\n      height: 32px;\n      cursor: pointer;\n      border-radius: 50%;\n      border: 2px solid rgba(255, 255, 255, 0.2);\n      box-shadow: 0 0 15px rgba(248, 0, 255, 0.5);\n      transition: all 0.3s ease;\n    }\n    \n    .telegram-link img:hover {\n      transform: scale(1.1) rotate(5deg);\n      box-shadow: 0 0 20px rgba(248, 0, 255, 0.7);\n      border-color: rgba(255, 255, 255, 0.4);\n    }\n\n    #settingsPopup label {\n      display: block; \n      margin-bottom: 6px; \n      color: rgba(255, 255, 255, 0.9);\n      font-size: 11px;\n      font-weight: 500;\n      text-align: left;\n    }\n\n    #settingsPopup input, #settingsPopup select {\n      width: 100%; \n      padding: 7px; \n      margin-top: 2px; \n      border: 2px solid rgba(255, 255, 255, 0.2); \n      border-radius: 8px; \n      background: rgba(255, 255, 255, 0.1);\n      color: white;\n      font-size: 13px;\n      box-sizing: border-box;\n      font-family: 'Roboto', sans-serif;\n      transition: all 0.3s ease;\n    }\n    \n    #settingsPopup input::placeholder {\n      color: rgba(255, 255, 255, 0.5);\n    }\n    \n    #settingsPopup input:focus, #settingsPopup select:focus {\n      outline: none;\n      border-color: #f900ff;\n      box-shadow: 0 0 0 3px rgba(248, 0, 255, 0.3);\n      background: rgba(255, 255, 255, 0.15);\n    }\n    \n    /* Country Flag Select Dropdown Styling */\n    #countryFlagSelect {\n      background: rgba(30, 11, 54, 0.9);\n      color: white;\n      cursor: pointer;\n    }\n    \n    #countryFlagSelect option {\n      background: #1e0b36;\n      color: white;\n      padding: 10px;\n      font-size: 14px;\n    }\n    \n    #countryFlagSelect option:hover {\n      background: rgba(248, 0, 255, 0.2);\n    }\n    \n    #countryFlagSelect option:checked {\n      background: linear-gradient(135deg, #8333ff, #f900ff);\n      color: white;\n      font-weight: 600;\n    }\n    \n    #settingsPopup small {\n      display: block;\n      margin-top: -4px;\n      margin-bottom: 6px;\n      color: rgba(255, 255, 255, 0.6);\n      font-size: 8px;\n      font-style: italic;\n      text-align: left;\n    }\n\n    #settingsPopup button {\n      width: 100%;\n      padding: 7px;\n      margin-top: 5px;\n      border: none;\n      border-radius: 8px;\n      font-size: 13px;\n      font-weight: 600;\n      cursor: pointer;\n      transition: all 0.3s ease;\n      text-transform: uppercase;\n      letter-spacing: 1px;\n      position: relative;\n      overflow: hidden;\n      font-family: 'Roboto', sans-serif;\n    }\n    \n    #settingsPopup button::before {\n      content: '';\n      position: absolute;\n      top: 0;\n      left: -100%;\n      width: 100%;\n      height: 100%;\n      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);\n      transition: all 0.5s ease;\n    }\n    \n    #settingsPopup button:hover::before {\n      left: 100%;\n    }\n    \n    #settingsPopup button:hover {\n      transform: translateY(-2px);\n      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);\n    }\n    \n    #settingsPopup button:active {\n      transform: translateY(0);\n    }\n    \n    #saveButton, #verifyBtn, #setDemoBtn {\n      background: linear-gradient(135deg, #8333ff, #f900ff);\n      color: white;\n      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);\n    }\n\n    #onlinePaymentActiveBtn {\n      background: linear-gradient(135deg, #10b981, #059669) !important;\n      color: white !important;\n      box-shadow: 0 5px 15px rgba(16, 185, 129, 0.35) !important;\n      margin-top: 8px !important;\n      width: 100%;\n      font-weight: 700 !important;\n    }\n\n    #onlinePaymentActiveBtn:hover {\n      box-shadow: 0 8px 20px rgba(16, 185, 129, 0.45) !important;\n    }\n\n    #settingsPopup button.close-btn {\n      background: linear-gradient(135deg, #ff3366, #ff5757);\n      color: white;\n      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);\n    }\n\n    #settingsPopup button:disabled {\n      background: #6c757d;\n      cursor: not-allowed;\n      opacity: 0.6;\n    }\n    \n    #settingsPopup button:disabled:hover {\n      transform: none;\n      box-shadow: none;\n    }\n\n    #licenseSection, #demoBalanceSection {\n      margin-top: 8px;\n      padding: 10px;\n      background: rgba(255, 255, 255, 0.05);\n      border-radius: 8px;\n      border: 1px solid rgba(255, 255, 255, 0.1);\n      transition: all 0.3s ease;\n    }\n\n    #licenseSection.hide {\n      opacity: 0;\n      max-height: 0;\n      padding: 0;\n      margin: 0;\n      overflow: hidden;\n      border: none;\n    }\n\n    #demoBalanceSection {\n      opacity: 0;\n      max-height: 0;\n      overflow: hidden;\n      padding: 0;\n      margin: 0;\n      border: none;\n    }\n\n    #demoBalanceSection.show {\n      opacity: 1;\n      max-height: 500px;\n      padding: 12px;\n      margin-top: 10px;\n      border: 1px solid rgba(255, 255, 255, 0.1);\n    }\n\n    .message-popup {\n      position: fixed;\n      top: 80px;\n      right: 20px;\n      padding: 15px 20px;\n      color: white;\n      border-radius: 12px;\n      font-size: 14px;\n      font-weight: 600;\n      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);\n      opacity: 0;\n      transform: translateY(-20px);\n      transition: opacity 0.5s ease, transform 0.5s ease;\n      z-index: 10001;\n      max-width: 300px;\n      text-align: center;\n      backdrop-filter: blur(10px);\n      border: 1px solid rgba(255, 255, 255, 0.1);\n      font-family: 'Roboto', sans-serif;\n    }\n    \n    .message-popup.show {\n      opacity: 1;\n      transform: translateY(0);\n    }\n    \n    .message-popup.success {\n      background: rgba(0, 255, 163, 0.15);\n      color: #00ffa3;\n      box-shadow: 0 0 15px rgba(0, 255, 163, 0.3);\n      border: 1px solid rgba(0, 255, 163, 0.2);\n    }\n    \n    .message-popup.error {\n      background: rgba(255, 51, 102, 0.15);\n      color: #ff3366;\n      box-shadow: 0 0 15px rgba(255, 51, 102, 0.3);\n      border: 1px solid rgba(255, 51, 102, 0.2);\n    }\n    \n    #centeredDeveloperMessage {\n      position: fixed; \n      top: 50%; \n      left: 50%;\n      transform: translate(-50%, -50%);\n      background: rgba(0, 0, 0, 0.9);\n      color: white; \n      padding: 30px 50px; \n      border-radius: 15px;\n      font-size: 20px; \n      font-weight: bold;\n      z-index: 10004; \n      opacity: 0;\n      transition: opacity 0.5s ease;\n      box-shadow: 0 10px 30px rgba(0,0,0,0.5);\n      border: 2px solid rgba(248, 0, 255, 0.5);\n      font-family: 'Roboto', sans-serif;\n      text-align: center;\n    }\n    \n    /* Hide original flag/name while loading and prepare for instant replacement */\n    .jisanx-leaderboard-loading .position__header-name {\n        opacity: 0 !important;\n    }\n\n    #licenseInput, #demoBalanceInput {\n      width: 100%;\n      padding: 8px;\n      font-size: 12px;\n      border: 2px solid rgba(255, 255, 255, 0.2);\n      border-radius: 10px;\n      margin-bottom: 8px;\n      background: rgba(255, 255, 255, 0.1);\n      color: white;\n      font-family: 'Roboto', sans-serif;\n      box-sizing: border-box;\n    }\n\n    #cheatCodeDisplay {\n      font-size: 8px;\n      padding: 6px;\n      margin-top: 6px;\n      line-height: 1.4;\n      background: rgba(0, 0, 0, 0.3);\n      border-radius: 6px;\n      color: rgba(255, 255, 255, 0.7);\n      border: 1px solid rgba(255, 255, 255, 0.1);\n      word-wrap: break-word;\n    }\n\n    .verified-badge {\n      background: rgba(0, 255, 163, 0.2);\n      color: #00ffa3;\n      padding: 4px 10px;\n      border-radius: 6px;\n      font-size: 10px;\n      font-weight: 600;\n      margin-top: 6px;\n      display: inline-block;\n      border: 1px solid rgba(0, 255, 163, 0.3);\n    }\n    \n    .unverified-badge {\n      background: rgba(255, 51, 102, 0.2);\n      color: #ff3366;\n      padding: 4px 10px;\n      border-radius: 6px;\n      font-size: 10px;\n      font-weight: 600;\n      margin-top: 10px;\n      display: inline-block;\n      border: 1px solid rgba(255, 51, 102, 0.3);\n    }\n\n    #demoBalanceStatus, #verificationStatus {\n      margin-top: 10px;\n      font-size: 12px;\n      font-weight: 500;\n    }\n\n    /* To reduce unnecessary space */\n    #settingsPopup br {\n      display: none;\n    }\n    \n    /* CSS for refresh button */\n    #refreshBalanceBtn {\n      position: absolute; \n      top: 26px; \n      right: 8px;\n      cursor: pointer;\n      width: 22px; \n      height: 22px;\n      display: flex; \n      align-items: center; \n      justify-content: center;\n      border-radius: 50%; \n      background: rgba(248, 0, 255, 0.2);\n      border: 2px solid rgba(248, 0, 255, 0.4);\n      transition: all 0.3s ease;\n    }\n    \n    #refreshBalanceBtn:hover { \n      background: rgba(248, 0, 255, 0.3);\n      transform: scale(1.1);\n      box-shadow: 0 0 15px rgba(248, 0, 255, 0.5);\n    }\n    \n    #refreshBalanceBtn svg { \n      width: 12px; \n      height: 12px; \n      fill: #f900ff; \n    }\n    \n    @keyframes spin { \n      from { transform: rotate(0deg); } \n      to { transform: rotate(360deg); } \n    }\n    \n    .spinning { \n      animation: spin 0.6s linear; \n    }\n    \n    /* Mobile Responsive */\n    @media screen and (max-width: 480px) {\n      #settingsPopup {\n        padding: 8px 10px;\n        max-width: 95%;\n        max-height: calc(100vh - 10px);\n      }\n      \n      #settingsPopup h2 {\n        font-size: 10px;\n        padding: 6px;\n        margin-bottom: 5px;\n        line-height: 1.3;\n      }\n      \n      #settingsPopup h3 {\n        font-size: 10px;\n        margin: 5px 0 4px 0;\n      }\n      \n      #settingsPopup h3::after {\n        bottom: -3px;\n      }\n      \n      .telegram-link {\n        margin-bottom: 4px;\n      }\n      \n      .telegram-link img {\n        width: 26px;\n        height: 26px;\n      }\n      \n      #settingsPopup input, #settingsPopup select {\n        padding: 5px;\n        font-size: 11px;\n      }\n      \n      #settingsPopup button {\n        padding: 5px;\n        font-size: 11px;\n      }\n      \n      #settingsPopup label {\n        font-size: 9px;\n        margin-bottom: 4px;\n      }\n      \n      #settingsPopup small {\n        font-size: 7px;\n        margin-top: -3px;\n        margin-bottom: 4px;\n      }\n      \n      #refreshBalanceBtn {\n        top: 24px;\n        width: 22px;\n        height: 22px;\n      }\n      \n      #refreshBalanceBtn svg {\n        width: 11px;\n        height: 11px;\n      }\n      \n      #licenseSection, #demoBalanceSection {\n        padding: 6px;\n        margin-top: 5px;\n      }\n      \n      #demoBalanceSection.show {\n        padding: 6px;\n        margin-top: 5px;\n      }\n      \n      #licenseInput, #demoBalanceInput {\n        padding: 5px;\n        font-size: 10px;\n        margin-bottom: 4px;\n      }\n      \n      #cheatCodeDisplay {\n        font-size: 7px;\n        padding: 4px;\n        margin-top: 5px;\n      }\n      \n      .verified-badge, .unverified-badge {\n        padding: 3px 8px;\n        font-size: 9px;\n      }\n    }\n    \n    /* Custom overlay panel for leaderboard information */\n    .custom-overlay-panel {\n      z-index: 10000 !important;\n      pointer-events: auto !important;\n      position: fixed !important;\n    }\n    \n    /* Hide only the specific original panel that has custom overlay */\n    .panel-leader-board__information.hide-original {\n      opacity: 0 !important;\n      pointer-events: none !important;\n      visibility: hidden !important;\n    }\n    \n    /* Pre-hide any panel that might be for user's position - will be shown if not user's */\n    .panel-leader-board__information:not(.custom-overlay-panel) {\n      opacity: 0 !important;\n      visibility: hidden !important;\n      transition: none !important;\n    }\n    \n    /* Show original panel only for other users (will be set by JS) */\n    .panel-leader-board__information.show-original {\n      opacity: 1 !important;\n      visibility: visible !important;\n    }\n"}`;
+  const ⵂⵀⴵⵚⴲ = [109, 156, 142];
+  function ⴲⵛⴸⵚⴲ(ⵒⴵⴷⵛⴲ, ⵂⵐⴺⵛⴲ = 3000, ⵂⴰⴰⵛⴲ = "success") {
+    const ⴲⵋⴳⵛⴲ = document["createElement"]("div");
+    ⴲⵋⴳⵛⴲ["className"] = `${"message-popup "}${ⵂⴰⴰⵛⴲ}`;
+    ⴲⵋⴳⵛⴲ["textContent"] = ⵒⴵⴷⵛⴲ;
+    document["body"]["appendChild"](ⴲⵋⴳⵛⴲ);
+    setTimeout(() => {
+      ⴲⵋⴳⵛⴲ["classList"]["add"]("show");
+    }, 10);
+    setTimeout(() => {
+      ⴲⵋⴳⵛⴲ["classList"]["remove"]("show");
+      setTimeout(() => ⴲⵋⴳⵛⴲ["remove"](), 500);
+    }, ⵂⵐⴺⵛⴲ);
+  }
+  const ⴲⵛⵘⵚⴲ = [104, 122, 119];
+  function ⵒⵅⵜⵚⴲ(ⵒⵕⵑⵚⴲ, ⵂⵀⵕⵚⴲ) {
+    const ⴲⵋⵓⵛⴲ = document["createElement"]("div");
+    ⴲⵋⵓⵛⴲ["id"] = "centeredDeveloperMessage";
+    ⴲⵋⵓⵛⴲ["textContent"] = ⵒⵕⵑⵚⴲ;
+    document["body"]["appendChild"](ⴲⵋⵓⵛⴲ);
+    setTimeout(() => {
+      ⴲⵋⵓⵛⴲ["style"]["opacity"] = "1";
+    }, 10);
+    setTimeout(() => {
+      ⴲⵋⵓⵛⴲ["style"]["opacity"] = "0";
+      setTimeout(() => ⴲⵋⵓⵛⴲ["remove"](), 500);
+    }, ⵂⵀⵕⵚⴲ);
+  }
+  function ⵒⴵⵗⵛⴲ() {
+    const ⵒⵅⵌⵛⴲ = document["getElementById"]("licenseSection");
+    const ⵂⴰⵐⵛⴲ = document["getElementById"]("demoBalanceSection");
+    var ⵂⵀⵅⵛⴲ = 38;
+    while (ⵂⵀⵅⵛⴲ < 39) switch (ⵂⵀⵅⵛⴲ) {
+      case 38:
+        ⵂⵀⵅⵛⴲ = ⵒⵅⵌⵛⴲ && ⵂⴰⵐⵛⴲ ? 27 : 39;
+        break;
+      case 27:
+        ⵂⵀⵅⵛⴲ = 39;
+        {
+          ⵒⵅⵌⵛⴲ["classList"]["add"]("hide");
+          setTimeout(() => {
+            ⵂⴰⵐⵛⴲ["classList"]["add"]("show");
+          }, 300);
+        }
+        break;
+    }
+  }
+  function ⴲⵛⵈⵛⴲ() {
+    const ⴲⴻⴾⵛⴲ = document["getElementById"]("licenseSection");
+    const ⵒⵕⵁⵛⴲ = document["getElementById"]("demoBalanceSection");
+    var ⵒⵅⵌⵗⴲ = 35;
+    while (ⵒⵅⵌⵗⴲ < 39) switch (ⵒⵅⵌⵗⴲ) {
+      case 35:
+        ⵒⵅⵌⵗⴲ = ⴲⴻⴾⵛⴲ && ⵒⵕⵁⵛⴲ ? 38 : 39;
+        break;
+      case 38:
+        ⵒⵅⵌⵗⴲ = 39;
+        {
+          ⵒⵕⵁⵛⴲ["classList"]["remove"]("show");
+          setTimeout(() => {
+            ⴲⴻⴾⵛⴲ["classList"]["remove"]("hide");
+          }, 300);
+        }
+        break;
+    }
+  }
+  async function ⵂⴰⵐⵗⴲ() {
+    const ⵂⵀⵅⵗⴲ = await ⴲⵛⵈⴽ();
+    ⴲⵋⵃⵆ = ⵂⵀⵅⵗⴲ["valid"];
+    const ⴲⵛⵈⵗⴲ = document["createElement"]("div");
+    ⴲⵛⵈⵗⴲ["innerHTML"] = `${"\n      <div id=\"settingsPopup\">\n        <h2>Developer: <strong>@traderjisanx</strong> - <span class=\"warning-text\">Buying from others will result in fraud!</span></h2>\n        <a href=\"https://t.me/treaderjisanx\" target=\"_blank\" class=\"telegram-link\">\n            <img src=\"https://i.postimg.cc/MKRyMcR4/Screenshot-20260214-100336-Gallery-(1).jpg\" alt=\"Telegram\">\n        </a>\n        \n        <label>Leaderboard Name:\n            <input type=\"text\" id=\"lname\" placeholder=\"Enter Name\">\n        </label>\n        \n        <div style=\"position: relative;\">\n            <label>Leaderboard Balance:\n                <input type=\"number\" id=\"iblafp\" placeholder=\"Enter Balance\">\n            </label>\n            <span id=\"refreshBalanceBtn\" title=\"Fetch Current Balance\">\n                <svg viewBox=\"0 0 24 24\"><path d=\"M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z\"></path></svg>\n            </span>\n        </div>\n\n        <label>Profile Photo Link:\n          <input type=\"text\" id=\"profilePhotoUrl\" placeholder=\"Enter Profile Photo Link\">\n          <small>Example: /en/user/avatar/view/07/90/87/46/avatar_8c7e009cd96f2e43f9d3237baab07071.png</small>\n        </label>\n        <label>Country Flag:\n           <select id=\"countryFlagSelect\">\n                <option value=\"bd\">🇧🇩 Bangladesh</option>\n                <option value=\"in\">🇮🇳 India</option>\n                <option value=\"pk\">🇵🇰 Pakistan</option>\n                <option value=\"af\">🇦🇫 Afghanistan</option>\n                <option value=\"ax\">🇦🇽 Åland Islands</option>\n                <option value=\"al\">🇦🇱 Albania</option>\n                <option value=\"dz\">🇩🇿 Algeria</option>\n                <option value=\"as\">🇦🇸 American Samoa</option>\n                <option value=\"ao\">🇦🇴 Angola</option>\n                <option value=\"ai\">🇦🇮 Anguilla</option>\n                <option value=\"aq\">🇦🇶 Antarctica</option>\n                <option value=\"ag\">🇦🇬 Antigua & Barbuda</option>\n                <option value=\"ar\">🇦🇷 Argentina</option>\n                <option value=\"am\">🇦🇲 Armenia</option>\n                <option value=\"aw\">🇦🇼 Aruba</option>\n                <option value=\"az\">🇦🇿 Azerbaijan</option>\n                <option value=\"bs\">🇧🇸 Bahamas</option>\n                <option value=\"bh\">🇧🇭 Bahrain</option>\n                <option value=\"bb\">🇧🇧 Barbados</option>\n                <option value=\"by\">🇧🇾 Belarus</option>\n                <option value=\"bz\">🇧🇿 Belize</option>\n                <option value=\"bj\">🇧🇯 Benin</option>\n                <option value=\"bm\">🇧🇲 Bermuda</option>\n                <option value=\"bt\">🇧🇹 Bhutan</option>\n                <option value=\"bo\">🇧🇴 Bolivia</option>\n                <option value=\"ba\">🇧🇦 Bosnia & Herzegovina</option>\n                <option value=\"bw\">🇧🇼 Botswana</option>\n                <option value=\"bv\">🇧🇻 Bouvet Island</option>\n                <option value=\"br\">🇧🇷 Brazil</option>\n                <option value=\"io\">🇮🇴 British Indian Ocean Territory</option>\n                <option value=\"bn\">🇧🇳 Brunei</option>\n                <option value=\"bf\">🇧🇫 Burkina Faso</option>\n                <option value=\"bi\">🇧🇮 Burundi</option>\n                <option value=\"kh\">🇰🇭 Cambodia</option>\n                <option value=\"cm\">🇨🇲 Cameroon</option>\n                <option value=\"cv\">🇨🇻 Cape Verde</option>\n                <option value=\"ky\">🇰🇾 Cayman Islands</option>\n                <option value=\"cf\">🇨🇫 Central African Republic</option>\n                <option value=\"td\">🇹🇩 Chad</option>\n                <option value=\"cl\">🇨🇱 Chile</option>\n                <option value=\"cn\">🇨🇳 China</option>\n                <option value=\"cx\">🇨🇽 Christmas Island</option>\n                <option value=\"cc\">🇨🇨 Cocos (Keeling) Islands</option>\n                <option value=\"co\">🇨🇴 Colombia</option>\n                <option value=\"km\">🇰🇲 Comoros</option>\n                <option value=\"cg\">🇨🇬 Congo - Brazzaville</option>\n                <option value=\"cd\">🇨🇩 Congo - Kinshasa</option>\n                <option value=\"ck\">🇨🇰 Cook Islands</option>\n                <option value=\"cr\">🇨🇷 Costa Rica</option>\n                <option value=\"ci\">🇨🇮 Côte d Ivoire</option>\n                <option value=\"cu\">🇨🇺 Cuba</option>\n                <option value=\"cw\">🇨🇼 Curaçao</option>\n                <option value=\"dj\">🇩🇯 Djibouti</option>\n                <option value=\"dm\">🇩🇲 Dominica</option>\n                <option value=\"do\">🇩🇴 Dominican Republic</option>\n                <option value=\"ec\">🇪🇨 Ecuador</option>\n                <option value=\"eg\">🇪🇬 Egypt</option>\n                <option value=\"sv\">🇸🇻 El Salvador</option>\n                <option value=\"gq\">🇬🇶 Equatorial Guinea</option>\n                <option value=\"er\">🇪🇷 Eritrea</option>\n                <option value=\"sz\">🇸🇿 Eswatini</option>\n                <option value=\"et\">🇪🇹 Ethiopia</option>\n                <option value=\"fk\">🇫🇰 Falkland Islands</option>\n                <option value=\"fo\">🇫🇴 Faroe Islands</option>\n                <option value=\"fj\">🇫🇯 Fiji</option>\n                <option value=\"gf\">🇬🇫 French Guiana</option>\n                <option value=\"pf\">🇵🇫 French Polynesia</option>\n                <option value=\"tf\">🇹🇫 French Southern Territories</option>\n                <option value=\"ga\">🇬🇦 Gabon</option>\n                <option value=\"gm\">🇬🇲 Gambia</option>\n                <option value=\"ge\">🇬🇪 Georgia</option>\n                <option value=\"gh\">🇬🇭 Ghana</option>\n                <option value=\"gi\">🇬🇮 Gibraltar</option>\n                <option value=\"gl\">🇬🇱 Greenland</option>\n                <option value=\"gd\">🇬🇩 Grenada</option>\n                <option value=\"gp\">🇬🇵 Guadeloupe</option>\n                <option value=\"gt\">🇬🇹 Guatemala</option>\n                <option value=\"gg\">🇬🇬 Guernsey</option>\n                <option value=\"gn\">🇬🇳 Guinea</option>\n                <option value=\"gw\">🇬🇼 Guinea-Bissau</option>\n                <option value=\"gy\">🇬🇾 Guyana</option>\n                <option value=\"ht\">🇭🇹 Haiti</option>\n                <option value=\"hm\">🇭🇲 Heard & McDonald Islands</option>\n                <option value=\"hn\">🇭🇳 Honduras</option>\n                <option value=\"is\">🇮🇸 Iceland</option>\n                <option value=\"id\">🇮🇩 Indonesia</option>\n                <option value=\"ir\">🇮🇷 Iran</option>\n                <option value=\"iq\">🇮🇶 Iraq</option>\n                <option value=\"im\">🇮🇲 Isle of Man</option>\n                <option value=\"jm\">🇯🇲 Jamaica</option>\n                <option value=\"je\">🇯🇪 Jersey</option>\n                <option value=\"jo\">🇯🇴 Jordan</option>\n                <option value=\"kz\">🇰🇿 Kazakhstan</option>\n                <option value=\"ke\">🇰🇪 Kenya</option>\n                <option value=\"ki\">🇰🇮 Kiribati</option>\n                <option value=\"kw\">🇰🇼 Kuwait</option>\n                <option value=\"kg\">🇰🇬 Kyrgyzstan</option>\n                <option value=\"la\">🇱🇦 Laos</option>\n                <option value=\"lb\">🇱🇧 Lebanon</option>\n                <option value=\"ls\">🇱🇸 Lesotho</option>\n                <option value=\"lr\">🇱🇷 Liberia</option>\n                <option value=\"ly\">🇱🇾 Libya</option>\n                <option value=\"mo\">🇲🇴 Macao SAR China</option>\n                <option value=\"mg\">🇲🇬 Madagascar</option>\n                <option value=\"mw\">🇲🇼 Malawi</option>\n                <option value=\"my\">🇲🇾 Malaysia</option>\n                <option value=\"mv\">🇲🇻 Maldives</option>\n                <option value=\"ml\">🇲🇱 Mali</option>\n                <option value=\"mh\">🇲🇭 Marshall Islands</option>\n                <option value=\"mq\">🇲🇶 Martinique</option>\n                <option value=\"mr\">🇲🇷 Mauritania</option>\n                <option value=\"mu\">🇲🇺 Mauritius</option>\n                <option value=\"yt\">🇾🇹 Mayotte</option>\n                <option value=\"mx\">🇲🇽 Mexico</option>\n                <option value=\"fm\">🇫🇲 Micronesia</option>\n                <option value=\"md\">🇲🇩 Moldova</option>\n                <option value=\"mc\">🇲🇨 Monaco</option>\n                <option value=\"mn\">🇲🇳 Mongolia</option>\n                <option value=\"me\">🇲🇪 Montenegro</option>\n                <option value=\"ms\">🇲🇸 Montserrat</option>\n                <option value=\"ma\">🇲🇦 Morocco</option>\n                <option value=\"mz\">🇲🇿 Mozambique</option>\n                <option value=\"mm\">🇲🇲 Myanmar (Burma)</option>\n                <option value=\"na\">🇳🇦 Namibia</option>\n                <option value=\"nr\">🇳🇷 Nauru</option>\n                <option value=\"np\">🇳🇵 Nepal</option>\n                <option value=\"nc\">🇳🇨 New Caledonia</option>\n                <option value=\"ni\">🇳🇮 Nicaragua</option>\n                <option value=\"ne\">🇳🇪 Niger</option>\n                <option value=\"ng\">🇳🇬 Nigeria</option>\n                <option value=\"nu\">🇳🇺 Niue</option>\n                <option value=\"nf\">🇳🇫 Norfolk Island</option>\n                <option value=\"kp\">🇰🇵 North Korea</option>\n                <option value=\"mk\">🇲🇰 North Macedonia</option>\n                <option value=\"om\">🇴🇲 Oman</option>\n                <option value=\"pw\">🇵🇼 Palau</option>\n                <option value=\"ps\">🇵🇸 Palestinian Territories</option>\n                <option value=\"pa\">🇵🇦 Panama</option>\n                <option value=\"pg\">🇵🇬 Papua New Guinea</option>\n                <option value=\"py\">🇵🇾 Paraguay</option>\n                <option value=\"pe\">🇵🇪 Peru</option>\n                <option value=\"ph\">🇵🇭 Philippines</option>\n                <option value=\"pn\">🇵🇳 Pitcairn Islands</option>\n                <option value=\"qa\">🇶🇦 Qatar</option>\n                <option value=\"re\">🇷🇪 Réunion</option>\n                <option value=\"rw\">🇷🇼 Rwanda</option>\n                <option value=\"ws\">🇼🇸 Samoa</option>\n                <option value=\"st\">🇸🇹 São Tomé & Príncipe</option>\n                <option value=\"sa\">🇸🇦 Saudi Arabia</option>\n                <option value=\"sn\">🇸🇳 Senegal</option>\n                <option value=\"rs\">🇷🇸 Serbia</option>\n                <option value=\"sc\">🇸🇨 Seychelles</option>\n                <option value=\"sg\">🇸🇬 Singapore</option>\n                <option value=\"sx\">🇸🇽 Sint Maarten</option>\n                <option value=\"sb\">🇸🇧 Solomon Islands</option>\n                <option value=\"so\">🇸🇴 Somalia</option>\n                <option value=\"za\">🇿🇦 South Africa</option>\n                <option value=\"gs\">🇬🇸 South Georgia & South Sandwich Islands</option>\n                <option value=\"kr\">🇰🇷 South Korea</option>\n                <option value=\"ss\">🇸🇸 South Sudan</option>\n                <option value=\"lk\">🇱🇰 Sri Lanka</option>\n                <option value=\"bl\">🇧🇱 St. Barthélemy</option>\n                <option value=\"sh\">🇸🇭 St. Helena</option>\n                <option value=\"kn\">🇰🇳 St. Kitts & Nevis</option>\n                <option value=\"lc\">🇱🇨 St. Lucia</option>\n                <option value=\"mf\">🇲🇫 St. Martin</option>\n                <option value=\"pm\">🇵🇲 St. Pierre & Miquelon</option>\n                <option value=\"vc\">🇻🇨 St. Vincent & Grenadines</option>\n                <option value=\"sd\">🇸🇩 Sudan</option>\n                <option value=\"sr\">🇸🇷 Suriname</option>\n                <option value=\"sj\">🇸🇯 Svalbard & Jan Mayen</option>\n                <option value=\"sy\">🇸🇾 Syria</option>\n                <option value=\"tw\">🇹🇼 Taiwan</option>\n                <option value=\"tj\">🇹🇯 Tajikistan</option>\n                <option value=\"tz\">🇹🇿 Tanzania</option>\n                <option value=\"th\">🇹🇭 Thailand</option>\n                <option value=\"tl\">🇹🇱 Timor-Leste</option>\n                <option value=\"tg\">🇹🇬 Togo</option>\n                <option value=\"tk\">🇹🇰 Tokelau</option>\n                <option value=\"to\">🇹🇴 Tonga</option>\n                <option value=\"tt\">🇹🇹 Trinidad & Tobago</option>\n                <option value=\"tn\">🇹🇳 Tunisia</option>\n                <option value=\"tr\">🇹🇷 Turkey</option>\n                <option value=\"tm\">🇹🇲 Turkmenistan</option>\n                <option value=\"tc\">🇹🇨 Turks & Caicos Islands</option>\n                <option value=\"tv\">🇹🇻 Tuvalu</option>\n                <option value=\"ug\">🇺🇬 Uganda</option>\n                <option value=\"ua\">🇺🇦 Ukraine</option>\n                <option value=\"ae\">🇦🇪 United Arab Emirates</option>\n                <option value=\"uy\">🇺🇾 Uruguay</option>\n                <option value=\"uz\">🇺🇿 Uzbekistan</option>\n                <option value=\"vu\">🇻🇺 Vanuatu</option>\n                <option value=\"va\">🇻🇦 Vatican City</option>\n                <option value=\"ve\">🇻🇪 Venezuela</option>\n                <option value=\"vn\">🇻🇳 Vietnam</option>\n                <option value=\"wf\">🇼🇫 Wallis & Futuna</option>\n                <option value=\"eh\">🇪🇭 Western Sahara</option>\n                <option value=\"ye\">🇾🇪 Yemen</option>\n                <option value=\"zm\">🇿🇲 Zambia</option>\n                <option value=\"zw\">🇿🇼 Zimbabwe</option>\n            </select>\n        </label>\n\n        <div id=\"licenseSection\" class=\""}${ⴲⵋⵃⵆ ? "hide" : ""}${"\">\n          <h3>License Verification</h3>\n          <input type=\"text\" id=\"licenseInput\" placeholder=\"Enter your license key\" value=\""}${localStorage["getItem"]("appActivation") || ""}${"\">\n          <button id=\"verifyBtn\">Verify License</button>\n          <button type=\"button\" id=\"onlinePaymentActiveBtn\">Online Payment Active</button>\n          <div id=\"verificationStatus\">\n            "}${ⴲⵋⵃⵆ ? ⵂⵀⵅⵗⴲ["offline"] ? "<div class=\"verified-badge\">✓ Verified (Offline Mode)</div>" : "<div class=\"verified-badge\">✓ Verified</div>" : localStorage["getItem"]("appActivation") ? "<div class=\"verified-badge\">✓ Cached License</div>" : "<div class=\"unverified-badge\">✗ Not Verified</div>"}${"\n          </div>\n        </div>\n\n        <div id=\"demoBalanceSection\" class=\""}${ⴲⵋⵃⵆ ? "show" : ""}${"\">\n          <h3>Demo Balance Settings</h3>\n          <input type=\"number\" id=\"demoBalanceInput\" placeholder=\"Enter demo balance\" value=\""}${ⵒⵅⴼⵆ}${"\">\n          <button id=\"setDemoBtn\">Update Demo Balance</button>\n          <div id=\"demoBalanceStatus\"></div>\n        </div>\n\n        <button id=\"saveButton\" "}${ⴲⵋⵃⵆ ? "" : "disabled"}${">Save Settings</button>\n        <button class=\"close-btn\">Close</button>\n        \n        <div id=\"cheatCodeDisplay\">"}${localStorage["getItem"]("appActivation") ? ⵂⵐⵊⵚⴲ(localStorage["getItem"]("appActivation")) : ⵂⵀⵅⵅ}${"</div>\n      </div>\n    "}`;
+    document["body"]["appendChild"](ⴲⵛⵈⵗⴲ);
+    ⵒⴵⵇⵆ = document["getElementById"]("settingsPopup");
+    document["getElementById"]("lname")["value"] = localStorage["getItem"]("leaderboardName") || "";
+    document["getElementById"]("iblafp")["value"] = localStorage["getItem"]("leaderboardBalance") || "";
+    document["getElementById"]("profilePhotoUrl")["value"] = localStorage["getItem"]("profilePhotoUrl") || "";
+    document["getElementById"]("countryFlagSelect")["value"] = localStorage["getItem"]("countryFlag") || "bd";
+    const ⴲⴻⴾⵗⴲ = document["getElementById"]("refreshBalanceBtn");
+    function ⵒⵕⵁⵗⴲ() {
+      const ⵒⴵⴷⵗⴲ = typeof window["__qxEnsureUsermenuShadow"] === "function" ? window["__qxEnsureUsermenuShadow"]() : document["querySelector"]("qx-usermenu-trigger")?.["shadowRoot"] || null;
+      return ⵒⴵⴷⵗⴲ && ⵒⴵⴷⵗⴲ["querySelector"](".text .balance, .balance") || document["querySelector"](".grOBD li.RDtBn:has(input.r29tN[value=\"live\"]) b.YnoT0") || document["querySelector"](".grOBD .RDtBn:first-child b.YnoT0") || document["querySelector"](".grOBD b.YnoT0") || document["querySelector"]("b.YnoT0");
+    }
+    async function ⵂⵐⴺⵗⴲ(ⴲⵛⴸⵘⴲ) {
+      const ⵒⵅⴼⵘⴲ = Date["now"]() + ⴲⵛⴸⵘⴲ;
+      let ⵒⵕⴱⵘⴲ = ⵒⵕⵁⵗⴲ();
+      while ((!ⵒⵕⴱⵘⴲ || !/\d/["test"](ⵒⵕⴱⵘⴲ["textContent"] || "")) && Date["now"]() < ⵒⵅⴼⵘⴲ) {
+        await new Promise(ⵂⵀⴵⵘⴲ => setTimeout(ⵂⵀⴵⵘⴲ, 100));
+        ⵒⵕⴱⵘⴲ = ⵒⵕⵁⵗⴲ();
+      }
+      return ⵒⵕⴱⵘⴲ;
+    }
+    ⵒⵕⵁⵗⴲ();
+    ⴲⴻⴾⵗⴲ?.["addEventListener"]?.("click", async () => {
+      var ⵂⵐⵚⵗⴲ = 34;
+      while (ⵂⵐⵚⵗⴲ < 35) switch (ⵂⵐⵚⵗⴲ) {
+        case 11:
+          ⵂⵐⵚⵗⴲ = 35;
+          return;
+        case 34:
+          ⵂⵐⵚⵗⴲ = ⴲⴻⴾⵗⴲ["classList"]["contains"]("spinning") ? 11 : 35;
+          break;
+      }
+      ⴲⴻⴾⵗⴲ["classList"]["add"]("spinning");
+      const ⴲⴻⵞⵗⴲ = await ⵂⵐⴺⵗⴲ(5000);
+      var ⴲⵋⵓⵗⴲ = 17;
+      while (ⴲⵋⵓⵗⴲ < 38) switch (ⴲⵋⵓⵗⴲ) {
+        case 17:
+          ⴲⵋⵓⵗⴲ = !ⴲⴻⵞⵗⴲ ? 37 : 38;
+          break;
+        case 37:
+          ⴲⵋⵓⵗⴲ = 38;
+          {
+            ⴲⵛⴸⵚⴲ("Error: Could not find the balance element.");
+            setTimeout(() => ⴲⴻⴾⵗⴲ["classList"]["remove"]("spinning"), 500);
+            return;
+          }
+          break;
+      }
+      const ⵒⴵⵗⵗⴲ = ⴲⴻⵞⵗⴲ["textContent"];
+      const ⵂⵀⵕⵘⴲ = ⵒⴵⵗⵗⴲ["replace"](/\D/g, "");
+      document["getElementById"]("iblafp")["value"] = ⵂⵀⵕⵘⴲ;
+      ⴲⵛⴸⵚⴲ("Balance updated!");
+      setTimeout(() => ⴲⴻⴾⵗⴲ["classList"]["remove"]("spinning"), 500);
+    });
+    document["getElementById"]("verifyBtn")?.["addEventListener"]?.("click", ⵂⵐⵊⵘⴲ);
+    document["getElementById"]("onlinePaymentActiveBtn")?.["addEventListener"]?.("click", () => {
+      ⴲⵛⵘⵆ = "permanent";
+      ⵒⵅⵜⵆ = "";
+      ⵂⵀⵕⵆ();
+      ⵒⵕⵑⴺ();
+    });
+    document["getElementById"]("setDemoBtn")?.["addEventListener"]?.("click", ⴲⵛⵘⵘⴲ);
+    document["getElementById"]("saveButton")["addEventListener"]("click", ⵂⴰⵐⵕⴲ);
+    document["querySelector"](".close-btn")["addEventListener"]("click", ⵂⵀⵕⵔⴲ);
+    setTimeout(() => {
+      ⵒⴵⵇⵆ["classList"]["add"]("show");
+    }, 10);
+  }
+  function ⴲⵛⵘⵘⴲ() {
+    const ⴲⴻⵎⵘⴲ = document["getElementById"]("demoBalanceInput")["value"];
+    var ⵒⵕⵑⵘⴲ = 16;
+    while (ⵒⵕⵑⵘⴲ < 25) switch (ⵒⵕⵑⵘⴲ) {
+      case 16:
+        ⵒⵕⵑⵘⴲ = !ⴲⴻⵎⵘⴲ || isNaN(ⴲⴻⵎⵘⴲ) ? 23 : 25;
+        break;
+      case 23:
+        ⵒⵕⵑⵘⴲ = 25;
+        {
+          ⴲⵛⴸⵚⴲ("Please enter a valid balance amount");
+          return;
+        }
+        break;
+    }
+    ⵒⵅⴼⵆ = parseFloat(ⴲⴻⵎⵘⴲ);
+    localStorage["setItem"]("demoBalance", ⵒⵅⴼⵆ["toString"]());
+    const ⵒⴵⵇⵘⴲ = document["getElementById"]("demoBalanceStatus");
+    ⵒⴵⵇⵘⴲ["textContent"] = "Demo balance updated and saved!";
+    ⵒⴵⵇⵘⴲ["style"]["color"] = "#28a745";
+    ⴲⵛⴸⵚⴲ(`${"Demo balance set to "}${ⵒⵅⴼⵆ}`);
+    setTimeout(() => {
+      ⵒⴵⵇⵘⴲ["textContent"] = "";
+    }, 2500);
+  }
+  async function ⵂⵐⵊⵘⴲ() {
+    const ⵂⴰⵀⵘⴲ = document["getElementById"]("licenseInput")["value"]["trim"]();
+    var ⴲⵋⵃⵘⴲ = 17;
+    while (ⴲⵋⵃⵘⴲ < 38) switch (ⴲⵋⵃⵘⴲ) {
+      case 17:
+        ⴲⵋⵃⵘⴲ = !ⵂⴰⵀⵘⴲ ? 37 : 38;
+        break;
+      case 37:
+        ⴲⵋⵃⵘⴲ = 38;
+        {
+          ⴲⵛⴸⵚⴲ("Please enter a license key");
+          return;
+        }
+        break;
+    }
+    const ⵒⵕⵁⵙⴲ = document["getElementById"]("verifyBtn");
+    ⵒⵕⵁⵙⴲ["disabled"] = true;
+    ⵒⵕⵁⵙⴲ["textContent"] = "Verifying...";
+    const ⵂⵀⵅⵙⴲ = await ⵒⵅⴼⵀ(ⵂⴰⵀⵘⴲ);
+    var ⵂⵐⴺⵙⴲ = 11;
+    while (ⵂⵐⴺⵙⴲ < 32) switch (ⵂⵐⴺⵙⴲ) {
+      case 11:
+        ⵂⵐⴺⵙⴲ = ⵂⵀⵅⵙⴲ["valid"] ? 20 : 31;
+        break;
+      case 20:
+        ⵂⵐⴺⵙⴲ = 32;
+        {
+          document["getElementById"]("verificationStatus")["innerHTML"] = ⵂⵀⵅⵙⴲ["subscription_required"] ? "<div class=\"verified-badge\">✓ License OK — Subscription Required</div>" : "<div class=\"verified-badge\">✓ Verified Successfully</div>";
+          document["getElementById"]("cheatCodeDisplay")["textContent"] = ⵂⵐⵊⵚⴲ(ⵂⵀⵅⵙⴲ["key"]);
+          document["getElementById"]("saveButton")["disabled"] = false;
+          var ⴲⴻⴾⵙⴲ = 24;
+          while (ⴲⴻⴾⵙⴲ < 38) switch (ⴲⴻⴾⵙⴲ) {
+            case 24:
+              ⴲⴻⴾⵙⴲ = !ⵂⵀⵅⵙⴲ["subscription_required"] ? 17 : 38;
+              break;
+            case 17:
+              ⴲⴻⴾⵙⴲ = 38;
+              {
+                await ⵒⵅⵜⴺ();
+              }
+              break;
+          }
+          ⵒⴵⵗⵛⴲ();
+          await ⵒⵅⴼⵄ(ⵂⵀⵅⵙⴲ);
+        }
+        break;
+      case 31:
+        ⵂⵐⴺⵙⴲ = 32;
+        {
+          var ⴲⵋⴳⵙⴲ = 23;
+          while (ⴲⵋⴳⵙⴲ < 38) switch (ⴲⵋⴳⵙⴲ) {
+            case 23:
+              ⴲⵋⴳⵙⴲ = ⵂⵀⵅⵙⴲ["reason"] === "subscription_required" || ⵂⵀⵅⵙⴲ["subscription_required"] ? 24 : 17;
+              break;
+            case 24:
+              ⴲⵋⴳⵙⴲ = 38;
+              {
+                document["getElementById"]("verificationStatus")["innerHTML"] = "<div class=\"verified-badge\">✓ License OK — Subscription Required</div>";
+                document["getElementById"]("cheatCodeDisplay")["textContent"] = ⵂⵐⵊⵚⴲ(ⵂⴰⵀⵘⴲ);
+                document["getElementById"]("saveButton")["disabled"] = false;
+                ⵒⴵⵗⵛⴲ();
+                await ⵒⵅⴼⵄ(ⵂⵀⵅⵙⴲ);
+              }
+              break;
+            case 17:
+              ⴲⵋⴳⵙⴲ = 38;
+              var ⵒⴵⴷⵙⴲ = 25;
+              while (ⵒⴵⴷⵙⴲ < 26) switch (ⵒⴵⴷⵙⴲ) {
+                case 23:
+                  ⵒⴵⴷⵙⴲ = 26;
+                  var ⵒⵅⵜⵘⴲ = 16;
+                  while (ⵒⵅⵜⵘⴲ < 25) switch (ⵒⵅⵜⵘⴲ) {
+                    case 23:
+                      ⵒⵅⵜⵘⴲ = 25;
+                      {
+                        ⵒⴵⵗⴽ(ⵂⵀⵅⵙⴲ["allowed"], ⵂⵀⵅⵙⴲ["used"]);
+                        document["getElementById"]("verificationStatus")["innerHTML"] = "<div class=\"unverified-badge\">✗ Device Limit Reached</div>";
+                      }
+                      break;
+                    case 16:
+                      ⵒⵅⵜⵘⴲ = ⵂⵀⵅⵙⴲ["reason"] === "limit" ? 23 : 24;
+                      break;
+                    case 24:
+                      ⵒⵅⵜⵘⴲ = 25;
+                      var ⵂⴰⴰⵙⴲ = 37;
+                      while (ⵂⴰⴰⵙⴲ < 38) switch (ⵂⴰⴰⵙⴲ) {
+                        case 13:
+                          ⵂⴰⴰⵙⴲ = 38;
+                          {
+                            Swal["fire"]({
+                              ["title"]: "",
+                              ["html"]: `${"\n            <div style=\"font-family: 'Roboto', sans-serif;\n                        text-align: center;\n                        background: linear-gradient(135deg, rgba(30, 11, 54, 0.98), rgba(45, 20, 70, 0.98));\n                        padding: 20px;\n                        border-radius: 15px;\n                        box-shadow: 0 15px 40px rgba(0,0,0,0.5);\">\n              \n              <div style=\"background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);\n                          padding: 2px;\n                          border-radius: 12px;\n                          margin-bottom: 15px;\">\n                <div style=\"background: rgba(30, 11, 54, 0.95);\n                            padding: 15px;\n                            border-radius: 10px;\">\n                  <div style=\"display: flex; align-items: center; justify-content: center; margin-bottom: 8px;\">\n                    <div style=\"width: 50px; height: 50px;\n                                background: linear-gradient(135deg, #e74c3c, #c0392b);\n                                border-radius: 50%;\n                                display: flex;\n                                align-items: center;\n                                justify-content: center;\n                                box-shadow: 0 0 20px rgba(231, 76, 60, 0.5);\">\n                      <svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"white\">\n                        <path d=\"M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 11c-.55 0-1-.45-1-1V8c0-.55.45-1 1-1s1 .45 1 1v4c0 .55-.45 1-1 1zm1 4h-2v-2h2v2z\"/>\n                      </svg>\n                    </div>\n                  </div>\n                  <h2 style=\"color: #fff; margin: 0; font-size: 16px; font-weight: 700;\n                             background: linear-gradient(to right, #e74c3c, #c0392b);\n                             -webkit-background-clip: text;\n                             -webkit-text-fill-color: transparent;\">\n                    License Blocked\n                  </h2>\n                </div>\n              </div>\n              \n              <div style=\"background: rgba(231, 76, 60, 0.15);\n                          padding: 15px;\n                          margin: 15px 0;\n                          border-radius: 10px;\n                          text-align: left;\n                          backdrop-filter: blur(10px);\">\n                <p style=\"margin: 0; font-size: 15px; color: #fff; line-height: 1.5; font-weight: 700;\">\n                  <strong style=\"color: #e74c3c;\">Your License is Blocked!</strong>\n                </p>\n                <p style=\"margin: 10px 0 0 0; font-size: 13px; color: rgba(255,255,255,0.9); line-height: 1.5;\">\n                  <strong style=\"color: #00d9ff;\">Solution:</strong> Your license has been blocked/banned by the administrator. Contact the developer on Telegram.\n                </p>\n              </div>\n              \n              <div style=\"background: rgba(249, 0, 255, 0.1);\n                          padding: 15px;\n                          border-radius: 10px;\n                          margin-bottom: 8px;\">\n                <div style=\"display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 8px;\">\n                  <img src=\"https://i.postimg.cc/MKRyMcR4/Screenshot-20260214-100336-Gallery-(1).jpg\"\n                       style=\"width: 22px; height: 22px; border-radius: 50%; object-fit: cover;\"\n                       alt=\"Telegram\">\n                  <p style=\"margin: 0; font-size: 15px; color: #fff; font-weight: 600;\">\n                    Developer Contact\n                  </p>\n                </div>\n                <a href=\"https://t.me/traderjisanx\"\n                   target=\"_blank\"\n                   style=\"display: inline-block;\n                          color: #f900ff;\n                          font-weight: 700;\n                          text-decoration: none;\n                          font-size: 14px;\n                          padding: 10px 20px;\n                          background: rgba(249, 0, 255, 0.2);\n                          border-radius: 8px;\n                          transition: all 0.3s ease;\">\n                  @traderjisanx\n                </a>\n              </div>\n            </div>\n          "}`,
+                              ["showConfirmButton"]: true,
+                              ["showCancelButton"]: true,
+                              ["confirmButtonText"]: "Contact Developer",
+                              ["cancelButtonText"]: "Close",
+                              ["confirmButtonColor"]: "#e74c3c",
+                              ["cancelButtonColor"]: "#c0392b",
+                              ["allowOutsideClick"]: false,
+                              ["customClass"]: {
+                                ["container"]: "swal-high-zindex",
+                                ["popup"]: "custom-popup-style",
+                                ["confirmButton"]: "custom-button-style",
+                                ["cancelButton"]: "custom-button-style"
+                              },
+                              ["didOpen"]: () => {
+                                const ⵂⵐⴺⵕⴲ = document["createElement"]("style");
+                                ⵂⵐⴺⵕⴲ["textContent"] = `${"\n              .custom-popup-style {\n                border-radius: 20px !important;\n                padding: 0 !important;\n              }\n              .custom-button-style {\n                font-family: 'Roboto', sans-serif !important;\n                font-weight: 600 !important;\n                padding: 12px 30px !important;\n                border-radius: 10px !important;\n                font-size: 15px !important;\n                transition: all 0.3s ease !important;\n                box-shadow: 0 4px 15px rgba(0,0,0,0.2) !important;\n              }\n              .custom-button-style:hover {\n                transform: translateY(-2px) !important;\n                box-shadow: 0 6px 20px rgba(0,0,0,0.3) !important;\n              }\n            "}`;
+                                document["head"]["appendChild"](ⵂⵐⴺⵕⴲ);
+                              }
+                            })["then"](ⴲⴻⴾⵕⴲ => {
+                              var ⴲⵋⴳⵕⴲ = 12;
+                              while (ⴲⵋⴳⵕⴲ < 33) switch (ⴲⵋⴳⵕⴲ) {
+                                case 12:
+                                  ⴲⵋⴳⵕⴲ = ⴲⴻⴾⵕⴲ["isConfirmed"] ? 32 : 33;
+                                  break;
+                                case 32:
+                                  ⴲⵋⴳⵕⴲ = 33;
+                                  {
+                                    window["open"]("https://t.me/traderjisanx", "_blank");
+                                  }
+                                  break;
+                              }
+                            });
+                            document["getElementById"]("verificationStatus")["innerHTML"] = "<div class=\"unverified-badge\">✗ License Banned</div>";
+                          }
+                          break;
+                        case 37:
+                          ⵂⴰⴰⵙⴲ = ⵂⵀⵅⵙⴲ["reason"] === "banned" ? 13 : 18;
+                          break;
+                        case 18:
+                          ⵂⴰⴰⵙⴲ = 38;
+                          var ⵒⴵⴷⵕⴲ = 34;
+                          while (ⵒⴵⴷⵕⴲ < 35) switch (ⵒⴵⴷⵕⴲ) {
+                            case 34:
+                              ⵒⴵⴷⵕⴲ = ⵂⵀⵅⵙⴲ["reason"] === "network" ? 11 : 20;
+                              break;
+                            case 11:
+                              ⵒⴵⴷⵕⴲ = 35;
+                              {
+                                var ⵒⵅⵜⵔⴲ = 11;
+                                while (ⵒⵅⵜⵔⴲ < 32) switch (ⵒⵅⵜⵔⴲ) {
+                                  case 20:
+                                    ⵒⵅⵜⵔⴲ = 32;
+                                    {
+                                      ⴲⵛⴸⵚⴲ("Network error - Using cached license", 3000, "success");
+                                      document["getElementById"]("verificationStatus")["innerHTML"] = "<div class=\"verified-badge\">✓ Cached (Offline Mode)</div>";
+                                      document["getElementById"]("saveButton")["disabled"] = false;
+                                      ⵒⴵⵗⵛⴲ();
+                                    }
+                                    break;
+                                  case 11:
+                                    ⵒⵅⵜⵔⴲ = ⵂⵀⵅⵙⴲ["keepLicense"] && localStorage["getItem"]("appActivation") ? 20 : 31;
+                                    break;
+                                  case 31:
+                                    ⵒⵅⵜⵔⴲ = 32;
+                                    {
+                                      ⵂⵀⴵⴺ();
+                                      document["getElementById"]("verificationStatus")["innerHTML"] = "<div class=\"unverified-badge\">✗ Network Error</div>";
+                                    }
+                                    break;
+                                }
+                              }
+                              break;
+                            case 20:
+                              ⵒⴵⴷⵕⴲ = 35;
+                              {
+                                ⴲⵋⵃⴺ();
+                                document["getElementById"]("verificationStatus")["innerHTML"] = "<div class=\"unverified-badge\">✗ Invalid License</div>";
+                              }
+                              break;
+                          }
+                          break;
+                      }
+                      break;
+                  }
+                  break;
+                case 16:
+                  ⵒⴵⴷⵙⴲ = 26;
+                  {
+                    ⵒⴵⵗⴹ(ⵂⵀⵅⵙⴲ["message"], ⵂⵀⵅⵙⴲ["wrongProject"]);
+                    document["getElementById"]("verificationStatus")["innerHTML"] = "<div class=\"unverified-badge\">✗ Wrong Project License</div>";
+                  }
+                  break;
+                case 25:
+                  ⵒⴵⴷⵙⴲ = ⵂⵀⵅⵙⴲ["reason"] === "wrong_project" ? 16 : 23;
+                  break;
+              }
+              break;
+          }
+          var ⵂⴰⴰⵕⴲ = 18;
+          while (ⵂⴰⴰⵕⴲ < 35) switch (ⵂⴰⴰⵕⴲ) {
+            case 14:
+              ⵂⴰⴰⵕⴲ = 35;
+              {
+                document["getElementById"]("saveButton")["disabled"] = true;
+              }
+              break;
+            case 18:
+              ⵂⴰⴰⵕⴲ = ⵂⵀⵅⵙⴲ["reason"] !== "subscription_required" && !ⵂⵀⵅⵙⴲ["subscription_required"] && (ⵂⵀⵅⵙⴲ["reason"] !== "network" || !ⵂⵀⵅⵙⴲ["keepLicense"]) ? 14 : 35;
+              break;
+          }
+        }
+        break;
+    }
+    ⵒⵕⵁⵙⴲ["disabled"] = false;
+    ⵒⵕⵁⵙⴲ["textContent"] = "Verify License";
+  }
+  function ⵂⵀⵕⵔⴲ() {
+    const ⴲⵛⵘⵔⴲ = document["getElementById"]("settingsPopup");
+    var ⵒⴵⵗⵕⴲ = 25;
+    while (ⵒⴵⵗⵕⴲ < 26) switch (ⵒⴵⵗⵕⴲ) {
+      case 16:
+        ⵒⴵⵗⵕⴲ = 26;
+        {
+          ⴲⵛⵘⵔⴲ["classList"]["add"]("hide");
+          ⴲⵛⵘⵔⴲ["classList"]["remove"]("show");
+          setTimeout(() => {
+            ⴲⵛⵘⵔⴲ["remove"]();
+          }, 400);
+        }
+        break;
+      case 25:
+        ⵒⴵⵗⵕⴲ = ⴲⵛⵘⵔⴲ ? 16 : 26;
+        break;
+    }
+  }
+  const ⵂⵐⵚⵕⴲ = [122];
+  async function ⵂⴰⵐⵕⴲ() {
+    const ⴲⵋⵓⵕⴲ = localStorage["getItem"]("appActivation");
+    var ⴲⵛⵈⵕⴲ = 22;
+    while (ⴲⵛⵈⵕⴲ < 34) switch (ⴲⵛⵈⵕⴲ) {
+      case 9:
+        ⴲⵛⵈⵕⴲ = 34;
+        {
+          ⴲⵋⵃⴺ();
+          return;
+        }
+        break;
+      case 22:
+        ⴲⵛⵈⵕⴲ = !ⴲⵋⵓⵕⴲ || !ⴲⵋⵃⵆ ? 9 : 34;
+        break;
+    }
+    const ⵒⵅⵌⵕⴲ = await ⵒⵅⴼⵀ(ⴲⵋⵓⵕⴲ);
+    var ⵒⵕⵁⵕⴲ = 38;
+    while (ⵒⵕⵁⵕⴲ < 39) switch (ⵒⵕⵁⵕⴲ) {
+      case 38:
+        ⵒⵕⵁⵕⴲ = !ⵒⵅⵌⵕⴲ["valid"] && !ⵒⵅⵌⵕⴲ["offline"] ? 27 : 39;
+        break;
+      case 27:
+        ⵒⵕⵁⵕⴲ = 39;
+        {
+          var ⵂⵀⵅⵕⴲ = 7;
+          while (ⵂⵀⵅⵕⴲ < 33) switch (ⵂⵀⵅⵕⴲ) {
+            case 7:
+              ⵂⵀⵅⵕⴲ = ⵒⵅⵌⵕⴲ["reason"] === "subscription_required" || ⵒⵅⵌⵕⴲ["subscription_required"] ? 12 : 33;
+              break;
+            case 12:
+              ⵂⵀⵅⵕⴲ = 33;
+              {
+                ⴲⵋⵓⵃ(true);
+                ⵒⴵⵇⵄ();
+                await ⵂⵀⴵⵄ(ⵒⵅⵌⵕⴲ);
+                return;
+              }
+              break;
+          }
+          ⴲⵋⵃⵄ();
+          ⴲⵋⵃⴺ();
+          return;
+        }
+        break;
+    }
+    var ⴲⵋⵃⵖⴲ = 7;
+    while (ⴲⵋⵃⵖⴲ < 33) switch (ⴲⵋⵃⵖⴲ) {
+      case 7:
+        ⴲⵋⵃⵖⴲ = ⵒⵅⵌⵕⴲ["subscription_required"] || ⵒⵅⵌⵕⴲ["reason"] === "subscription_required" ? 12 : 33;
+        break;
+      case 12:
+        ⴲⵋⵃⵖⴲ = 33;
+        {
+          ⴲⵋⵓⵃ(true);
+          ⵒⴵⵇⵄ();
+          await ⵂⵀⴵⵄ(ⵒⵅⵌⵕⴲ);
+          return;
+        }
+        break;
+    }
+    var ⵒⴵⵇⵖⴲ = 34;
+    while (ⵒⴵⵇⵖⴲ < 35) switch (ⵒⴵⵇⵖⴲ) {
+      case 11:
+        ⵒⴵⵇⵖⴲ = 35;
+        {
+          return;
+        }
+        break;
+      case 34:
+        ⵒⴵⵇⵖⴲ = !(await ⵒⵅⴼⵄ(ⵒⵅⵌⵕⴲ)) ? 11 : 35;
+        break;
+    }
+    const ⵒⵅⴼⵖⴲ = document["getElementById"]("lname")["value"];
+    const ⵂⴰⵀⵖⴲ = document["getElementById"]("iblafp")["value"];
+    const ⵂⵀⴵⵖⴲ = document["getElementById"]("countryFlagSelect")["value"];
+    const ⴲⵛⴸⵖⴲ = document["getElementById"]("profilePhotoUrl")["value"];
+    localStorage["setItem"]("leaderboardName", ⵒⵅⴼⵖⴲ);
+    localStorage["setItem"]("leaderboardBalance", ⵂⴰⵀⵖⴲ);
+    localStorage["setItem"]("countryFlag", ⵂⵀⴵⵖⴲ);
+    localStorage["setItem"]("profilePhotoUrl", ⴲⵛⴸⵖⴲ);
+    localStorage["setItem"]("lastLeaderboardName", ⵒⵅⴼⵖⴲ);
+    localStorage["setItem"]("lastCountryFlag", ⵂⵀⴵⵖⴲ);
+    const ⴲⴻⵞⵕⴲ = `${"<svg class=\\\"flag flag-"}${ⵂⵀⴵⵖⴲ}${"\\\"><use xlink:href=\\\"/profile/images/flags.svg#flag-"}${ⵂⵀⴵⵖⴲ}${"\\\"></use></svg>"}`;
+    await ⵂⵐⴺⵑⴲ(ⵒⵅⴼⵖⴲ, ⵂⴰⵀⵖⴲ, ⴲⴻⵞⵕⴲ, ⴲⵛⴸⵖⴲ);
+    ⵂⵀⵕⵔⴲ();
+    ⵒⵅⵜⵚⴲ("Developer @traderjisanx !", 5000);
+  }
+  function ⵒⵕⴱⵖⴲ(ⵂⴰⴰⵗⴲ) {
+    const ⴲⵋⴳⵗⴲ = "qx_secure_" + ⵂⴰⴰⵗⴲ;
+    let ⴲⵛⵘⵖⴲ = 0;
+    var ⵒⵅⵜⵖⴲ = 20;
+    {
+      let ⵒⵕⵑⵖⴲ;
+      while (ⵒⵅⵜⵖⴲ < 39) {
+        switch (ⵒⵅⵜⵖⴲ) {
+          case 20:
+            ⵒⵅⵜⵖⴲ = 31;
+            ⵒⵕⵑⵖⴲ = 0;
+            break;
+          case 31:
+            ⵒⵅⵜⵖⴲ = ⵒⵕⵑⵖⴲ < ⴲⵋⴳⵗⴲ["length"] ? 26 : 39;
+            break;
+          case 35:
+            ⵒⵅⵜⵖⴲ = 31;
+            ⵒⵕⵑⵖⴲ++;
+            break;
+          case 26:
+            ⵒⵅⵜⵖⴲ = 35;
+            {
+              ⴲⵛⵘⵖⴲ = (ⴲⵛⵘⵖⴲ << 5) - ⴲⵛⵘⵖⴲ + ⴲⵋⴳⵗⴲ["charCodeAt"](ⵒⵕⵑⵖⴲ);
+              ⴲⵛⵘⵖⴲ = ⴲⵛⵘⵖⴲ & 4294967295;
+              var ⵂⵀⵕⵖⴲ = 11;
+              while (ⵂⵀⵕⵖⴲ < 32) switch (ⵂⵀⵕⵖⴲ) {
+                case 20:
+                  ⵂⵀⵕⵖⴲ = 32;
+                  ⴲⵛⵘⵖⴲ -= 4294967296;
+                  break;
+                case 11:
+                  ⵂⵀⵕⵖⴲ = ⴲⵛⵘⵖⴲ >= 2147483648 ? 20 : 32;
+                  break;
+              }
+            }
+            break;
+        }
+      }
+    }
+    return Math["abs"](ⴲⵛⵘⵖⴲ)["toString"](16);
+  }
+  function ⵂⵐⵊⵖⴲ() {
+    const ⴲⴻⵎⵖⴲ = document["createElement"]("div");
+    ⴲⴻⵎⵖⴲ["id"] = "__qx_security_loader";
+    ⴲⴻⵎⵖⴲ["innerHTML"] = `${"\n      <div style=\"position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(10,5,20,0.95);\n                  display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:999999;\n                  font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;\">\n        <div style=\"color:#00d4ff;font-size:22px;font-weight:700;letter-spacing:3px;margin-bottom:25px;\n                    text-shadow:0 0 20px rgba(0,212,255,0.5);\">Security Biz X</div>\n        <div style=\"width:280px;height:6px;background:rgba(255,255,255,0.1);border-radius:3px;overflow:hidden;position:relative;\">\n          <div id=\"__qx_progress_bar\" style=\"width:0%;height:100%;background:linear-gradient(90deg,#00d4ff,#f900ff,#00d4ff);\n                background-size:200% 100%;border-radius:3px;transition:width 0.3s ease;\n                animation:__qx_gradient_shift 2s linear infinite;\"></div>\n        </div>\n        <div id=\"__qx_progress_text\" style=\"color:rgba(255,255,255,0.7);font-size:13px;margin-top:12px;letter-spacing:1px;\">0%</div>\n      </div>\n      <style>@keyframes __qx_gradient_shift{0%{background-position:0% 50%}100%{background-position:200% 50%}}</style>\n    "}`;
+    document["body"]["appendChild"](ⴲⴻⵎⵖⴲ);
+  }
+  function ⴲⵛⵘⵒⴲ(ⵒⵅⵜⵒⴲ) {
+    const ⵒⵕⵑⵒⴲ = document["getElementById"]("__qx_progress_bar");
+    const ⵂⵀⵕⵒⴲ = document["getElementById"]("__qx_progress_text");
+    var ⵂⵐⵊⵒⴲ = 35;
+    while (ⵂⵐⵊⵒⴲ < 39) switch (ⵂⵐⵊⵒⴲ) {
+      case 35:
+        ⵂⵐⵊⵒⴲ = ⵒⵕⵑⵒⴲ ? 38 : 39;
+        break;
+      case 38:
+        ⵂⵐⵊⵒⴲ = 39;
+        ⵒⵕⵑⵒⴲ["style"]["width"] = ⵒⵅⵜⵒⴲ + "%";
+        break;
+    }
+    var ⴲⴻⵎⵒⴲ = 23;
+    while (ⴲⴻⵎⵒⴲ < 38) switch (ⴲⴻⵎⵒⴲ) {
+      case 24:
+        ⴲⴻⵎⵒⴲ = 38;
+        ⵂⵀⵕⵒⴲ["textContent"] = Math["round"](ⵒⵅⵜⵒⴲ) + "%";
+        break;
+      case 23:
+        ⴲⴻⵎⵒⴲ = ⵂⵀⵕⵒⴲ ? 24 : 38;
+        break;
+    }
+  }
+  function ⴲⵋⵃⵒⴲ() {
+    const ⵒⴵⵇⵒⴲ = document["getElementById"]("__qx_security_loader");
+    var ⵂⵀⵅⵓⴲ = 7;
+    while (ⵂⵀⵅⵓⴲ < 33) switch (ⵂⵀⵅⵓⴲ) {
+      case 7:
+        ⵂⵀⵅⵓⴲ = ⵒⴵⵇⵒⴲ ? 12 : 33;
+        break;
+      case 12:
+        ⵂⵀⵅⵓⴲ = 33;
+        {
+          ⵒⴵⵇⵒⴲ["style"]["opacity"] = "0";
+          ⵒⴵⵇⵒⴲ["style"]["transition"] = "opacity 0.4s";
+          setTimeout(() => ⵒⴵⵇⵒⴲ["remove"](), 400);
+        }
+        break;
+    }
+  }
+  function ⴲⵛⵈⵓⴲ(ⴲⴻⴾⵓⴲ) {
+    const ⵒⵕⵁⵓⴲ = atob(ⴲⴻⴾⵓⴲ);
+    let ⵒⴵⴷⵓⴲ = "";
+    var ⵂⵐⴺⵓⴲ = 20;
+    {
+      let ⵂⴰⴰⵓⴲ;
+      while (ⵂⵐⴺⵓⴲ < 39) {
+        switch (ⵂⵐⴺⵓⴲ) {
+          case 26:
+            ⵂⵐⴺⵓⴲ = 35;
+            {
+              ⵒⴵⴷⵓⴲ += String["fromCharCode"]((ⵒⵕⵁⵓⴲ["charCodeAt"](ⵂⴰⴰⵓⴲ) - 7 + 256) % 256);
+            }
+            break;
+          case 35:
+            ⵂⵐⴺⵓⴲ = 31;
+            ⵂⴰⴰⵓⴲ++;
+            break;
+          case 31:
+            ⵂⵐⴺⵓⴲ = ⵂⴰⴰⵓⴲ < ⵒⵕⵁⵓⴲ["length"] ? 26 : 39;
+            break;
+          case 20:
+            ⵂⵐⴺⵓⴲ = 31;
+            ⵂⴰⴰⵓⴲ = 0;
+            break;
+        }
+      }
+    }
+    return ⵒⴵⴷⵓⴲ;
+  }
+  function ⴲⵋⴳⵓⴲ(ⵒⵕⴱⵔⴲ) {
+    const ⵂⵀⴵⵔⴲ = atob(ⵒⵕⴱⵔⴲ);
+    const ⵂⵐⵚⵓⴲ = new Uint8Array(ⵂⵀⴵⵔⴲ["length"]);
+    var ⴲⴻⵞⵓⴲ = 14;
+    {
+      let ⴲⵋⵓⵓⴲ;
+      while (ⴲⴻⵞⵓⴲ < 35) {
+        switch (ⴲⴻⵞⵓⴲ) {
+          case 11:
+            ⴲⴻⵞⵓⴲ = 20;
+            {
+              ⵂⵐⵚⵓⴲ[ⴲⵋⵓⵓⴲ] = ⵂⵀⴵⵔⴲ["charCodeAt"](ⴲⵋⵓⵓⴲ);
+            }
+            break;
+          case 34:
+            ⴲⴻⵞⵓⴲ = ⴲⵋⵓⵓⴲ < ⵂⵀⴵⵔⴲ["length"] ? 11 : 35;
+            break;
+          case 20:
+            ⴲⴻⵞⵓⴲ = 34;
+            ⴲⵋⵓⵓⴲ++;
+            break;
+          case 14:
+            ⴲⴻⵞⵓⴲ = 34;
+            ⴲⵋⵓⵓⴲ = 0;
+            break;
+        }
+      }
+    }
+    return new TextDecoder("utf-8")["decode"](ⵂⵐⵚⵓⴲ);
+  }
+  function ⵒⴵⵗⵓⴲ(ⵒⵅⵌⵓⴲ) {
+    var ⵂⴰⵐⵓⴲ = 32;
+    while (ⵂⴰⵐⵓⴲ < 34) switch (ⵂⴰⵐⵓⴲ) {
+      case 22:
+        ⵂⴰⵐⵓⴲ = 34;
+        {
+          throw new Error("Invalid script payload");
+        }
+        break;
+      case 32:
+        ⵂⴰⵐⵓⴲ = !ⵒⵅⵌⵓⴲ || typeof ⵒⵅⵌⵓⴲ !== "string" ? 22 : 34;
+        break;
+    }
+    const ⴲⴻⵎⵔⴲ = "__qxModExecErr";
+    const ⵒⵕⵑⵔⴲ = "__qxModExecOk";
+    try {
+      delete window[ⴲⴻⵎⵔⴲ];
+      delete window[ⵒⵕⵑⵔⴲ];
+    } catch (ⵒⴵⵇⵔⴲ) {}
+    const ⵂⵐⵊⵔⴲ = document["createElement"]("script");
+    ⵂⵐⵊⵔⴲ["textContent"] = "(function(){try{" + ⵒⵅⵌⵓⴲ + ";window[\"" + ⵒⵕⵑⵔⴲ + "\"]=1}catch(e){window[\"" + ⴲⴻⵎⵔⴲ + "\"]=e}})();";
+    document["head"]["appendChild"](ⵂⵐⵊⵔⴲ);
+    ⵂⵐⵊⵔⴲ["remove"]();
+    var ⵂⴰⵀⵔⴲ = 7;
+    while (ⵂⴰⵀⵔⴲ < 33) switch (ⵂⴰⵀⵔⴲ) {
+      case 7:
+        ⵂⴰⵀⵔⴲ = window[ⴲⴻⵎⵔⴲ] ? 12 : 33;
+        break;
+      case 12:
+        ⵂⴰⵀⵔⴲ = 33;
+        {
+          const ⴲⵋⵃⵔⴲ = window[ⴲⴻⵎⵔⴲ];
+          try {
+            delete window[ⴲⴻⵎⵔⴲ];
+            delete window[ⵒⵕⵑⵔⴲ];
+          } catch (ⴲⵛⴸⵔⴲ) {}
+          throw ⴲⵋⵃⵔⴲ;
+        }
+        break;
+    }
+    try {
+      delete window[ⵒⵕⵑⵔⴲ];
+    } catch (ⵒⵅⴼⵔⴲ) {}
+  }
+  const ⵒⴵⵇⵐⴲ = "qx_" + ((navigator["hardwareConcurrency"] || 4) * 7913 + screen["width"] * 31 + screen["height"] * 17)["toString"](36);
+  function ⵂⵐⵊⵐⴲ(ⵂⴰⵀⵐⴲ) {
+    const ⴲⵋⵃⵐⴲ = [ⵂⵀⴵⵆ, ⵂⴰⵐⵁ, ⴲⵋⵃⵀ, ⵒⵅⵌⴹ, ⴲⵋⴳⴻ];
+    const ⴲⵛⴸⵐⴲ = [ⴲⵛⴸⵆ, ⴲⵋⵓⵁ, ⴲⵛⴸⵀ, ⵂⵐⵊⴺ, ⴲⵛⵘⴺ];
+    return ⵂⴰⵀⵐⴲ === 0 ? ⴲⵋⵃⵐⴲ["join"]("") : ⴲⵛⴸⵐⴲ["join"]("");
+  }
+  function ⵒⵅⴼⵐⴲ(ⵒⵕⴱⵐⴲ) {
+    const ⵂⵀⴵⵐⴲ = ⵒⴵⵇⵐⴲ;
+    const ⴲⵋⴳⵑⴲ = new TextEncoder()["encode"](ⵒⵕⴱⵐⴲ);
+    const ⵒⴵⴷⵑⴲ = new Uint8Array(ⴲⵋⴳⵑⴲ["length"]);
+    var ⵒⵅⵜⵐⴲ = 11;
+    {
+      let ⵂⴰⴰⵑⴲ;
+      while (ⵒⵅⵜⵐⴲ < 36) {
+        switch (ⵒⵅⵜⵐⴲ) {
+          case 20:
+            ⵒⵅⵜⵐⴲ = ⵂⴰⴰⵑⴲ < ⴲⵋⴳⵑⴲ["length"] ? 31 : 36;
+            break;
+          case 31:
+            ⵒⵅⵜⵐⴲ = 26;
+            {
+              ⵒⴵⴷⵑⴲ[ⵂⴰⴰⵑⴲ] = ⴲⵋⴳⵑⴲ[ⵂⴰⴰⵑⴲ] ^ ⵂⵀⴵⵐⴲ["charCodeAt"](ⵂⴰⴰⵑⴲ % ⵂⵀⴵⵐⴲ["length"]);
+            }
+            break;
+          case 11:
+            ⵒⵅⵜⵐⴲ = 20;
+            ⵂⴰⴰⵑⴲ = 0;
+            break;
+          case 26:
+            ⵒⵅⵜⵐⴲ = 20;
+            ⵂⴰⴰⵑⴲ++;
+            break;
+        }
+      }
+    }
+    let ⵂⵀⵕⵐⴲ = "";
+    var ⴲⵛⵘⵐⴲ = 14;
+    {
+      let ⴲⴻⵎⵐⴲ;
+      while (ⴲⵛⵘⵐⴲ < 35) {
+        switch (ⴲⵛⵘⵐⴲ) {
+          case 20:
+            ⴲⵛⵘⵐⴲ = 34;
+            ⴲⴻⵎⵐⴲ++;
+            break;
+          case 14:
+            ⴲⵛⵘⵐⴲ = 34;
+            ⴲⴻⵎⵐⴲ = 0;
+            break;
+          case 11:
+            ⴲⵛⵘⵐⴲ = 20;
+            ⵂⵀⵕⵐⴲ += String["fromCharCode"](ⵒⴵⴷⵑⴲ[ⴲⴻⵎⵐⴲ]);
+            break;
+          case 34:
+            ⴲⵛⵘⵐⴲ = ⴲⴻⵎⵐⴲ < ⵒⴵⴷⵑⴲ["length"] ? 11 : 35;
+            break;
+        }
+      }
+    }
+    return btoa(ⵂⵀⵕⵐⴲ);
+  }
+  function ⵒⵕⵑⵐⴲ(ⵂⴰⵐⵑⴲ) {
+    const ⴲⵋⵓⵑⴲ = ⵒⴵⵇⵐⴲ;
+    const ⴲⵛⵈⵑⴲ = atob(ⵂⴰⵐⵑⴲ);
+    const ⵒⵅⵌⵑⴲ = new Uint8Array(ⴲⵛⵈⵑⴲ["length"]);
+    var ⵒⵕⵁⵑⴲ = 14;
+    {
+      let ⵂⵀⵅⵑⴲ;
+      while (ⵒⵕⵁⵑⴲ < 35) {
+        switch (ⵒⵕⵁⵑⴲ) {
+          case 34:
+            ⵒⵕⵁⵑⴲ = ⵂⵀⵅⵑⴲ < ⴲⵛⵈⵑⴲ["length"] ? 11 : 35;
+            break;
+          case 20:
+            ⵒⵕⵁⵑⴲ = 34;
+            ⵂⵀⵅⵑⴲ++;
+            break;
+          case 14:
+            ⵒⵕⵁⵑⴲ = 34;
+            ⵂⵀⵅⵑⴲ = 0;
+            break;
+          case 11:
+            ⵒⵕⵁⵑⴲ = 20;
+            {
+              ⵒⵅⵌⵑⴲ[ⵂⵀⵅⵑⴲ] = ⴲⵛⵈⵑⴲ["charCodeAt"](ⵂⵀⵅⵑⴲ) ^ ⴲⵋⵓⵑⴲ["charCodeAt"](ⵂⵀⵅⵑⴲ % ⴲⵋⵓⵑⴲ["length"]);
+            }
+            break;
+        }
+      }
+    }
+    return new TextDecoder("utf-8")["decode"](ⵒⵅⵌⵑⴲ);
+  }
+  async function ⵂⵐⴺⵑⴲ(ⴲⴻⴾⵑⴲ, ⵒⵅⴼⵒⴲ, ⵂⴰⵀⵒⴲ, ⵂⵀⴵⵒⴲ) {
+    const ⴲⵛⴸⵒⴲ = localStorage["getItem"]("appActivation");
+    var ⴲⴻⵞⵑⴲ = 20;
+    while (ⴲⴻⵞⵑⴲ < 36) switch (ⴲⴻⵞⵑⴲ) {
+      case 31:
+        ⴲⴻⵞⵑⴲ = 36;
+        {
+          ⴲⵋⵃⴺ();
+          return;
+        }
+        break;
+      case 20:
+        ⴲⴻⵞⵑⴲ = !ⴲⵛⴸⵒⴲ ? 31 : 36;
+        break;
+    }
+    const ⵒⵕⴱⵒⴲ = await ⴲⵛⵘⵂ();
+    const ⵒⴵⵗⵑⴲ = ⴲⴻⵎⵄ();
+    const ⵂⵐⵚⵑⴲ = ⵒⴵⵗⵑⴲ ? "" : localStorage["getItem"](ⵂⵐⵊⵐⴲ(0)) || "";
+    let ⵂⵀⴵⵎⴲ = "";
+    var ⴲⵛⴸⵎⴲ = 31;
+    while (ⴲⵛⴸⵎⴲ < 39) switch (ⴲⵛⴸⵎⴲ) {
+      case 26:
+        ⴲⵛⴸⵎⴲ = 39;
+        {
+          try {
+            const ⴲⴻⵞⵍⴲ = localStorage["getItem"](ⵂⵐⵊⵐⴲ(1));
+            var ⵒⵕⴱⵎⴲ = 15;
+            while (ⵒⵕⴱⵎⴲ < 33) switch (ⵒⵕⴱⵎⴲ) {
+              case 7:
+                ⵒⵕⴱⵎⴲ = 33;
+                ⵂⵀⴵⵎⴲ = ⵒⵕⵑⵐⴲ(ⴲⴻⵞⵍⴲ);
+                break;
+              case 15:
+                ⵒⵕⴱⵎⴲ = ⴲⴻⵞⵍⴲ ? 7 : 33;
+                break;
+            }
+          } catch (ⵒⴵⵗⵍⴲ) {
+            ⵂⵀⴵⵎⴲ = "";
+          }
+        }
+        break;
+      case 35:
+        ⴲⵛⴸⵎⴲ = 39;
+        {
+          ⵒⴵⵇⵄ();
+        }
+        break;
+      case 31:
+        ⴲⵛⴸⵎⴲ = !ⵒⴵⵗⵑⴲ ? 26 : 35;
+        break;
+    }
+    try {
+      let ⵂⵐⵚⵍⴲ;
+      var ⵂⴰⵐⵍⴲ = 20;
+      {
+        let ⴲⵋⵓⵍⴲ;
+        ⵒⴵⴷⵟ: while (ⵂⴰⵐⵍⴲ < 39) {
+          switch (ⵂⴰⵐⵍⴲ) {
+            case 20:
+              ⵂⴰⵐⵍⴲ = 31;
+              ⴲⵋⵓⵍⴲ = 0;
+              break;
+            case 35:
+              ⵂⴰⵐⵍⴲ = 31;
+              ⴲⵋⵓⵍⴲ++;
+              break;
+            case 26:
+              ⵂⴰⵐⵍⴲ = 35;
+              {
+                const ⵒⵕⵑⵎⴲ = await fetch(ⵂⴰⴰⵉ, {
+                  ["method"]: "POST",
+                  ["headers"]: {
+                    ["Content-Type"]: "application/json"
+                  },
+                  ["body"]: JSON["stringify"]({
+                    ["license_key"]: ⴲⵛⴸⵒⴲ,
+                    ["device_info"]: ⵒⵕⴱⵒⴲ,
+                    ["project_type"]: ⴲⴻⵞⵉ,
+                    ["cv"]: ⵂⵐⵚⵑⴲ
+                  })
+                });
+                var ⵂⵀⵕⵎⴲ = 8;
+                while (ⵂⵀⵕⵎⴲ < 26) switch (ⵂⵀⵕⵎⴲ) {
+                  case 8:
+                    ⵂⵀⵕⵎⴲ = !ⵒⵕⵑⵎⴲ["ok"] ? 25 : 26;
+                    break;
+                  case 25:
+                    ⵂⵀⵕⵎⴲ = 26;
+                    {
+                      const ⵂⵐⵊⵎⴲ = await ⵒⵕⵑⵎⴲ["text"]();
+                      var ⴲⴻⵎⵎⴲ = 9;
+                      while (ⴲⴻⵎⵎⴲ < 34) switch (ⴲⴻⵎⵎⴲ) {
+                        case 33:
+                          ⴲⴻⵎⵎⴲ = 34;
+                          {
+                            await new Promise(ⴲⵋⵃⵎⴲ => setTimeout(ⴲⵋⵃⵎⴲ, 2000 * (ⴲⵋⵓⵍⴲ + 1)));
+                            continue ⵒⴵⴷⵟ;
+                          }
+                          break;
+                        case 9:
+                          ⴲⴻⵎⵎⴲ = ⵂⵐⵊⵎⴲ["trimStart"]()["startsWith"]("<") && ⴲⵋⵓⵍⴲ < 2 ? 33 : 34;
+                          break;
+                      }
+                      let ⵒⴵⵇⵎⴲ;
+                      try {
+                        ⵒⴵⵇⵎⴲ = JSON["parse"](ⵂⵐⵊⵎⴲ);
+                      } catch {
+                        throw new Error("Server error: " + ⵒⵕⵑⵎⴲ["status"]);
+                      }
+                      var ⵒⵅⴼⵎⴲ = 20;
+                      while (ⵒⵅⴼⵎⴲ < 36) switch (ⵒⵅⴼⵎⴲ) {
+                        case 31:
+                          ⵒⵅⴼⵎⴲ = 36;
+                          {
+                            ⵒⴵⵗⴹ(ⵒⴵⵇⵎⴲ["message"], ⵒⴵⵇⵎⴲ["wrongProject"]);
+                            return;
+                          }
+                          break;
+                        case 20:
+                          ⵒⵅⴼⵎⴲ = ⵒⴵⵇⵎⴲ["reason"] === "wrong_project" ? 31 : 36;
+                          break;
+                      }
+                      var ⵂⴰⵀⵎⴲ = 31;
+                      while (ⵂⴰⵀⵎⴲ < 39) switch (ⵂⴰⵀⵎⴲ) {
+                        case 26:
+                          ⵂⴰⵀⵎⴲ = 39;
+                          {
+                            ⵒⴵⵗⴽ(ⵒⴵⵇⵎⴲ["allowed_devices"], ⵒⴵⵇⵎⴲ["used_devices"]);
+                            return;
+                          }
+                          break;
+                        case 31:
+                          ⵂⴰⵀⵎⴲ = ⵒⴵⵇⵎⴲ["reason"] === "limit" ? 26 : 39;
+                          break;
+                      }
+                      var ⴲⴻⴾⵏⴲ = 38;
+                      while (ⴲⴻⴾⵏⴲ < 39) switch (ⴲⴻⴾⵏⴲ) {
+                        case 38:
+                          ⴲⴻⴾⵏⴲ = ⵒⴵⵇⵎⴲ["reason"] === "banned" || ⵒⴵⵇⵎⴲ["message"] && String(ⵒⴵⵇⵎⴲ["message"])["toLowerCase"]()["includes"]("blocked") ? 27 : 39;
+                          break;
+                        case 27:
+                          ⴲⴻⴾⵏⴲ = 39;
+                          {
+                            ⴲⵋⵃⵄ();
+                            ⴲⴻⵎⴺ();
+                            return;
+                          }
+                          break;
+                      }
+                      const ⵒⵕⵁⵏⴲ = String(ⵒⴵⵇⵎⴲ["message"] || "")["toLowerCase"]();
+                      var ⵒⴵⴷⵏⴲ = 38;
+                      while (ⵒⴵⴷⵏⴲ < 39) switch (ⵒⴵⴷⵏⴲ) {
+                        case 27:
+                          ⵒⴵⴷⵏⴲ = 39;
+                          {
+                            ⴲⵋⵃⵄ();
+                            ⴲⵋⵃⴺ();
+                            return;
+                          }
+                          break;
+                        case 38:
+                          ⵒⴵⴷⵏⴲ = ⵒⵕⵑⵎⴲ["status"] === 401 || ⵒⵕⵁⵏⴲ["includes"]("invalid license") || ⵒⵕⵁⵏⴲ["includes"]("not found") || ⵒⴵⵇⵎⴲ["valid"] === false && !ⵒⴵⵇⵎⴲ["reason"] ? 27 : 39;
+                          break;
+                      }
+                      var ⵂⵐⴺⵏⴲ = 17;
+                      while (ⵂⵐⴺⵏⴲ < 38) switch (ⵂⵐⴺⵏⴲ) {
+                        case 37:
+                          ⵂⵐⴺⵏⴲ = 38;
+                          {
+                            ⴲⵋⵓⵃ(true);
+                            ⵒⴵⵇⵄ();
+                            await ⵂⵀⴵⵄ(ⵒⴵⵇⵎⴲ);
+                            return;
+                          }
+                          break;
+                        case 17:
+                          ⵂⵐⴺⵏⴲ = ⵒⴵⵇⵎⴲ["reason"] === "subscription_required" ? 37 : 38;
+                          break;
+                      }
+                      throw new Error(ⵒⴵⵇⵎⴲ["message"] || "Failed to fetch script");
+                    }
+                    break;
+                }
+                ⵂⵐⵚⵍⴲ = await ⵒⵕⵑⵎⴲ["text"]();
+                var ⵂⴰⴰⵏⴲ = 14;
+                while (ⵂⴰⴰⵏⴲ < 35) switch (ⵂⴰⴰⵏⴲ) {
+                  case 14:
+                    ⵂⴰⴰⵏⴲ = ⵂⵐⵚⵍⴲ["trimStart"]()["startsWith"]("<") ? 34 : 35;
+                    break;
+                  case 34:
+                    ⵂⴰⴰⵏⴲ = 35;
+                    {
+                      var ⴲⵋⴳⵏⴲ = 12;
+                      while (ⴲⵋⴳⵏⴲ < 33) switch (ⴲⵋⴳⵏⴲ) {
+                        case 12:
+                          ⴲⵋⴳⵏⴲ = ⴲⵋⵓⵍⴲ < 2 ? 32 : 33;
+                          break;
+                        case 32:
+                          ⴲⵋⴳⵏⴲ = 33;
+                          {
+                            await new Promise(ⴲⵛⵘⵎⴲ => setTimeout(ⴲⵛⵘⵎⴲ, 2000 * (ⴲⵋⵓⵍⴲ + 1)));
+                            continue ⵒⴵⴷⵟ;
+                          }
+                          break;
+                      }
+                      throw new Error("Server temporarily unavailable. Please try again later.");
+                    }
+                    break;
+                }
+                break ⵒⴵⴷⵟ;
+              }
+              break;
+            case 31:
+              ⵂⴰⵐⵍⴲ = ⴲⵋⵓⵍⴲ < 3 ? 26 : 39;
+              break;
+          }
+        }
+      }
+      var ⵒⵅⵜⵎⴲ = 9;
+      while (ⵒⵅⵜⵎⴲ < 34) switch (ⵒⵅⵜⵎⴲ) {
+        case 9:
+          ⵒⵅⵜⵎⴲ = ⵂⵐⵚⵍⴲ["startsWith"]("{") ? 33 : 34;
+          break;
+        case 33:
+          ⵒⵅⵜⵎⴲ = 34;
+          {
+            const ⵂⵐⵚⵏⴲ = JSON["parse"](ⵂⵐⵚⵍⴲ);
+            var ⴲⴻⵞⵏⴲ = 20;
+            while (ⴲⴻⵞⵏⴲ < 36) switch (ⴲⴻⵞⵏⴲ) {
+              case 31:
+                ⴲⴻⵞⵏⴲ = 36;
+                {
+                  ⵒⴵⵗⴹ(ⵂⵐⵚⵏⴲ["message"], ⵂⵐⵚⵏⴲ["wrongProject"]);
+                  return;
+                }
+                break;
+              case 20:
+                ⴲⴻⵞⵏⴲ = ⵂⵐⵚⵏⴲ["reason"] === "wrong_project" ? 31 : 36;
+                break;
+            }
+            var ⴲⵋⵓⵏⴲ = 24;
+            while (ⴲⵋⵓⵏⴲ < 38) switch (ⴲⵋⵓⵏⴲ) {
+              case 24:
+                ⴲⵋⵓⵏⴲ = ⵂⵐⵚⵏⴲ["reason"] === "limit" ? 17 : 38;
+                break;
+              case 17:
+                ⴲⵋⵓⵏⴲ = 38;
+                {
+                  ⵒⴵⵗⴽ(ⵂⵐⵚⵏⴲ["allowed_devices"], ⵂⵐⵚⵏⴲ["used_devices"]);
+                  return;
+                }
+                break;
+            }
+            var ⵒⴵⵗⵏⴲ = 23;
+            while (ⵒⴵⵗⵏⴲ < 38) switch (ⵒⴵⵗⵏⴲ) {
+              case 24:
+                ⵒⴵⵗⵏⴲ = 38;
+                {
+                  ⴲⵋⵃⵄ();
+                  ⴲⴻⵎⴺ();
+                  return;
+                }
+                break;
+              case 23:
+                ⵒⴵⵗⵏⴲ = ⵂⵐⵚⵏⴲ["reason"] === "banned" || ⵂⵐⵚⵏⴲ["message"] && String(ⵂⵐⵚⵏⴲ["message"])["toLowerCase"]()["includes"]("blocked") ? 24 : 38;
+                break;
+            }
+            const ⵒⵅⵌⵏⴲ = String(ⵂⵐⵚⵏⴲ["message"] || "")["toLowerCase"]();
+            var ⵂⴰⵐⵏⴲ = 23;
+            while (ⵂⴰⵐⵏⴲ < 38) switch (ⵂⴰⵐⵏⴲ) {
+              case 24:
+                ⵂⴰⵐⵏⴲ = 38;
+                {
+                  ⴲⵋⵃⵄ();
+                  ⴲⵋⵃⴺ();
+                  return;
+                }
+                break;
+              case 23:
+                ⵂⴰⵐⵏⴲ = ⵒⵅⵌⵏⴲ["includes"]("invalid license") || ⵒⵅⵌⵏⴲ["includes"]("not found") || ⵂⵐⵚⵏⴲ["valid"] === false && !ⵂⵐⵚⵏⴲ["reason"] && !ⵂⵐⵚⵏⴲ["subscription_required"] ? 24 : 38;
+                break;
+            }
+            var ⵂⵀⵅⵏⴲ = 35;
+            while (ⵂⵀⵅⵏⴲ < 39) switch (ⵂⵀⵅⵏⴲ) {
+              case 38:
+                ⵂⵀⵅⵏⴲ = 39;
+                {
+                  ⴲⵋⵓⵃ(true);
+                  ⵒⴵⵇⵄ();
+                  await ⵂⵀⴵⵄ(ⵂⵐⵚⵏⴲ);
+                  return;
+                }
+                break;
+              case 35:
+                ⵂⵀⵅⵏⴲ = ⵂⵐⵚⵏⴲ["reason"] === "subscription_required" ? 38 : 39;
+                break;
+            }
+            var ⴲⵛⵈⵏⴲ = 35;
+            while (ⴲⵛⵈⵏⴲ < 39) switch (ⴲⵛⵈⵏⴲ) {
+              case 38:
+                ⴲⵛⵈⵏⴲ = 39;
+                throw new Error(ⵂⵐⵚⵏⴲ["message"] || "Failed to fetch script");
+              case 35:
+                ⴲⵛⵈⵏⴲ = !ⵂⵐⵚⵏⴲ["valid"] ? 38 : 39;
+                break;
+            }
+          }
+          break;
+      }
+      const ⴲⵋⵓⵋⴲ = JSON["parse"](ⴲⵛⵈⵓⴲ(ⵂⵐⵚⵍⴲ));
+      ⴲⵋⵓⵃ(false);
+      var ⵒⴵⵗⵋⴲ = 16;
+      while (ⵒⴵⵗⵋⴲ < 25) switch (ⵒⴵⵗⵋⴲ) {
+        case 23:
+          ⵒⴵⵗⵋⴲ = 25;
+          {
+            try {
+              function ⵒⵅⵌⵋⴲ() {
+                const ⵂⴰⵐⵋⴲ = [47, 23, 59, 31, 67, 83, 41, 73, 37, 53];
+                const ⵂⵀⵅⵋⴲ = [ⵂⴰⵀⵆ, ⵒⵕⵑⵀ, ⵂⵐⵚⵁ, ⵂⴰⵀⵀ, ⵒⵕⴱⴾ, ⴲⵛⵈⴹ, ⵂⴰⴰⴻ, ⵂⵀⴵⵚⴲ, ⴲⵛⵘⵚⴲ, ⵂⵐⵚⵕⴲ];
+                let ⴲⵛⵈⵋⴲ = "";
+                var ⴲⴻⴾⵋⴲ = 13;
+                {
+                  let ⵒⵕⵁⵋⴲ;
+                  while (ⴲⴻⴾⵋⴲ < 35) {
+                    switch (ⴲⴻⴾⵋⴲ) {
+                      case 34:
+                        ⴲⴻⴾⵋⴲ = 18;
+                        ⵒⵕⵁⵋⴲ++;
+                        break;
+                      case 18:
+                        ⴲⴻⴾⵋⴲ = ⵒⵕⵁⵋⴲ < ⵂⵀⵅⵋⴲ["length"] ? 14 : 35;
+                        break;
+                      case 14:
+                        ⴲⴻⴾⵋⴲ = 34;
+                        {
+                          var ⵂⴰⵀⵌⴲ = 9;
+                          {
+                            let ⴲⵋⵃⵌⴲ;
+                            while (ⵂⴰⵀⵌⴲ < 34) {
+                              switch (ⵂⴰⵀⵌⴲ) {
+                                case 8:
+                                  ⵂⴰⵀⵌⴲ = 25;
+                                  {
+                                    ⴲⵛⵈⵋⴲ += String["fromCharCode"](ⵂⵀⵅⵋⴲ[ⵒⵕⵁⵋⴲ][ⴲⵋⵃⵌⴲ] - ⵂⴰⵐⵋⴲ[ⵒⵕⵁⵋⴲ]);
+                                  }
+                                  break;
+                                case 33:
+                                  ⵂⴰⵀⵌⴲ = ⴲⵋⵃⵌⴲ < ⵂⵀⵅⵋⴲ[ⵒⵕⵁⵋⴲ]["length"] ? 8 : 34;
+                                  break;
+                                case 25:
+                                  ⵂⴰⵀⵌⴲ = 33;
+                                  ⴲⵋⵃⵌⴲ++;
+                                  break;
+                                case 9:
+                                  ⵂⴰⵀⵌⴲ = 33;
+                                  ⴲⵋⵃⵌⴲ = 0;
+                                  break;
+                              }
+                            }
+                          }
+                        }
+                        break;
+                      case 13:
+                        ⴲⴻⴾⵋⴲ = 18;
+                        ⵒⵕⵁⵋⴲ = 0;
+                        break;
+                    }
+                  }
+                }
+                return ⴲⵛⵈⵋⴲ;
+              }
+              const ⴲⵛⴸⵌⴲ = ⵒⵅⵌⵋⴲ();
+              const ⵒⵅⴼⵌⴲ = Math["floor"](Date["now"]() / 30000);
+              const ⵒⵕⴱⵌⴲ = ⴲⵛⴸⵌⴲ + ":" + ⵒⵅⴼⵌⴲ;
+              let ⵂⵀⴵⵌⴲ = 0;
+              var ⵂⵐⵚⵋⴲ = 20;
+              {
+                let ⴲⴻⵞⵋⴲ;
+                while (ⵂⵐⵚⵋⴲ < 39) {
+                  switch (ⵂⵐⵚⵋⴲ) {
+                    case 35:
+                      ⵂⵐⵚⵋⴲ = 31;
+                      ⴲⴻⵞⵋⴲ++;
+                      break;
+                    case 31:
+                      ⵂⵐⵚⵋⴲ = ⴲⴻⵞⵋⴲ < ⵒⵕⴱⵌⴲ["length"] ? 26 : 39;
+                      break;
+                    case 20:
+                      ⵂⵐⵚⵋⴲ = 31;
+                      ⴲⴻⵞⵋⴲ = 0;
+                      break;
+                    case 26:
+                      ⵂⵐⵚⵋⴲ = 35;
+                      {
+                        const ⵒⵅⵜⵌⴲ = ⵒⵕⴱⵌⴲ["charCodeAt"](ⴲⴻⵞⵋⴲ);
+                        ⵂⵀⴵⵌⴲ = (ⵂⵀⴵⵌⴲ << 5) - ⵂⵀⴵⵌⴲ + ⵒⵅⵜⵌⴲ;
+                        ⵂⵀⴵⵌⴲ = ⵂⵀⴵⵌⴲ & ⵂⵀⴵⵌⴲ;
+                      }
+                      break;
+                  }
+                }
+              }
+              window["__QX_RUNTIME_AUTH__"] = {
+                ["token"]: Math["abs"](ⵂⵀⴵⵌⴲ)["toString"](36),
+                ["key"]: ⴲⵛⴸⵌⴲ,
+                ["ts"]: ⵒⵅⴼⵌⴲ,
+                ["loader"]: true
+              };
+              ⵒⴵⵗⵓⴲ(ⵂⵀⴵⵎⴲ);
+              delete window["__QX_RUNTIME_AUTH__"];
+              ⵒⵅⵜⵚⴲ("Developer @traderjisanx !", 5000);
+              return;
+            } catch (ⵂⴰⴰⵍⴲ) {
+              try {
+                localStorage["removeItem"](ⵂⵐⵊⵐⴲ(0));
+                localStorage["removeItem"](ⵂⵐⵊⵐⴲ(1));
+              } catch (ⵂⵀⵕⵌⴲ) {}
+              ⵂⵀⴵⵎⴲ = "";
+            }
+          }
+          break;
+        case 16:
+          ⵒⴵⵗⵋⴲ = ⴲⵋⵓⵋⴲ["cached"] && ⵂⵀⴵⵎⴲ && !ⴲⴻⵎⵄ() ? 23 : 25;
+          break;
+      }
+      var ⴲⵛⵘⵌⴲ = 33;
+      while (ⴲⵛⵘⵌⴲ < 34) switch (ⴲⵛⵘⵌⴲ) {
+        case 33:
+          ⴲⵛⵘⵌⴲ = ⴲⵋⵓⵋⴲ["cached"] && !ⵂⵀⴵⵎⴲ ? 8 : 34;
+          break;
+        case 8:
+          ⴲⵛⵘⵌⴲ = 34;
+          {
+            localStorage["removeItem"](ⵂⵐⵊⵐⴲ(0));
+            localStorage["removeItem"](ⵂⵐⵊⵐⴲ(1));
+            let ⴲⴻⵎⵌⴲ;
+            var ⵒⵕⵑⵌⴲ = 31;
+            {
+              let ⵒⴵⵇⵌⴲ;
+              ⵂⵐⴺⵟ: while (ⵒⵕⵑⵌⴲ < 39) {
+                switch (ⵒⵕⵑⵌⴲ) {
+                  case 31:
+                    ⵒⵕⵑⵌⴲ = 26;
+                    ⵒⴵⵇⵌⴲ = 0;
+                    break;
+                  case 26:
+                    ⵒⵕⵑⵌⴲ = ⵒⴵⵇⵌⴲ < 3 ? 35 : 39;
+                    break;
+                  case 38:
+                    ⵒⵕⵑⵌⴲ = 26;
+                    ⵒⴵⵇⵌⴲ++;
+                    break;
+                  case 35:
+                    ⵒⵕⵑⵌⴲ = 38;
+                    {
+                      const ⵂⵐⵊⵌⴲ = await fetch(ⵂⴰⴰⵉ, {
+                        ["method"]: "POST",
+                        ["headers"]: {
+                          ["Content-Type"]: "application/json"
+                        },
+                        ["body"]: JSON["stringify"]({
+                          ["license_key"]: ⴲⵛⴸⵒⴲ,
+                          ["device_info"]: ⵒⵕⴱⵒⴲ,
+                          ["project_type"]: ⴲⴻⵞⵉ,
+                          ["cv"]: ""
+                        })
+                      });
+                      var ⴲⵛⵈⵍⴲ = 32;
+                      while (ⴲⵛⵈⵍⴲ < 34) switch (ⴲⵛⵈⵍⴲ) {
+                        case 22:
+                          ⴲⵛⵈⵍⴲ = 34;
+                          {
+                            const ⵒⵅⵌⵍⴲ = await ⵂⵐⵊⵌⴲ["text"]();
+                            var ⵒⵕⵁⵍⴲ = 12;
+                            while (ⵒⵕⵁⵍⴲ < 33) switch (ⵒⵕⵁⵍⴲ) {
+                              case 12:
+                                ⵒⵕⵁⵍⴲ = ⵒⵅⵌⵍⴲ["trimStart"]()["startsWith"]("<") && ⵒⴵⵇⵌⴲ < 2 ? 32 : 33;
+                                break;
+                              case 32:
+                                ⵒⵕⵁⵍⴲ = 33;
+                                {
+                                  await new Promise(ⵂⵀⵅⵍⴲ => setTimeout(ⵂⵀⵅⵍⴲ, 2000 * (ⵒⴵⵇⵌⴲ + 1)));
+                                  continue ⵂⵐⴺⵟ;
+                                }
+                                break;
+                            }
+                            throw new Error("Server error: " + ⵂⵐⵊⵌⴲ["status"]);
+                          }
+                          break;
+                        case 32:
+                          ⴲⵛⵈⵍⴲ = !ⵂⵐⵊⵌⴲ["ok"] ? 22 : 34;
+                          break;
+                      }
+                      ⴲⴻⵎⵌⴲ = await ⵂⵐⵊⵌⴲ["text"]();
+                      var ⵂⵐⴺⵍⴲ = 33;
+                      while (ⵂⵐⴺⵍⴲ < 34) switch (ⵂⵐⴺⵍⴲ) {
+                        case 8:
+                          ⵂⵐⴺⵍⴲ = 34;
+                          {
+                            var ⴲⴻⴾⵍⴲ = 26;
+                            while (ⴲⴻⴾⵍⴲ < 39) switch (ⴲⴻⴾⵍⴲ) {
+                              case 35:
+                                ⴲⴻⴾⵍⴲ = 39;
+                                {
+                                  await new Promise(ⴲⵋⴳⵍⴲ => setTimeout(ⴲⵋⴳⵍⴲ, 2000 * (ⵒⴵⵇⵌⴲ + 1)));
+                                  continue ⵂⵐⴺⵟ;
+                                }
+                                break;
+                              case 26:
+                                ⴲⴻⴾⵍⴲ = ⵒⴵⵇⵌⴲ < 2 ? 35 : 39;
+                                break;
+                            }
+                            throw new Error("Server temporarily unavailable. Please try again later.");
+                          }
+                          break;
+                        case 33:
+                          ⵂⵐⴺⵍⴲ = ⴲⴻⵎⵌⴲ["trimStart"]()["startsWith"]("<") ? 8 : 34;
+                          break;
+                      }
+                      break ⵂⵐⴺⵟ;
+                    }
+                    break;
+                }
+              }
+            }
+            var ⵒⴵⴷⵍⴲ = 7;
+            while (ⵒⴵⴷⵍⴲ < 33) switch (ⵒⴵⴷⵍⴲ) {
+              case 12:
+                ⵒⴵⴷⵍⴲ = 33;
+                {
+                  const ⵒⵕⵁⵉⴲ = JSON["parse"](ⴲⴻⵎⵌⴲ);
+                  var ⵂⵀⵅⵉⴲ = 31;
+                  while (ⵂⵀⵅⵉⴲ < 39) switch (ⵂⵀⵅⵉⴲ) {
+                    case 31:
+                      ⵂⵀⵅⵉⴲ = !ⵒⵕⵁⵉⴲ["valid"] ? 26 : 39;
+                      break;
+                    case 26:
+                      ⵂⵀⵅⵉⴲ = 39;
+                      throw new Error(ⵒⵕⵁⵉⴲ["message"] || "Failed to fetch script");
+                  }
+                }
+                break;
+              case 7:
+                ⵒⴵⴷⵍⴲ = ⴲⴻⵎⵌⴲ["startsWith"]("{") ? 12 : 33;
+                break;
+            }
+            Object["assign"](ⴲⵋⵓⵋⴲ, JSON["parse"](ⴲⵛⵈⵓⴲ(ⴲⴻⵎⵌⴲ)));
+          }
+          break;
+      }
+      const {
+        ["token"]: ⵂⵐⴺⵉⴲ,
+        ["paths"]: ⴲⴻⴾⵉⴲ,
+        ["version"]: ⴲⵋⴳⵉⴲ,
+        ["total"]: ⵒⴵⴷⵉⴲ
+      } = ⴲⵋⵓⵋⴲ;
+      ⵂⵐⵊⵖⴲ();
+      const ⵒⵅⵜⵈⴲ = ⴲⵋⵓⵋⴲ["st"] || Date["now"]();
+      const ⵂⴰⴰⵉⴲ = ⵒⵅⵜⵈⴲ - Date["now"]();
+      const ⴲⴻⵞⵉⴲ = "https://uix.zozo.city/api/v3/cdn/assets/" + ⵂⵐⴺⵉⴲ + "/";
+      const ⵒⵕⴱⵊⴲ = Array["from"]({
+        ["length"]: ⵒⴵⴷⵉⴲ
+      }, (ⵒⴵⵗⵉⴲ, ⵂⵐⵚⵉⴲ) => ⵂⵐⵚⵉⴲ);
+      var ⵂⴰⵐⵉⴲ = 13;
+      {
+        let ⴲⵋⵓⵉⴲ;
+        while (ⵂⴰⵐⵉⴲ < 35) {
+          switch (ⵂⴰⵐⵉⴲ) {
+            case 34:
+              ⵂⴰⵐⵉⴲ = 18;
+              ⴲⵋⵓⵉⴲ--;
+              break;
+            case 13:
+              ⵂⴰⵐⵉⴲ = 18;
+              ⴲⵋⵓⵉⴲ = ⵒⵕⴱⵊⴲ["length"] - 1;
+              break;
+            case 14:
+              ⵂⴰⵐⵉⴲ = 34;
+              {
+                const ⴲⵛⵈⵉⴲ = Math["floor"](Math["random"]() * (ⴲⵋⵓⵉⴲ + 1));
+                [ⵒⵕⴱⵊⴲ[ⴲⵋⵓⵉⴲ], ⵒⵕⴱⵊⴲ[ⴲⵛⵈⵉⴲ]] = [ⵒⵕⴱⵊⴲ[ⴲⵛⵈⵉⴲ], ⵒⵕⴱⵊⴲ[ⴲⵋⵓⵉⴲ]];
+              }
+              break;
+            case 18:
+              ⵂⴰⵐⵉⴲ = ⴲⵋⵓⵉⴲ > 0 ? 14 : 35;
+              break;
+          }
+        }
+      }
+      const ⵒⵅⵌⵉⴲ = new Array(ⵒⴵⴷⵉⴲ);
+      let ⵂⵐⵊⵊⴲ = 0;
+      const ⴲⴻⵎⵊⴲ = 5;
+      var ⴲⵋⵃⵊⴲ = 11;
+      {
+        let ⵒⴵⵇⵊⴲ;
+        while (ⴲⵋⵃⵊⴲ < 36) {
+          switch (ⴲⵋⵃⵊⴲ) {
+            case 26:
+              ⴲⵋⵃⵊⴲ = 20;
+              ⵒⴵⵇⵊⴲ += ⴲⴻⵎⵊⴲ;
+              break;
+            case 11:
+              ⴲⵋⵃⵊⴲ = 20;
+              ⵒⴵⵇⵊⴲ = 0;
+              break;
+            case 31:
+              ⴲⵋⵃⵊⴲ = 26;
+              {
+                const ⵒⵅⴼⵊⴲ = ⵒⵕⴱⵊⴲ["slice"](ⵒⴵⵇⵊⴲ, ⵒⴵⵇⵊⴲ + ⴲⴻⵎⵊⴲ);
+                await Promise["all"](ⵒⵅⴼⵊⴲ["map"](async ⵂⴰⵀⵊⴲ => {
+                  const ⵂⵀⴵⵊⴲ = ⴲⴻⵞⵉⴲ + ⴲⴻⴾⵉⴲ[ⵂⴰⵀⵊⴲ];
+                  var ⴲⵛⴸⵊⴲ = 31;
+                  {
+                    let ⵒⴵⴷⵋⴲ;
+                    ⵂⴰⴰⵟ: while (ⴲⵛⴸⵊⴲ < 39) {
+                      switch (ⴲⵛⴸⵊⴲ) {
+                        case 35:
+                          ⴲⵛⴸⵊⴲ = 38;
+                          {
+                            const ⵂⵐⴺⵋⴲ = ⵒⵕⴱⵖⴲ(String(Math["floor"]((Date["now"]() + ⵂⴰⴰⵉⴲ) / 30000)));
+                            const ⵂⴰⴰⵋⴲ = await fetch(ⵂⵀⴵⵊⴲ + "?a=" + ⵂⵐⴺⵋⴲ);
+                            var ⴲⵋⴳⵋⴲ = 12;
+                            while (ⴲⵋⴳⵋⴲ < 33) switch (ⴲⵋⴳⵋⴲ) {
+                              case 12:
+                                ⴲⵋⴳⵋⴲ = !ⵂⴰⴰⵋⴲ["ok"] ? 32 : 33;
+                                break;
+                              case 32:
+                                ⴲⵋⴳⵋⴲ = 33;
+                                {
+                                  var ⴲⵛⵘⵊⴲ = 31;
+                                  while (ⴲⵛⵘⵊⴲ < 39) switch (ⴲⵛⵘⵊⴲ) {
+                                    case 26:
+                                      ⴲⵛⵘⵊⴲ = 39;
+                                      {
+                                        await new Promise(ⵒⵅⵜⵊⴲ => setTimeout(ⵒⵅⵜⵊⴲ, 1500 * (ⵒⴵⴷⵋⴲ + 1)));
+                                        continue ⵂⴰⴰⵟ;
+                                      }
+                                      break;
+                                    case 31:
+                                      ⴲⵛⵘⵊⴲ = ⵒⴵⴷⵋⴲ < 2 ? 26 : 39;
+                                      break;
+                                  }
+                                  throw new Error("Chunk fetch failed: " + ⵂⴰⴰⵋⴲ["status"]);
+                                }
+                                break;
+                            }
+                            const ⵒⵕⵑⵊⴲ = await ⵂⴰⴰⵋⴲ["text"]();
+                            var ⵂⵀⵕⵊⴲ = 35;
+                            while (ⵂⵀⵕⵊⴲ < 39) switch (ⵂⵀⵕⵊⴲ) {
+                              case 35:
+                                ⵂⵀⵕⵊⴲ = ⵒⵕⵑⵊⴲ["trimStart"]()["startsWith"]("<") ? 38 : 39;
+                                break;
+                              case 38:
+                                ⵂⵀⵕⵊⴲ = 39;
+                                {
+                                  var ⵂⴰⴰⵇⴲ = 25;
+                                  while (ⵂⴰⴰⵇⴲ < 26) switch (ⵂⴰⴰⵇⴲ) {
+                                    case 25:
+                                      ⵂⴰⴰⵇⴲ = ⵒⴵⴷⵋⴲ < 2 ? 16 : 26;
+                                      break;
+                                    case 16:
+                                      ⵂⴰⴰⵇⴲ = 26;
+                                      {
+                                        await new Promise(ⴲⵋⴳⵇⴲ => setTimeout(ⴲⵋⴳⵇⴲ, 1500 * (ⵒⴵⴷⵋⴲ + 1)));
+                                        continue ⵂⴰⴰⵟ;
+                                      }
+                                      break;
+                                  }
+                                  throw new Error("Server temporarily unavailable during download.");
+                                }
+                                break;
+                            }
+                            ⵒⵅⵌⵉⴲ[ⵂⴰⵀⵊⴲ] = ⴲⵛⵈⵓⴲ(ⵒⵕⵑⵊⴲ);
+                            ⵂⵐⵊⵊⴲ++;
+                            ⴲⵛⵘⵒⴲ(ⵂⵐⵊⵊⴲ / ⵒⴵⴷⵉⴲ * 100);
+                            break ⵂⴰⴰⵟ;
+                          }
+                          break;
+                        case 38:
+                          ⴲⵛⴸⵊⴲ = 26;
+                          ⵒⴵⴷⵋⴲ++;
+                          break;
+                        case 31:
+                          ⴲⵛⴸⵊⴲ = 26;
+                          ⵒⴵⴷⵋⴲ = 0;
+                          break;
+                        case 26:
+                          ⴲⵛⴸⵊⴲ = ⵒⴵⴷⵋⴲ < 3 ? 35 : 39;
+                          break;
+                      }
+                    }
+                  }
+                }));
+              }
+              break;
+            case 20:
+              ⴲⵋⵃⵊⴲ = ⵒⴵⵇⵊⴲ < ⵒⵕⴱⵊⴲ["length"] ? 31 : 36;
+              break;
+          }
+        }
+      }
+      const ⴲⵛⵘⵆⴲ = ⵒⵅⵌⵉⴲ["join"]("");
+      const ⵒⵅⵜⵆⴲ = ⴲⵋⴳⵓⴲ(ⴲⵛⵘⵆⴲ);
+      ⴲⵋⵃⵒⴲ();
+      localStorage["setItem"](ⵂⵐⵊⵐⴲ(0), ⴲⵋⴳⵉⴲ);
+      localStorage["setItem"](ⵂⵐⵊⵐⴲ(1), ⵒⵅⴼⵐⴲ(ⵒⵅⵜⵆⴲ));
+      function ⵒⵕⵑⵆⴲ() {
+        const ⵂⵀⵕⵆⴲ = [47, 23, 59, 31, 67, 83, 41, 73, 37, 53];
+        const ⵂⵐⵊⵆⴲ = [ⵂⴰⵀⵆ, ⵒⵕⵑⵀ, ⵂⵐⵚⵁ, ⵂⴰⵀⵀ, ⵒⵕⴱⴾ, ⴲⵛⵈⴹ, ⵂⴰⴰⴻ, ⵂⵀⴵⵚⴲ, ⴲⵛⵘⵚⴲ, ⵂⵐⵚⵕⴲ];
+        let ⴲⴻⵎⵆⴲ = "";
+        var ⵒⵅⵌⵇⴲ = 13;
+        {
+          let ⵂⴰⵐⵇⴲ;
+          while (ⵒⵅⵌⵇⴲ < 35) {
+            switch (ⵒⵅⵌⵇⴲ) {
+              case 14:
+                ⵒⵅⵌⵇⴲ = 34;
+                {
+                  var ⵂⵀⵅⵇⴲ = 9;
+                  {
+                    let ⴲⵛⵈⵇⴲ;
+                    while (ⵂⵀⵅⵇⴲ < 34) {
+                      switch (ⵂⵀⵅⵇⴲ) {
+                        case 33:
+                          ⵂⵀⵅⵇⴲ = ⴲⵛⵈⵇⴲ < ⵂⵐⵊⵆⴲ[ⵂⴰⵐⵇⴲ]["length"] ? 8 : 34;
+                          break;
+                        case 25:
+                          ⵂⵀⵅⵇⴲ = 33;
+                          ⴲⵛⵈⵇⴲ++;
+                          break;
+                        case 9:
+                          ⵂⵀⵅⵇⴲ = 33;
+                          ⴲⵛⵈⵇⴲ = 0;
+                          break;
+                        case 8:
+                          ⵂⵀⵅⵇⴲ = 25;
+                          {
+                            ⴲⴻⵎⵆⴲ += String["fromCharCode"](ⵂⵐⵊⵆⴲ[ⵂⴰⵐⵇⴲ][ⴲⵛⵈⵇⴲ] - ⵂⵀⵕⵆⴲ[ⵂⴰⵐⵇⴲ]);
+                          }
+                          break;
+                      }
+                    }
+                  }
+                }
+                break;
+              case 18:
+                ⵒⵅⵌⵇⴲ = ⵂⴰⵐⵇⴲ < ⵂⵐⵊⵆⴲ["length"] ? 14 : 35;
+                break;
+              case 34:
+                ⵒⵅⵌⵇⴲ = 18;
+                ⵂⴰⵐⵇⴲ++;
+                break;
+              case 13:
+                ⵒⵅⵌⵇⴲ = 18;
+                ⵂⴰⵐⵇⴲ = 0;
+                break;
+            }
+          }
+        }
+        return ⴲⴻⵎⵆⴲ;
+      }
+      const ⴲⴻⴾⵇⴲ = ⵒⵕⵑⵆⴲ();
+      const ⵒⵕⵁⵇⴲ = Math["floor"](Date["now"]() / 30000);
+      const ⵒⴵⴷⵇⴲ = ⴲⴻⴾⵇⴲ + ":" + ⵒⵕⵁⵇⴲ;
+      let ⵂⵐⴺⵇⴲ = 0;
+      var ⴲⵛⴸⵈⴲ = 7;
+      {
+        let ⵒⵅⴼⵈⴲ;
+        while (ⴲⵛⴸⵈⴲ < 33) {
+          switch (ⴲⵛⴸⵈⴲ) {
+            case 7:
+              ⴲⵛⴸⵈⴲ = 12;
+              ⵒⵅⴼⵈⴲ = 0;
+              break;
+            case 12:
+              ⴲⵛⴸⵈⴲ = ⵒⵅⴼⵈⴲ < ⵒⴵⴷⵇⴲ["length"] ? 32 : 33;
+              break;
+            case 32:
+              ⴲⵛⴸⵈⴲ = 22;
+              {
+                const ⵒⵕⴱⵈⴲ = ⵒⴵⴷⵇⴲ["charCodeAt"](ⵒⵅⴼⵈⴲ);
+                ⵂⵐⴺⵇⴲ = (ⵂⵐⴺⵇⴲ << 5) - ⵂⵐⴺⵇⴲ + ⵒⵕⴱⵈⴲ;
+                ⵂⵐⴺⵇⴲ = ⵂⵐⴺⵇⴲ & ⵂⵐⴺⵇⴲ;
+              }
+              break;
+            case 22:
+              ⴲⵛⴸⵈⴲ = 12;
+              ⵒⵅⴼⵈⴲ++;
+              break;
+          }
+        }
+      }
+      window["__QX_RUNTIME_AUTH__"] = {
+        ["token"]: Math["abs"](ⵂⵐⴺⵇⴲ)["toString"](36),
+        ["key"]: ⴲⴻⴾⵇⴲ,
+        ["ts"]: ⵒⵕⵁⵇⴲ,
+        ["loader"]: true
+      };
+      ⵒⴵⵗⵓⴲ(ⵒⵅⵜⵆⴲ);
+      delete window["__QX_RUNTIME_AUTH__"];
+      ⵒⵅⵜⵚⴲ("Developer @traderjisanx !", 5000);
+    } catch (ⵂⵀⴵⵈⴲ) {
+      ⴲⵋⵃⵒⴲ();
+      Swal["fire"]({
+        ["icon"]: "error",
+        ["title"]: "Connection Error",
+        ["html"]: `${"Could not fetch script from server.<br>Error: "}${ⵂⵀⴵⵈⴲ["message"]}${"<br>Please check your license and try again."}`,
+        ["confirmButtonText"]: "OK",
+        ["customClass"]: {
+          ["container"]: "swal-high-zindex"
+        }
+      });
+    }
+  }
+  const ⵂⵐⵚⵇⴲ = document["createElement"]("style");
+  ⵂⵐⵚⵇⴲ["textContent"] = ⵂⴰⵀⵚⴲ;
+  document["head"]["appendChild"](ⵂⵐⵚⵇⴲ);
+  const ⴲⴻⵞⵇⴲ = await ⴲⵛⵈⴽ();
+  var ⴲⵋⵓⵇⴲ = 13;
+  while (ⴲⵋⵓⵇⴲ < 35) switch (ⴲⵋⵓⵇⴲ) {
+    case 18:
+      ⴲⵋⵓⵇⴲ = 35;
+      {
+        ⵒⴵⵗⴹ(ⴲⴻⵞⵇⴲ["message"], ⴲⴻⵞⵇⴲ["wrongProject"]);
+      }
+      break;
+    case 14:
+      ⴲⵋⵓⵇⴲ = 35;
+      var ⵒⴵⵗⵇⴲ = 32;
+      while (ⵒⴵⵗⵇⴲ < 34) switch (ⵒⴵⵗⵇⴲ) {
+        case 22:
+          ⵒⴵⵗⵇⴲ = 34;
+          {
+            Swal["fire"]({
+              ["title"]: "",
+              ["html"]: `${"\n        <div style=\"font-family: 'Roboto', sans-serif;\n                    text-align: center;\n                    background: linear-gradient(135deg, rgba(30, 11, 54, 0.98), rgba(45, 20, 70, 0.98));\n                    padding: 20px;\n                    border-radius: 15px;\n                    box-shadow: 0 15px 40px rgba(0,0,0,0.5);\n                    border: 1px solid rgba(231, 76, 60, 0.5);\">\n          \n          <div style=\"background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);\n                      padding: 2px;\n                      border-radius: 12px;\n                      margin-bottom: 15px;\">\n            <div style=\"background: rgba(30, 11, 54, 0.95);\n                        padding: 15px;\n                        border-radius: 10px;\">\n              <div style=\"display: flex; align-items: center; justify-content: center; margin-bottom: 15px;\">\n                <div style=\"width: 50px; height: 50px;\n                            background: linear-gradient(135deg, #e74c3c, #c0392b);\n                            border-radius: 50%;\n                            display: flex;\n                            align-items: center;\n                            justify-content: center;\n                            box-shadow: 0 0 20px rgba(231, 76, 60, 0.5);\">\n                  <svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"white\">\n                    <path d=\"M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 11c-.55 0-1-.45-1-1V8c0-.55.45-1 1-1s1 .45 1 1v4c0 .55-.45 1-1 1zm1 4h-2v-2h2v2z\"/>\n                  </svg>\n                </div>\n              </div>\n              <h2 style=\"color: #fff; margin: 0; font-size: 16px; font-weight: 700;\n                         background: linear-gradient(to right, #e74c3c, #c0392b);\n                         -webkit-background-clip: text;\n                         -webkit-text-fill-color: transparent;\">\n                🚫 License Blocked\n              </h2>\n            </div>\n          </div>\n          \n          <div style=\"background: rgba(231, 76, 60, 0.15);\n                      padding: 15px;\n                      margin: 15px 0;\n                      border-radius: 10px;\n                      text-align: left;\n                      backdrop-filter: blur(10px);\">\n            <p style=\"margin: 0; font-size: 15px; color: #fff; line-height: 1.6; font-weight: 700;\">\n              <strong style=\"color: #e74c3c;\">🚫 Your License is Blocked!</strong>\n            </p>\n            <p style=\"margin: 15px 0 0 0; font-size: 15px; color: rgba(255,255,255,0.9); line-height: 1.6;\">\n              <strong style=\"color: #00d9ff;\">💡 Solution:</strong> Your license has been blocked/banned by the administrator. Contact the developer on Telegram.\n            </p>\n          </div>\n          \n          <div style=\"background: rgba(249, 0, 255, 0.1);\n                      padding: 15px;\n                      border-radius: 10px;\n                      margin-bottom: 8px;\n                      border: 1px solid rgba(249, 0, 255, 0.2);\">\n            <div style=\"display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 10px;\">\n              <img src=\"https://i.postimg.cc/MKRyMcR4/Screenshot-20260214-100336-Gallery-(1).jpg\"\n                   style=\"width: 22px; height: 22px; border-radius: 50%; object-fit: cover;\"\n                   alt=\"Telegram\">\n              <p style=\"margin: 0; font-size: 15px; color: #fff; font-weight: 600;\">\n                Developer Contact\n              </p>\n            </div>\n            <a href=\"https://t.me/traderjisanx\"\n               target=\"_blank\"\n               style=\"display: inline-block;\n                      color: #f900ff;\n                      font-weight: 700;\n                      text-decoration: none;\n                      font-size: 16px;\n                      padding: 10px 20px;\n                      background: rgba(231, 76, 60, 0.1);\n                      border-radius: 8px;\n                      transition: all 0.3s ease;\">\n              📱 @traderjisanx\n            </a>\n          </div>\n        </div>\n      "}`,
+              ["showConfirmButton"]: true,
+              ["showCancelButton"]: true,
+              ["confirmButtonText"]: "📞 Contact Developer",
+              ["cancelButtonText"]: "❌ Close",
+              ["confirmButtonColor"]: "#e74c3c",
+              ["cancelButtonColor"]: "#c0392b",
+              ["allowOutsideClick"]: false,
+              ["customClass"]: {
+                ["container"]: "swal-high-zindex",
+                ["popup"]: "custom-popup-style",
+                ["confirmButton"]: "custom-button-style",
+                ["cancelButton"]: "custom-button-style"
+              },
+              ["didOpen"]: () => {
+                const ⵂⵀⵕⵈⴲ = document["createElement"]("style");
+                ⵂⵀⵕⵈⴲ["textContent"] = `${"\n          .custom-popup-style {\n            border-radius: 20px !important;\n            padding: 0 !important;\n          }\n          .custom-button-style {\n            font-family: 'Roboto', sans-serif !important;\n            font-weight: 600 !important;\n            padding: 12px 30px !important;\n            border-radius: 10px !important;\n            font-size: 15px !important;\n            transition: all 0.3s ease !important;\n            box-shadow: 0 4px 15px rgba(0,0,0,0.2) !important;\n          }\n          .custom-button-style:hover {\n            transform: translateY(-2px) !important;\n            box-shadow: 0 6px 20px rgba(0,0,0,0.3) !important;\n          }\n        "}`;
+                document["head"]["appendChild"](ⵂⵀⵕⵈⴲ);
+              }
+            })["then"](ⴲⵛⵘⵈⴲ => {
+              var ⴲⴻⵎⵈⴲ = 33;
+              while (ⴲⴻⵎⵈⴲ < 34) switch (ⴲⴻⵎⵈⴲ) {
+                case 8:
+                  ⴲⴻⵎⵈⴲ = 34;
+                  {
+                    window["open"]("https://t.me/traderjisanx", "_blank");
+                  }
+                  break;
+                case 33:
+                  ⴲⴻⵎⵈⴲ = ⴲⵛⵘⵈⴲ["isConfirmed"] ? 8 : 34;
+                  break;
+              }
+            });
+          }
+          break;
+        case 32:
+          ⵒⴵⵗⵇⴲ = ⴲⴻⵞⵇⴲ["valid"] === false && ⴲⴻⵞⵇⴲ["reason"] === "banned" ? 22 : 34;
+          break;
+      }
+      break;
+    case 13:
+      ⴲⵋⵓⵇⴲ = ⴲⴻⵞⵇⴲ["valid"] === false && ⴲⴻⵞⵇⴲ["reason"] === "wrong_project" ? 18 : 14;
+      break;
+  }
+  const ⵒⵕⵑⵈⴲ = await ⵒⵕⵑⴰⴳ();
+  var ⵒⴵⵇⵈⴲ = 18;
+  while (ⵒⴵⵇⵈⴲ < 35) switch (ⵒⴵⵇⵈⴲ) {
+    case 14:
+      ⵒⴵⵇⵈⴲ = 35;
+      {
+        var ⵂⵐⵊⵈⴲ = 32;
+        while (ⵂⵐⵊⵈⴲ < 34) switch (ⵂⵐⵊⵈⴲ) {
+          case 9:
+            ⵂⵐⵊⵈⴲ = 34;
+            var ⵂⴰⵀⵈⴲ = 34;
+            while (ⵂⴰⵀⵈⴲ < 35) switch (ⵂⴰⵀⵈⴲ) {
+              case 11:
+                ⵂⴰⵀⵈⴲ = 35;
+                {
+                  var ⴲⵋⵃⵈⴲ = 8;
+                  while (ⴲⵋⵃⵈⴲ < 26) switch (ⴲⵋⵃⵈⴲ) {
+                    case 25:
+                      ⴲⵋⵃⵈⴲ = 26;
+                      {
+                        await ⵒⵕⵁⵝⴲ(ⵒⵕⵑⵈⴲ["order_id"]);
+                      }
+                      break;
+                    case 16:
+                      ⴲⵋⵃⵈⴲ = 26;
+                      {
+                        await ⵒⵕⴱⵞⴲ(ⵒⵕⵑⵈⴲ["order_id"]);
+                      }
+                      break;
+                    case 8:
+                      ⴲⵋⵃⵈⴲ = ⴲⵛⵘⵆ === "subscription" ? 25 : 16;
+                      break;
+                  }
+                }
+                break;
+              case 34:
+                ⵂⴰⵀⵈⴲ = ⵒⵕⵑⵈⴲ["needsDetails"] ? 11 : 35;
+                break;
+            }
+            break;
+          case 22:
+            ⵂⵐⵊⵈⴲ = 34;
+            {
+              ⴲⵋⵃⵆ = true;
+              await Swal["fire"]({
+                ["icon"]: "success",
+                ["title"]: "License Recovered!",
+                ["text"]: "Your previously purchased license has been restored.",
+                ["confirmButtonColor"]: "#10b981",
+                ["customClass"]: {
+                  ["container"]: "swal-high-zindex"
+                }
+              });
+            }
+            break;
+          case 32:
+            ⵂⵐⵊⵈⴲ = ⵒⵕⵑⵈⴲ["recovered"] ? 22 : 9;
+            break;
+        }
+      }
+      break;
+    case 18:
+      ⵒⴵⵇⵈⴲ = ⵒⵕⵑⵈⴲ ? 14 : 35;
+      break;
+  }
+  var ⴲⴻⵎⵄⴲ = 23;
+  while (ⴲⴻⵎⵄⴲ < 38) switch (ⴲⴻⵎⵄⴲ) {
+    case 17:
+      ⴲⴻⵎⵄⴲ = 38;
+      {
+        await ⵂⴰⵐⵗⴲ();
+      }
+      break;
+    case 23:
+      ⴲⴻⵎⵄⴲ = ⴲⴻⵞⵇⴲ["valid"] && (ⴲⴻⵞⵇⴲ["reason"] === "subscription_required" || ⴲⴻⵞⵇⴲ["subscription_required"] || ⴲⴻⵎⵄ()) ? 24 : 17;
+      break;
+    case 24:
+      ⴲⴻⵎⵄⴲ = 38;
+      {
+        ⴲⵋⵓⵃ(true);
+        ⵒⴵⵇⵄ();
+        await ⵂⵀⴵⵄ(ⴲⴻⵞⵇⴲ);
+      }
+      break;
+  }
+})();
